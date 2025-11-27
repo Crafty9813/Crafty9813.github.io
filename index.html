@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Jonathan Li</title>
+  </head>
+  <body>
+    <h1 style="color: lightskyblue">About Me!</h1>
+
+    <figure>
+      <img src="images/Me.jpg" alt="me" id="Me" />
+    </figure>
+
+    <!--INTRO PARAGRAPH-->
+    <p id="IntroP">
+      Hey there! My name is Jonathan Li, and I'm currently a sophomore in high
+      school. I'm really into autonomous robotics and ML. I've been building
+      cool things ever since I was young, and most of the stuff I do here is
+      self taught. I really thank my mom for all of her support in my passion. I
+      have a Youtube channel where I explain many of my projects, and my GitHub
+      has most of the code for them. Scroll down to view some of my work!
+      <br />
+    </p>
+
+    <a
+      href="https://www.youtube.com/@JonathanLi-9813/videos"
+      target="_blank"
+      class="button"
+      >My youtube channel</a
+    >
+
+    <a href="https://github.com/Crafty9813" target="_blank" class="button"
+      >My GitHub</a
+    >
+
+    <h1>Some Projects I'm Proud of!</h1>
+
+    <!-- IMAGES & VIDEOS OF PROJECTS -->
+    <div class="image-container">
+      <figure>
+        <img src="images/diffusion.jpg" alt="diffusion model" id="diffusion" />
+        <figcaption>Simple DDPM work in progress.</figcaption>
+      </figure>
+
+      <figure>
+        <video class="raspi-bot" width="320" height="240" controls>
+          <source src="videos/raspi-bot.mp4#t=0.001" type="video/mp4" />
+        </video>
+        <figcaption>
+          Raspberry Pi robot that follows Apriltags and semi-autonomously picks
+          up objects using YOLO. I also added keyboard teleop.
+        </figcaption>
+      </figure>
+
+      <figure>
+        <video class="isaac-sim" width="320" height="240" controls>
+          <source src="videos/Isaac-Sim.mp4#t=0.001" type="video/mp4" />
+        </video>
+        <figcaption>Isaac Sim and Isaac Lab setup!</figcaption>
+      </figure>
+
+      <figure>
+        <video class="lunar-lander" width="320" height="240" controls>
+          <source src="videos/lunar-lander.mp4#t=0.001" type="video/mp4" />
+        </video>
+        <figcaption>Lunar Lander RL using PPO.</figcaption>
+      </figure>
+
+      <figure>
+        <video class="RL-car" width="320" height="240" controls>
+          <source src="videos/RL-car.mp4#t=0.001" type="video/mp4" />
+        </video>
+        <figcaption>
+          I used RL (specifically Q-learning) for a "car" (yellow rectangle) to
+          reach a goal (green circle) in Python.
+        </figcaption>
+      </figure>
+
+      <figure>
+        <video class="ar-js" width="320" height="240" controls>
+          <source src="videos/ar-js.mp4#t=0.001" type="video/mp4" />
+        </video>
+        <figcaption>
+          Displaying 3D models on Hiro (or other fiducial markers like QR codes)
+          using AR.js, I'm looking into VSLAM instead.
+        </figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/cv2-js.png" alt="opencv-js" id="cv2-js" />
+        <figcaption>
+          I created a web page using OpenCV.js to show computer vision
+          algorithms! Typically OpenCV is with Python or C++, but this uses JS
+          so no Python backend needed!
+        </figcaption>
+      </figure>
+
+      <figure>
+        <video class="num-pred" width="320" height="240" controls>
+          <source src="videos/num_pred.mp4#t=0.001" type="video/mp4" />
+        </video>
+        <figcaption>
+          PyTorch digit classification using a CNN. Data is from the MNIST
+          dataset.
+        </figcaption>
+      </figure>
+
+      <figure>
+        <video class="sentiment-analysis" width="320" height="240" controls>
+          <source src="videos/sentiment-anal.mp4#t=0.001" type="video/mp4" />
+        </video>
+        <figcaption>Sentiment analysis using sklearn in Python.</figcaption>
+      </figure>
+
+      <figure>
+        <video class="facial-features" width="320" height="240" controls>
+          <source src="videos/facial_features.mp4#t=0.001" type="video/mp4" />
+        </video>
+        <figcaption>
+          Facial feature recognition using Haar Cascades (pretty old but popular
+          and powerful algorithm).
+        </figcaption>
+      </figure>
+
+      <figure>
+        <video class="mp-mouse" width="320" height="240" controls>
+          <source src="videos/mp-mouse.mp4#t=0.001" type="video/mp4" />
+        </video>
+        <figcaption>
+          Gesture controlled mouse using Google's Mediapipe API for hand
+          landmarks, & PyAutoGUI to actually control the mouse.
+        </figcaption>
+      </figure>
+
+      <figure>
+        <video class="rviz-rt" width="320" height="240" controls>
+          <source src="videos/rviz-rt.mp4#t=0.001" type="video/mp4" />
+        </video>
+        <figcaption>
+          LiDAR connected to Raspberry Pi real time data visualization in RViz
+          via SSH
+        </figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/ROSLidar.png" alt="ROS Lidar Demo" class="ROSLidar" />
+        <figcaption>
+          I learned the basics of ROS! Gazebo & RViz sim shown.
+        </figcaption>
+      </figure>
+
+      <figure>
+        <video class="lamp" width="320" height="240" controls>
+          <source src="videos/lamp.mp4#t=0.001" type="video/mp4" />
+        </video>
+        <figcaption>
+          HC-SR04 ultrasonic sensor motion lamp, mean't to make life easier,
+          especially for when you need to get up midnight.
+        </figcaption>
+      </figure>
+
+      <figure>
+        <video class="arduino-lidar-bot" width="320" height="240" controls>
+          <source src="videos/arduino-lidar-bot.mp4#t=0.001" type="video/mp4" />
+        </video>
+        <figcaption>
+          Simple Arduino obstacle avoiding robot using LiDAR...works as a simple
+          DIY roomba I guess.
+        </figcaption>
+      </figure>
+
+      <figure>
+        <video class="plastic-bottle-bot" width="320" height="240" controls>
+          <source
+            src="videos/plastic-bottle-bot.mp4#t=0.001"
+            type="video/mp4"
+          />
+        </video>
+        <figcaption>
+          State-machine based autonomous robot to throw away trash (plastic
+          bottles).
+        </figcaption>
+      </figure>
+
+      <figure>
+        <video class="gdino" width="320" height="240" controls>
+          <source src="videos/gdino.mp4#t=0.001" type="video/mp4" />
+        </video>
+        <figcaption>
+          GroundingDINO and PyTorch for FRC 2025 algae detection, helped by
+          mentor.
+        </figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/YOLO.png" alt="yolo" class="yolo" />
+        <figcaption>Played w/ YOLO11 pretrained object recognition.</figcaption>
+      </figure>
+
+      <figure>
+        <video class="face-req" width="320" height="240" controls>
+          <source src="videos/face-req.mp4#t=0.001" type="video/mp4" />
+        </video>
+        <figcaption>
+          Raspberry Pi facial recognition security camera, Haar Cascade based.
+        </figcaption>
+      </figure>
+
+      <figure>
+        <img
+          src="images/open-sauce-projects.jpg"
+          alt="Open Sauce projects"
+          id="open-sauce-projects"
+        />
+        <figcaption>Stuff I brought to show at Open Sauce 2024!</figcaption>
+      </figure>
+
+      <figure>
+        <img
+          src="images/strandbeest.JPG"
+          alt="RC strandbeest"
+          id="strandbeest"
+        />
+        <figcaption>
+          My RC FPV strandbeest model (goal was to mimic an animal so you could
+          use it to monitor species...)
+        </figcaption>
+      </figure>
+
+      <figure>
+        <video class="swerve-drive" width="320" height="240" controls>
+          <source src="videos/swerve-drive.mp4#t=0.001" type="video/mp4" />
+        </video>
+        <figcaption>
+          My custom Arduino swerve drive, I basically designed everything!
+        </figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/robotic-arm.png" alt="6 dof arm" id="robotic-arm" />
+        <figcaption>6 DOF 3D-printed arm</figcaption>
+      </figure>
+    </div>
+
+    <h1>Visiting Boston Dynamics!</h1>
+    <img
+      src="images/bos-dynamics.webp"
+      alt="Me at boston dynamics"
+      class="boston-dynamics"
+    />
+
+    <img src="images/quadruped.webp" alt="Quadruped" class="quadruped" />
+
+    <p style="text-align: center">
+      I got to visit Boston Dynamics' headquarters in Waltham, MA! It was super
+      fun seeing their robots & driving some of their quadrupeds.
+    </p>
+
+    <!-- OPEN SAUCE SECTION -->
+    <h1>My Open Sauce 2024 experience & some cool (& famous) people I met!</h1>
+
+    <figure>
+      <img src="images/booth-image.jpg" alt="Booth" class="booth-image" />
+      <figcaption>
+        My booth! Me explaning a dragonfly ornithopter mechanism which many
+        <br />
+        found interest in. This simple mechanism could be used for tiny drones,
+        although <br />
+        I'm not too sure if it would be more efficient than just using
+        propellers
+      </figcaption>
+    </figure>
+
+    <p id="boothP">
+      At my booth I showed my Arduino quadcopter which uses an MPU-6050 gyro &
+      accelerometer, a line follower using 2 IR sensors, a 3D-printed humanoid
+      hand, facial recognition on a Raspberry Pi, an ornithopter, ArUco marker
+      detection, and a simple HC-05 bluetooth RC car. It was very fun!
+    </p>
+
+    <div id="people_photos">
+      <figure>
+        <img
+          src="images/Veritasium.jpg"
+          alt="Veritasium"
+          class="people-met-photos"
+        />
+        <figcaption>I met Veritasium!</figcaption>
+      </figure>
+
+      <figure>
+        <img
+          src="images/eternal-progression.jpg"
+          alt="Eternal Progression"
+          class="people-met-photos"
+        />
+        <figcaption>
+          Eternal Progression (Josh) was in the same hotel!
+        </figcaption>
+      </figure>
+
+      <figure>
+        <img
+          src="images/Hacksmith.JPG"
+          alt="The Hacksmith"
+          class="people-met-photos"
+        />
+        <figcaption>I met James Hobson (The Hacksmith)!</figcaption>
+      </figure>
+
+      <figure>
+        <img
+          src="images/allen-pan.JPG"
+          alt="Allen Pan"
+          class="people-met-photos"
+        />
+        <figcaption>I met Allen Pan!</figcaption>
+      </figure>
+
+      <figure>
+        <img
+          src="images/tom-stanton.JPG"
+          alt="Tom Stanton"
+          class="people-met-photos"
+        />
+        <figcaption>I met Tom Stanton!</figcaption>
+      </figure>
+
+      <figure>
+        <img
+          src="images/Styropyro.jpg"
+          alt="Styropyro"
+          class="people-met-photos"
+        />
+        <figcaption>I met Styropyro (Drake)!</figcaption>
+      </figure>
+
+      <figure>
+        <img
+          src="images/JLaser.jpg"
+          alt="Jake Laser"
+          class="people-met-photos"
+        />
+        <figcaption>I met Jake Laser (JLaserVideo)</figcaption>
+      </figure>
+
+      <figure>
+        <img
+          src="images/Joel-creates.jpg"
+          alt="Joel Creates"
+          class="people-met-photos"
+        />
+        <figcaption>I met Joel (Joel Creates)!</figcaption>
+      </figure>
+
+      <figure>
+        <img
+          src="images/peter-sripol.JPG"
+          alt="Peter Sripol"
+          class="people-met-photos"
+        />
+        <figcaption>I met Peter Sripol!</figcaption>
+      </figure>
+
+      <figure>
+        <img
+          src="images/ProjectAir.JPG"
+          alt="Project Air"
+          class="people-met-photos"
+        />
+        <figcaption>I met James Whomsley (Project Air)!</figcaption>
+      </figure>
+    </div>
+  </body>
+</html>
