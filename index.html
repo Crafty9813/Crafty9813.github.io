@@ -16,10 +16,8 @@
     <!--INTRO PARAGRAPH-->
     <p id="IntroP">
       Hey there! My name is Jonathan Li, and I'm currently a sophomore in high
-      school. I'm really into autonomous robotics and ML. I've been building
-      cool things ever since I was young, and most of the stuff I do here is
-      self taught. I really thank my mom for all of her support in my passion. I
-      have a Youtube channel where I explain many of my projects, and my GitHub
+      school. I'm really into autonomous robotics and ML, and I've been building
+      cool things ever since I was young. I have a Youtube channel where I explain many of my projects, and my GitHub
       has most of the code for them. Scroll down to view some of my work!
       <br />
     </p>
@@ -35,22 +33,49 @@
       >My GitHub</a
     >
 
+    <figure>
+      <video class="dash-humanoid" width="320" height="240" controls>
+        <source src="videos/run_test.mp4#t=0.001" type="video/mp4" />
+      </video>
+      <figcaption>
+        I'm working with a Ph.D student at UMass Amherst for an upcoming humanoid project and arm!
+      </figcaption>
+    </figure>
+
     <h1>Some Projects I'm Proud of!</h1>
 
     <!-- IMAGES & VIDEOS OF PROJECTS -->
     <div class="image-container">
       <figure>
         <img src="images/diffusion.jpg" alt="diffusion model" id="diffusion" />
-        <figcaption>Simple DDPM work in progress.</figcaption>
+        <figcaption>Little DDPM</figcaption>
+      </figure>
+
+      <figure>
+        <video class="disparity-map" width="320" height="240" controls>
+          <source src="videos/disparity.mov#t=0.001" type="video/mp4" />
+        </video>
+        <figcaption>
+          I played around with the IMX219-83 stereo camera with the Jetson Orin Nano and created a disparity map.
+        </figcaption>
+      </figure>
+
+      <figure>
+        <video class="rocker-bogie" width="320" height="240" controls>
+          <source src="videos/rocker-bogie.mov#t=0.001" type="video/mp4" />
+        </video>
+        <figcaption>
+          I made a Rocker Bogie suspension rover inspired by the mars rover.
+        </figcaption>
       </figure>
 
       <figure>
         <video class="raspi-bot" width="320" height="240" controls>
-          <source src="videos/raspi-bot.mp4#t=0.001" type="video/mp4" />
+          <source src="videos/raspi-bot.mov#t=0.001" type="video/mp4" />
         </video>
         <figcaption>
-          Raspberry Pi robot that follows Apriltags and semi-autonomously picks
-          up objects using YOLO. I also added keyboard teleop.
+          Raspberry Pi robot that follows Apriltags and autonomously picks
+          up objects using YOLO. I also made it so it follows me and can deliver me snacks. I also added keyboard teleop.
         </figcaption>
       </figure>
 
@@ -59,6 +84,15 @@
           <source src="videos/Isaac-Sim.mp4#t=0.001" type="video/mp4" />
         </video>
         <figcaption>Isaac Sim and Isaac Lab setup!</figcaption>
+      </figure>
+
+      <figure>
+        <video class="ik-sim" width="320" height="240" controls>
+          <source src="videos/ik-sim.mov#t=0.001" type="video/mp4" />
+        </video>
+        <figcaption>
+          I made a little 2D inverse kinematics demo.
+        </figcaption>
       </figure>
 
       <figure>
@@ -74,7 +108,7 @@
         </video>
         <figcaption>
           I used RL (specifically Q-learning) for a "car" (yellow rectangle) to
-          reach a goal (green circle) in Python.
+          reach a goal (green circle).
         </figcaption>
       </figure>
 
@@ -84,7 +118,7 @@
         </video>
         <figcaption>
           Displaying 3D models on Hiro (or other fiducial markers like QR codes)
-          using AR.js, I'm looking into VSLAM instead.
+          using AR.js, I may look into VSLAM instead.
         </figcaption>
       </figure>
 
@@ -111,7 +145,7 @@
         <video class="sentiment-analysis" width="320" height="240" controls>
           <source src="videos/sentiment-anal.mp4#t=0.001" type="video/mp4" />
         </video>
-        <figcaption>Sentiment analysis using sklearn in Python.</figcaption>
+        <figcaption>Sentiment analysis using sklearn.</figcaption>
       </figure>
 
       <figure>
@@ -119,8 +153,7 @@
           <source src="videos/facial_features.mp4#t=0.001" type="video/mp4" />
         </video>
         <figcaption>
-          Facial feature recognition using Haar Cascades (pretty old but popular
-          and powerful algorithm).
+          Facial feature recognition using Haar Cascades (pretty old but powerful algorithm).
         </figcaption>
       </figure>
 
@@ -156,7 +189,7 @@
           <source src="videos/lamp.mp4#t=0.001" type="video/mp4" />
         </video>
         <figcaption>
-          HC-SR04 ultrasonic sensor motion lamp, mean't to make life easier,
+          HC-SR04 ultrasonic sensor motion lamp mean't to make life easier,
           especially for when you need to get up midnight.
         </figcaption>
       </figure>
@@ -166,8 +199,7 @@
           <source src="videos/arduino-lidar-bot.mp4#t=0.001" type="video/mp4" />
         </video>
         <figcaption>
-          Simple Arduino obstacle avoiding robot using LiDAR...works as a simple
-          DIY roomba I guess.
+          Simple Arduino roomba using LiDAR
         </figcaption>
       </figure>
 
