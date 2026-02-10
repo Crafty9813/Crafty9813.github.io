@@ -38,7 +38,7 @@
         <source src="videos/run_test.mp4#t=0.001" type="video/mp4" />
       </video>
       <figcaption>
-        I'm working with a Ph.D student at UMass Amherst for an upcoming humanoid project and arm!
+        I'm working with a lab at UMass Amherst for an upcoming humanoid project and arm!
       </figcaption>
     </figure>
 
@@ -74,8 +74,17 @@
           <source src="videos/raspi-bot.mov#t=0.001" type="video/mp4" />
         </video>
         <figcaption>
-          Raspberry Pi robot that follows Apriltags and autonomously picks
-          up objects using YOLO. I also made it so it follows me and can deliver me snacks. I also added keyboard teleop.
+          I made an autonomous Raspberry Pi robot that delivers snacks using voice commands, follows AprilTags, and picks
+          up objects using YOLO object recognition.
+        </figcaption>
+      </figure>
+
+      <figure>
+        <video class="self-balancing" width="320" height="240" controls>
+          <source src="videos/self-balancer.mp4#t=0.001" type="video/mp4" />
+        </video>
+        <figcaption>
+          I made a 2 wheel self balancing robot (wheel inverted pendulum) that uses an MPU6050 and a complementary filter.
         </figcaption>
       </figure>
 
@@ -95,11 +104,13 @@
         </figcaption>
       </figure>
 
-      <figure>
-        <video class="lunar-lander" width="320" height="240" controls>
-          <source src="videos/lunar-lander.mp4#t=0.001" type="video/mp4" />
+       <figure>
+        <video class="swerve-drive" width="320" height="240" controls>
+          <source src="videos/swerve-drive.mp4#t=0.001" type="video/mp4" />
         </video>
-        <figcaption>Lunar Lander RL using PPO.</figcaption>
+        <figcaption>
+          My custom Arduino swerve drive, I basically designed everything!
+        </figcaption>
       </figure>
 
       <figure>
@@ -110,6 +121,23 @@
           I used RL (specifically Q-learning) for a "car" (yellow rectangle) to
           reach a goal (green circle).
         </figcaption>
+      </figure>
+
+      <figure>
+        <video class="mp-mouse" width="320" height="240" controls>
+          <source src="videos/mp-mouse.mp4#t=0.001" type="video/mp4" />
+        </video>
+        <figcaption>
+          Gesture controlled mouse using Google's Mediapipe API for hand
+          landmarks, & PyAutoGUI to actually control the mouse.
+        </figcaption>
+      </figure>
+
+      <figure>
+        <video class="lunar-lander" width="320" height="240" controls>
+          <source src="videos/lunar-lander.mp4#t=0.001" type="video/mp4" />
+        </video>
+        <figcaption>Lunar Lander RL using PPO.</figcaption>
       </figure>
 
       <figure>
@@ -154,16 +182,6 @@
         </video>
         <figcaption>
           Facial feature recognition using Haar Cascades (pretty old but powerful algorithm).
-        </figcaption>
-      </figure>
-
-      <figure>
-        <video class="mp-mouse" width="320" height="240" controls>
-          <source src="videos/mp-mouse.mp4#t=0.001" type="video/mp4" />
-        </video>
-        <figcaption>
-          Gesture controlled mouse using Google's Mediapipe API for hand
-          landmarks, & PyAutoGUI to actually control the mouse.
         </figcaption>
       </figure>
 
@@ -227,17 +245,8 @@
       </figure>
 
       <figure>
-        <img src="images/YOLO.png" alt="yolo" class="yolo" />
-        <figcaption>Played w/ YOLO11 pretrained object recognition.</figcaption>
-      </figure>
-
-      <figure>
-        <video class="face-req" width="320" height="240" controls>
-          <source src="videos/face-req.mp4#t=0.001" type="video/mp4" />
-        </video>
-        <figcaption>
-          Raspberry Pi facial recognition security camera, Haar Cascade based.
-        </figcaption>
+        <img src="images/ORB-detect.png" alt="yolo" class="yolo" />
+        <figcaption>Played w/ ORB feature detection.</figcaption>
       </figure>
 
       <figure>
@@ -250,6 +259,20 @@
       </figure>
 
       <figure>
+        <video class="face-req" width="320" height="240" controls>
+          <source src="videos/face-req.mp4#t=0.001" type="video/mp4" />
+        </video>
+        <figcaption>
+          Raspberry Pi facial recognition security camera, Haar Cascade based.
+        </figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/YOLO.png" alt="yolo" class="yolo" />
+        <figcaption>Played w/ YOLO11</figcaption>
+      </figure>
+
+      <figure>
         <img
           src="images/strandbeest.JPG"
           alt="RC strandbeest"
@@ -258,15 +281,6 @@
         <figcaption>
           My RC FPV strandbeest model (goal was to mimic an animal so you could
           use it to monitor species...)
-        </figcaption>
-      </figure>
-
-      <figure>
-        <video class="swerve-drive" width="320" height="240" controls>
-          <source src="videos/swerve-drive.mp4#t=0.001" type="video/mp4" />
-        </video>
-        <figcaption>
-          My custom Arduino swerve drive, I basically designed everything!
         </figcaption>
       </figure>
 
@@ -307,8 +321,8 @@
 
     <p id="boothP">
       At my booth I showed my Arduino quadcopter which uses an MPU-6050 gyro &
-      accelerometer, a line follower using 2 IR sensors, a 3D-printed humanoid
-      hand, facial recognition on a Raspberry Pi, an ornithopter, ArUco marker
+      accelerometer, a 3D-printed humanoid hand, a line follower using 2 IR sensors,
+      facial recognition on a Raspberry Pi, an ornithopter, ArUco marker
       detection, and a simple HC-05 bluetooth RC car. It was very fun!
     </p>
 
