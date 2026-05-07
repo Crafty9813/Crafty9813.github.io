@@ -32,6 +32,14 @@ p {
   margin-bottom: 4rem;
 }
 
+.section {
+  display: none;
+}
+
+.section.active {
+  display: block; /* Just reveals, doesn't touch grid inside */
+}
+
 /* GOLD PULSE GLOW */
 @keyframes pulse-glow {
   0% {
