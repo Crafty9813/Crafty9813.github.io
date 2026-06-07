@@ -10,13 +10,13 @@
     <h1 style="color: lightskyblue">About Me!</h1>
 
     <figure>
-      <img src="images/Me.jpg" alt="me" id="Me" />
+      <img src="images/Me.jpg" fetchpriority="high" alt="me" id="Me" />
     </figure>
 
     <!--INTRO PARAGRAPH-->
     <p id="IntroP">
       Hey there! My name is Jonathan Li, and I'm currently a sophomore in high
-      school. I'm really into autonomous robotics and ML, and I've been building
+      school. I'm really into robotics and ML, and I've been building
       cool things ever since I was young. I have a Youtube channel where I explain many of my projects, and my GitHub
       has most of the code for them. Scroll down to view some of my work!
       <br />
@@ -61,32 +61,35 @@
     <div id="internship" class="section">
       <div class = "image-container">
         <figure>
-          <video width="320" height="240" controls>
+          <video width="320" height="240" controls preload="metadata">
             <source src="videos/encoder-pcb-forte.webm#t=0.001" type="video/mp4" />
           </video>
           <figcaption>
-            I got to learn and design a pcb in KiCad.
+            I got to learn and design a PCB in KiCad!
           </figcaption>
         </figure>
 
         <figure>
-          <video width="320" height="240" controls>
+          <video width="320" height="240" controls preload="metadata">
             <source src="videos/bldc-gui.mp4#t=0.001" type="video/mp4" />
           </video>
           <figcaption>
-            I created a little GUI for tuning Kp and Kd values for BLDC motors. Angle, torque, & velocity graphs are shown.
+            I created a little GUI for tuning Kp and Kd values for BLDC motors. Angle, torque, & velocity graphs are shown. I learned about FOC too.
+            The code for the motor controller is actually modified from the MIT mini cheetah, but the PhD student I'm working with modified it, I just added the GUI and modified some
+            of the STM32 code to send & receive serial data about the torque, encoder angle, kp, kd, etc. The serial data gets sent to my laptop and is plotted on the GUI via a simple
+            python script which also sends serial data via UART back to the STM32.
           </figcaption>
         </figure>
 
          <figure>
-          <video width="320" height="240" controls>
+          <video width="320" height="240" controls preload="metadata">
             <source src="videos/Isaac-Sim.mp4#t=0.001" type="video/mp4" />
           </video>
-          <figcaption>Isaac Sim and Isaac Lab setup!</figcaption>
+          <figcaption>Isaac Sim and Isaac Lab setup! I played with RL with the Franka arm and a couple of Unitree robots.</figcaption>
         </figure>
 
         <figure>
-          <video width="320" height="240" controls>
+          <video width="320" height="240" controls preload="metadata">
             <source src="videos/oscilloscope.mov#t=0.001" type="video/mp4" />
           </video>
           <figcaption>
@@ -98,13 +101,24 @@
 
     <div id="legged" class="section">
       <div class = "image-container">
+
         <figure>
-          <video width="320" height="240" controls>
+          <video width="320" height="240" controls preload="metadata">
+            <source src="videos/box-casper.mp4#t=0.001" type="video/mp4" />
+          </video>
+          <figcaption>
+            I added a shoebox cover to Casper V2 (in the video I didn't secure it so its loud)
+          </figcaption>
+        </figure>
+
+        <figure>
+          <video width="320" height="240" controls preload="metadata">
             <source src="videos/casper.mp4#t=0.001" type="video/mp4" />
           </video>
           <figcaption>
-            I made Casper V1, my first functional quadruped robot dog with only 2 DOF per leg. I used skills I learned from Precalculus like 
-            trig (law of cosines) and parametric equations to make the stepping trajectory a semi-ellipse. I named him Casper because I know a dog named Casper and he's really cute!
+            I made different iterations of Casper, my robot dog. For Casper V2 I made the legs 3 DOF so it can strafe and rotate in place more smoothly. I experimented with jogging outdoors and going over rocks & small obstacles.
+            I used skills I learned from Precalculus like trig (law of cosines) and parametric equations to make the stepping trajectory a sine wave. I found the trot gait to be the best balance between 
+            speed and stability for me (I tried others like crawl and pronk). I got the aluminum from Ace, drilled holes, 3D printed the legs, and used an Arduino. I named him Casper because I know a dog named Casper and he's really cute!
           </figcaption>
         </figure>
       </div>
@@ -121,39 +135,40 @@
 
         <figure>
           <img src="images/diffusion.jpg" alt="diffusion model" id="diffusion" />
-          <figcaption>Little DDPM</figcaption>
+          <figcaption>Little DDPM, I learned about the U-Net architechture and denoising process.</figcaption>
         </figure>
 
         <figure>
-          <video width="320" height="240" controls>
-            <source src="videos/vqa-moondream.mov#t=0.001" type="video/mp4" />
+          <video width="320" height="240" controls preload="metadata">
+            <source src="videos/vqa-moondream.mp4#t=0.001" type="video/mp4" />
           </video>
           <figcaption>
-            I played around with VQA using the moondream VLM on a Jetson Orin Nano.
+            I played around with VQA using the moondream VLM on a Jetson Orin Nano. VLA models are really useful for autonomy.
           </figcaption>
         </figure>
 
         <figure>
-          <video width="320" height="240" controls>
+          <video width="320" height="240" controls preload="metadata">
             <source src="videos/disparity.mov#t=0.001" type="video/mp4" />
           </video>
           <figcaption>
             I played around with the IMX219-83 stereo camera with the Jetson Orin Nano and created a disparity map.
+            This can be used for robots w/o LiDAR or other distance sensors and solely rely on vision.
           </figcaption>
         </figure>
 
         <figure>
-          <video width="320" height="240" controls>
+          <video width="320" height="240" controls preload="metadata">
             <source src="videos/mp-mouse.mp4#t=0.001" type="video/mp4" />
           </video>
           <figcaption>
-            Gesture controlled mouse using Google's Mediapipe API for hand
-            landmarks & PyAutoGUI to control the mouse.
+            I made a gesture controlled mouse (using laptop webcam) using Google's Mediapipe API for hand
+            landmarks & PyAutoGUI to control the mouse. As you can see its quite hard to control...
           </figcaption>
         </figure>
 
         <figure>
-          <video width="320" height="240" controls>
+          <video width="320" height="240" controls preload="metadata">
             <source src="videos/ar-js.mp4#t=0.001" type="video/mp4" />
           </video>
           <figcaption>
@@ -163,7 +178,7 @@
         </figure>
 
         <figure>
-          <video width="320" height="240" controls>
+          <video width="320" height="240" controls preload="metadata">
             <source src="videos/cart-pole.webm#t=0.001" type="video/mp4" />
           </video>
           <figcaption>I used the NEAT algorithm for CartPole.</figcaption>
@@ -184,7 +199,7 @@
         </figure>
 
         <figure>
-          <video width="320" height="240" controls>
+          <video width="320" height="240" controls preload="metadata">
             <source src="videos/RL-car.mp4#t=0.001" type="video/mp4" />
           </video>
           <figcaption>
@@ -194,7 +209,7 @@
         </figure>
 
         <figure>
-          <video width="320" height="240" controls>
+          <video width="320" height="240" controls preload="metadata">
             <source src="videos/facial_features.mp4#t=0.001" type="video/mp4" />
           </video>
           <figcaption>
@@ -203,7 +218,7 @@
         </figure>
 
         <figure>
-          <video width="320" height="240" controls>
+          <video width="320" height="240" controls preload="metadata">
             <source src="videos/num_pred.mp4#t=0.001" type="video/mp4" />
           </video>
           <figcaption>
@@ -213,14 +228,14 @@
         </figure>
 
         <figure>
-          <video width="320" height="240" controls>
+          <video width="320" height="240" controls preload="metadata">
             <source src="videos/sentiment-anal.mp4#t=0.001" type="video/mp4" />
           </video>
           <figcaption>Sentiment analysis using sklearn. I'm using the IMDB movie review dataset from Kaggle.</figcaption>
         </figure>
 
         <figure>
-          <video width="320" height="240" controls>
+          <video width="320" height="240" controls preload="metadata">
             <source src="videos/gdino.mp4#t=0.001" type="video/mp4" />
           </video>
           <figcaption>
@@ -230,23 +245,23 @@
         </figure>
 
         <figure>
-          <video width="320" height="240" controls>
+          <video width="320" height="240" controls preload="metadata">
             <source src="videos/lunar-lander.mp4#t=0.001" type="video/mp4" />
           </video>
           <figcaption>Lunar Lander RL using PPO.</figcaption>
         </figure>
 
         <figure>
-          <video width="320" height="240" controls>
+          <video width="320" height="240" controls preload="metadata">
             <source src="videos/face-req.mp4#t=0.001" type="video/mp4" />
           </video>
           <figcaption>
-            Raspberry Pi facial recognition security camera.
+            I made this Raspberry Pi facial recognition security camera in middle school.
           </figcaption>
         </figure>
 
         <figure>
-          <img src="images/YOLO.png" alt="yolo" class="yolo" />
+          <img src="images/YOLO.png" alt="yolo"/>
           <figcaption>Played w/ YOLO11</figcaption>
         </figure>
       </div>
@@ -255,7 +270,7 @@
     <div id="ROS-related" class="section">
       <div class = "image-container">
         <figure>
-          <video width="320" height="240" controls>
+          <video width="320" height="240" controls preload="metadata">
             <source src="videos/rviz-rt.mp4#t=0.001" type="video/mp4" />
           </video>
           <figcaption>
@@ -267,7 +282,7 @@
         <figure>
           <img src="images/ROSLidar.png" alt="ROS Lidar Demo"/>
           <figcaption>
-            I learned the basics of ROS! Gazebo & RViz sim shown.
+            I learned the basics of ROS! ROS is mainly used in higher level robotics such as in universities and maybe even industry. Gazebo & RViz sim shown with LiDAR.
           </figcaption>
         </figure>
       </div>
@@ -276,27 +291,29 @@
     <div id="household-bots" class="section">
       <div class = "image-container">
         <figure>
-          <video width="320" height="240" controls>
+          <video width="320" height="240" controls preload="metadata">
             <source src="videos/raspi-bot.mov#t=0.001" type="video/mp4" />
           </video>
           <figcaption>
             I made an autonomous Raspberry Pi robot that delivers snacks using voice commands, follows AprilTags, and picks
-            up objects using YOLO object recognition. It uses a vosk model and YOLO converted to the NCNN format to run at a useable speed on the pi.
+            up objects using YOLO object recognition. It uses a vosk model for speech recognition and YOLO converted to the NCNN format to run at a useable speed on the pi. 
+            Since I'm using monocular cameras, I got depth estimation by measuring the bottle width, finding my focal length (by measuring from a known distance), 
+            and plugging into distance = (focal length * bottle width) / pixel width in frame found by using simple trig.
           </figcaption>
         </figure>
 
         <figure>
-          <video width="320" height="240" controls>
+          <video width="320" height="240" controls preload="metadata">
             <source src="videos/lamp.mp4#t=0.001" type="video/mp4" />
           </video>
           <figcaption>
-            HC-SR04 ultrasonic sensor motion lamp mean't to make life easier,
-            especially for when you need to get up midnight. I made this in middle school and may or may not have gotten shocked once.
+            I made this HC-SR04 ultrasonic sensor motion lamp for my mom to make her life easier,
+            especially for when she needs to get up at midnight. I made this in middle school and may or may not have gotten shocked once.
           </figcaption>
         </figure>
 
         <figure>
-          <video width="320" height="240" controls>
+          <video width="320" height="240" controls preload="metadata">
             <source src="videos/arduino-lidar-bot.mp4#t=0.001" type="video/mp4" />
           </video>
           <figcaption>
@@ -305,7 +322,7 @@
         </figure>
 
         <figure>
-          <video width="320" height="240" controls>
+          <video width="320" height="240" controls preload="metadata">
             <source
               src="videos/plastic-bottle-bot.mp4#t=0.001"
               type="video/mp4"
@@ -314,6 +331,7 @@
           <figcaption>
             Arduino state-machine based autonomous robot to throw away trash (plastic
             bottles). I used mecanum wheels since I wanted strafe capabilities but also less complexity than say a swerve or crab drive.
+            I made this in 8th grade.
           </figcaption>
         </figure>
       </div>
@@ -322,25 +340,27 @@
     <div id="drones" class="section">
       <div class = "image-container">
         <figure>
-          <video width="320" height="240" controls>
+          <video width="320" height="240" controls preload="metadata">
             <source src="videos/pioneerV3.mp4#t=0.001" type="video/mp4" />
           </video>
           <figcaption>
-            I made Pioneer V3. I used carbon fiber propellers and 3508 BLDC motors for heavier lifting weight. In total Pioneer V3 weighs 5 lb.
+            I made Pioneer V3. I used carbon fiber propellers and 3508 BLDC motors for heavier lifting weight. It's also using an Arduino, but since it's a larger drone less frequent IMU updates are needed.
+            I used a 200 Hz loop. Motor mounts and center hub are 3D-printed, aluminum is from Ace Hardware. In total Pioneer V3 weighs 5 lb.
           </figcaption>
         </figure>
 
         <figure>
-          <video width="320" height="240" controls>
-            <source src="videos/big-drone.mp4#t=0.001" type="video/mp4" />
+          <video width="320" height="240" controls preload="metadata">
+            <source src="videos/pioneerv2.mp4#t=0.001" type="video/mp4" />
           </video>
           <figcaption>
-            I gave myself a challenge and made Pioneer V2, a larger Arduino quadcopter (30 in dia) in only around 20 hours!
+            I gave myself a challenge and made Pioneer V2, a larger Arduino quadcopter (30 in dia) in only around 20 hours! I also used it to help plant seeds for my mom.
+            Sorry the video quality is kind of bad...you might be able to see the seeds falling.
           </figcaption>
         </figure>
 
         <figure>
-          <video width="320" height="240" controls>
+          <video width="320" height="240" controls preload="metadata">
             <source src="videos/drone-drop.mp4#t=0.001" type="video/mp4" />
           </video>
           <figcaption>
@@ -353,8 +373,8 @@
     <div id="arms" class="section">
       <div class = "image-container">
         <figure>
-          <video width="320" height="240" controls>
-            <source src="videos/SwerveArm.mp4#t=0.001" type="video/mp4" />
+          <video width="320" height="240" controls preload="metadata">
+            <source src="videos/swerve-arm.mp4#t=0.001" type="video/mp4" />
           </video>
           <figcaption>
             I did a little experiment converting my custom swerve module into an arm so 2 main motors are at the bottom. I thought this could help reduce inertia and be more efficient.
@@ -362,8 +382,8 @@
         </figure>
 
         <figure>
-          <video width="320" height="240" controls>
-            <source src="videos/ik-sim.mov#t=0.001" type="video/mp4" />
+          <video width="320" height="240" controls preload="metadata">
+            <source src="videos/ik-sim.mp4#t=0.001" type="video/mp4" />
           </video>
           <figcaption>
             I made a little 2D inverse kinematics demo. Its sort of like a SCARA arm.
@@ -371,17 +391,19 @@
         </figure>
 
         <figure>
-          <img src="images/robotic-arm.png" alt="6 dof arm" id="robotic-arm" />
-          <figcaption>6 DOF 3D-printed arm, I made this in 7th grade.</figcaption>
-        </figure>
-
-        <figure>
-          <video width="320" height="240" controls>
-            <source src="videos/MiniArm.mp4#t=0.001" type="video/mp4" />
+          <video width="320" height="240" controls preload="metadata">
+            <source src="videos/mini-arm.mp4#t=0.001" type="video/mp4" />
           </video>
           <figcaption>
             Mini 3D printed 3 DOF arm (not my design, from Thingiverse) but I'm using an STM32. It's very silent because of the small stepper motors.
           </figcaption>
+        </figure>
+
+        <figure>
+          <video width="320" height="240" controls preload="metadata">
+            <source src ="videos/arm.mp4#t=0.001" type="video/mp4"/>
+          </video>
+          <figcaption>6 DOF 3D-printed arm using an Arduino, I made this in 7th grade but the design was from Thingiverse. I printed it on my first Ender FDM printer.</figcaption>
         </figure>
       </div>
     </div>
@@ -389,20 +411,22 @@
     <div id="extraterrestrial" class="section">
       <div class = "image-container">
         <figure>
-          <video width="320" height="240" controls>
+          <video width="320" height="240" controls preload="metadata">
             <source src="videos/rocker-bogie.mov#t=0.001" type="video/mp4" />
           </video>
           <figcaption>
             I made a Rocker Bogie suspension rover inspired by the mars rover. This can be used for robots outside on rough terrain. It's just using an Arduino, I mainly wanted to see the concept.
+            The aluminum is from Ace and the joints and wheels (TPU) are 3D printed, I designed it in Fusion. I later on added a ATGM336H GPS and HMC5883L compass for waypoint navigation.
           </figcaption>
         </figure>
 
         <figure>
-          <video width="320" height="240" controls>
+          <video width="320" height="240" controls preload="metadata">
             <source src="videos/water-rocket.mov#t=0.001" type="video/mp4" />
           </video>
           <figcaption>
-            I made a water rocket
+            I made a water rocket just for fun. I made it in middle school, its using a hand ball
+            pump and the rocket is just a plastic bottle.
           </figcaption>
         </figure>
       </div>
@@ -411,20 +435,22 @@
     <div id="autonomous-cars" class="section">
       <div class = "image-container">
         <figure>
-          <video width="320" height="240" controls>
+          <video width="320" height="240" controls preload="metadata">
             <source src="videos/auto-car.mp4#t=0.001" type="video/mp4" />
           </video>
           <figcaption>
             I made a simple but fairly fast mini autonomous race car just using ultrasonic sensors. I experimented with slowing down before accelerating near turns. I was inspired by F1Tenth although this is way less complicated...
+            I'm using a standard 1000kv BLDC drone motor geared down to drive and it works surprisingly well. The only limitation was the ultrasonic sensor reading updates not being fast enough so this is only considered low speed for the car.
+            I designed the car in Fusion.
           </figcaption>
         </figure>
 
         <figure>
-          <video width="320" height="240" controls>
+          <video width="320" height="240" controls preload="metadata">
             <source src="videos/lane-demo.webm#t=0.001" type="video/mp4" />
           </video>
           <figcaption>
-            I played with lane detection in OpenCV. I used Canny edge detection and the Hough Transform.
+            I played with lane detection in OpenCV for autonomous driving. I used Canny edge detection and the Hough Transform.
           </figcaption>
         </figure>
       </div>
@@ -433,32 +459,11 @@
     <div id="other" class="section">
       <div class = "image-container">
         <figure>
-          <img
-            src="images/strandbeest.JPG"
-            alt="RC strandbeest"
-            id="strandbeest"
-          />
-          <figcaption>
-            My RC FPV strandbeest model using NRF24l01 modules. Goal was to mimic an animal so you could
-            use it to monitor species.
-          </figcaption>
-        </figure>
-
-        <figure>
-          <video width="320" height="240" controls>
-            <source src="videos/self-balancer.mp4#t=0.001" type="video/mp4" />
-          </video>
-          <figcaption>
-            I made an Arduino based 2 wheel self balancing robot (wheel inverted pendulum) that uses an MPU6050 and a complementary filter.
-          </figcaption>
-        </figure>
-
-        <figure>
-          <video width="320" height="240" controls>
+          <video width="320" height="240" controls preload="metadata">
             <source src="videos/swerve-drive.mp4#t=0.001" type="video/mp4" />
           </video>
           <figcaption>
-            My custom Arduino swerve drive, I basically designed everything! Check out my Youtube video to see more on my 3D-printed module design.
+            My custom Arduino swerve drive, I basically DIYed everything (except for raw metal and Arduino lol). Check out my Youtube video to see more on my 3D-printed module design!
           </figcaption>
         </figure>
 
@@ -469,12 +474,33 @@
           </figcaption>
         </figure>
 
+        <figure>
+          <img
+            src="images/strandbeest.JPG"
+            alt="RC strandbeest"
+          />
+          <figcaption>
+            My RC FPV strandbeest model using NRF24l01 modules. Goal was to mimic an animal so you could
+            use it to monitor species. I'm using an Arduino nano and N20 motors.
+          </figcaption>
+        </figure>
+
+        <figure>
+          <video width="320" height="240" controls preload="metadata">
+            <source src="videos/self-balancer.mp4#t=0.001" type="video/mp4" />
+          </video>
+          <figcaption>
+            I made an Arduino based 2 wheel self balancing robot (wheel inverted pendulum) that uses an MPU6050 and a complementary filter. The frame is from my old 3D printer, and the wheels are 3D-printed TPU.
+          </figcaption>
+        </figure>
+
          <figure>
-          <video width="320" height="240" controls>
+          <video width="320" height="240" controls preload="metadata">
             <source src="videos/wing-morph-orni.mp4#t=0.1" type="video/mp4" />
           </video>
           <figcaption>
-            I tried making a passive wing morphing mechanism for my rubber-band powered ornithopter.
+            I tried making a passive wing morphing mechanism for one of my rubber-band powered ornithopters (I also made dragonfly versions with pairs of wings).
+            This could improve efficiency by creating less drag on the upstroke, and some universities already did this.
           </figcaption>
         </figure>
 
@@ -482,13 +508,12 @@
           <img
             src="images/open-sauce-projects.jpg"
             alt="Open Sauce projects"
-            id="open-sauce-projects"
           />
           <figcaption>Stuff I brought to show at Open Sauce 2024!</figcaption>
         </figure>
 
         <figure>
-          <video width="320" height="240" controls>
+          <video width="320" height="240" controls preload="metadata">
             <source src="videos/aruco.mov#t=0.001" type="video/mp4" />
           </video>
           <figcaption>
@@ -496,26 +521,35 @@
           </figcaption>
         </figure>
 
-         <figure>
-          <video width="320" height="240" controls>
+        <figure>
+          <video width="320" height="240" controls preload="metadata">
             <source src="videos/ESP32-car.mp4#t=0.001" type="video/mp4" />
           </video>
           <figcaption>
-            I made an ESP32 controlled car.
+            I made an ESP32 controlled car (and boat). I learned about the ESP-NOW protocol.
           </figcaption>
         </figure>
 
         <figure>
-          <video width="320" height="240" controls>
+          <video width="320" height="240" controls preload="metadata">
+            <source src="videos/flywheel.mp4#t=0.001" type="video/mp4" />
+          </video>
+          <figcaption>
+            I added a flywheel to my line follower (using IR sensors) to launch bottle caps.
+          </figcaption>
+        </figure>
+
+        <figure>
+          <video width="320" height="240" controls preload="metadata">
             <source src="videos/mapleseed.mp4#t=0.001" type="video/mp4" />
           </video>
           <figcaption>
-            I made a super capacitor monocoper/mapleseed
+            I made a super capacitor monocoper/mapleseed inspired by nature
           </figcaption>
         </figure>
 
          <figure>
-          <video width="320" height="240" controls>
+          <video width="320" height="240" controls preload="metadata">
             <source src="videos/lightbulb.mp4#t=0.001" type="video/mp4" />
           </video>
           <figcaption>
@@ -524,25 +558,27 @@
         </figure>
 
         <figure>
-          <video width="320" height="240" controls>
+          <video width="320" height="240" controls preload="metadata">
             <source src="videos/boat.mp4#t=0.001" type="video/mp4" />
           </video>
           <figcaption>
-            I made a large RC boat that could be used for water missions
+            I made a large RC boat that could be used for water missions. I used a foam board that I cut with my DIY foam cutter!
+            I designed (in Fusion) and 3D printed the servo to rudder mount which also held the BLDC thruster in place.
           </figcaption>
         </figure>
 
         <figure>
-          <video width="320" height="240" controls>
+          <video width="320" height="240" controls preload="metadata">
             <source src="videos/scooters.mp4#t=0.001" type="video/mp4" />
           </video>
           <figcaption>
-            I made different kinds of (very) odd electric scooters and skateboards...
+            I made different kinds of (very) odd electric scooters and skateboards... Its hard to see but for my scooter
+            I used an Arduino with a joystick to control a servo to pull the drill trigger.
           </figcaption>
         </figure>
 
         <figure>
-          <video width="320" height="240" controls>
+          <video width="320" height="240" controls preload="metadata">
             <source src="videos/helicopter-gyro.mp4#t=0.001" type="video/mp4" />
           </video>
           <figcaption>
@@ -551,25 +587,25 @@
         </figure>
 
         <figure>
-          <video width="320" height="240" controls>
+          <video width="320" height="240" controls preload="metadata">
             <source src="videos/air-traj.mp4#t=0.001" type="video/mp4" />
           </video>
           <figcaption>
-            I made a gravity powered ping-pong ball launcher for middle school SciOly. I added a crank mechanism to angle the launcher barrel.
+            I made a gravity powered ping-pong ball launcher for middle school SciOly. I 3D printed a crank mechanism to angle the launcher barrel.
           </figcaption>
         </figure>
 
         <figure>
-          <video width="320" height="240" controls>
+          <video width="320" height="240" controls preload="metadata">
             <source src="videos/roller-coaster.mp4#t=0.001" type="video/mp4" />
           </video>
           <figcaption>
-            I made a marble roller coaster for middle school SciOly. I 3D-printed the tracks.
+            I made a marble roller coaster for middle school SciOly. I 3D-printed the tracks. Heres a demo of the far air jump and funnel.
           </figcaption>
         </figure>
 
         <figure>
-          <video width="320" height="240" controls>
+          <video width="320" height="240" controls preload="metadata">
             <source src="videos/voltage-detector.mp4#t=0.001" type="video/mp4" />
           </video>
           <figcaption>
@@ -578,7 +614,7 @@
         </figure>
 
         <figure>
-          <video width="320" height="240" controls>
+          <video width="320" height="240" controls preload="metadata">
             <source src="videos/dc-motor.mov#t=0.001" type="video/mp4" />
           </video>
           <figcaption>
@@ -587,29 +623,20 @@
         </figure>
 
         <figure>
-          <video width="320" height="240" controls>
+          <video width="320" height="240" controls preload="metadata">
             <source src="videos/gyrobot.mp4#t=0.001" type="video/mp4" />
           </video>
           <figcaption>
-            I made a tiny state machine robot using an MPU6050 so it can drive straight.
+            I made a tiny state machine robot using an MPU6050 so it can drive straight. I tuned PID pretty fast after making my first quadcopter above.
           </figcaption>
         </figure>
 
         <figure>
-          <video width="320" height="240" controls>
+          <video width="320" height="240" controls preload="metadata">
             <source src="videos/battlebot.mp4#t=0.001" type="video/mp4" />
           </video>
           <figcaption>
             I made a mechanism for a battlebot to launch a bottle. Same mechanism as the water rocket but w/o water, servo to release the pressure.
-          </figcaption>
-        </figure>
-
-        <figure>
-          <video width="320" height="240" controls>
-            <source src="videos/ornithopters.mp4#t=0.001" type="video/mp4" />
-          </video>
-          <figcaption>
-            I tried making different types of rubber band powered ornithopters, such as a dragonfly that sadly didn't fly too well...
           </figcaption>
         </figure>
       </div>
@@ -631,7 +658,7 @@
 
     <p style="text-align: center">
       I got to visit Boston Dynamics' headquarters in Waltham, MA! It was super
-      fun seeing their robots & driving some of their quadrupeds.
+      fun seeing their robots & driving some of their quadrupeds. I saw how Spot had stereo cameras on each side.
     </p>
 
     <!-- OPEN SAUCE SECTION -->

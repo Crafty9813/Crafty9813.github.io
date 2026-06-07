@@ -142,23 +142,6 @@ figure img {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-#open-sauce-projects,
-#strandbeest {
-  border-radius: 100px;
-}
-
-#robotic-arm {
-  width: 90%;
-  height: auto;
-  border-radius: 200px;
-}
-
-.yolo {
-  width: 80%;
-  height: auto;
-  border-radius: 10px;
-}
-
 .boston-dynamics {
   margin-left: 200px;
   border-radius: 30px;
@@ -203,7 +186,7 @@ figure img {
 
 figcaption {
   color: lightsteelblue;
-  font-style: italic;
+  /*font-style: italic;*/
   padding: 0.5rem;
 }
 
