@@ -35,7 +35,7 @@
 
     <figure>
       <video class="dash-humanoid" width="320" height="240" controls>
-        <source src="videos/run_test.mp4#t=0.001" type="video/mp4" />
+        <source src="videos/dash-run.mp4#t=0.001" type="video/mp4" />
       </video>
       <figcaption>
         I'm working at a lab at UMass Amherst for an upcoming humanoid project and arm! I so far helped with IsaacLab RL training, STM32 stuff, and got to learn PCB design.
@@ -62,7 +62,7 @@
       <div class = "image-container">
         <figure>
           <video width="320" height="240" controls preload="metadata">
-            <source src="videos/encoder-pcb-forte.webm#t=0.001" type="video/mp4" />
+            <source src="videos/pcb-forte.mp4#t=0.001" type="video/mp4" />
           </video>
           <figcaption>
             I got to learn and design a PCB in KiCad!
@@ -90,7 +90,7 @@
 
         <figure>
           <video width="320" height="240" controls preload="metadata">
-            <source src="videos/oscilloscope.mov#t=0.001" type="video/mp4" />
+            <source src="videos/oscilloscope.mp4#t=0.001" type="video/mp4" />
           </video>
           <figcaption>
             I created a little "oscilloscope" using an STM32, it reads data from a potentiometer and shows it on a python GUI. I learned more about ADCs.
@@ -104,7 +104,7 @@
 
         <figure>
           <video width="320" height="240" controls preload="metadata">
-            <source src="videos/box-casper.mp4#t=0.001" type="video/mp4" />
+            <source src="videos/box-casp.mp4#t=0.001" type="video/mp4" />
           </video>
           <figcaption>
             I added a shoebox cover to Casper V2 (in the video I didn't secure it so its loud)
@@ -140,7 +140,7 @@
 
         <figure>
           <video width="320" height="240" controls preload="metadata">
-            <source src="videos/vqa-moondream.mp4#t=0.001" type="video/mp4" />
+            <source src="videos/vqa.mp4#t=0.001" type="video/mp4" />
           </video>
           <figcaption>
             I played around with VQA using the moondream VLM on a Jetson Orin Nano. VLA models are really useful for autonomy.
@@ -149,7 +149,7 @@
 
         <figure>
           <video width="320" height="240" controls preload="metadata">
-            <source src="videos/disparity.mov#t=0.001" type="video/mp4" />
+            <source src="videos/disparity.mp4#t=0.001" type="video/mp4" />
           </video>
           <figcaption>
             I played around with the IMX219-83 stereo camera with the Jetson Orin Nano and created a disparity map.
@@ -210,7 +210,7 @@
 
         <figure>
           <video width="320" height="240" controls preload="metadata">
-            <source src="videos/facial_features.mp4#t=0.001" type="video/mp4" />
+            <source src="videos/facial-feature.mp4#t=0.001" type="video/mp4" />
           </video>
           <figcaption>
             Facial feature recognition using Haar Cascades (pretty old but powerful algorithm).
@@ -292,13 +292,22 @@
       <div class = "image-container">
         <figure>
           <video width="320" height="240" controls preload="metadata">
-            <source src="videos/raspi-bot.mov#t=0.001" type="video/mp4" />
+            <source src="videos/raspi-bot.mp4#t=0.001" type="video/mp4" />
           </video>
           <figcaption>
             I made an autonomous Raspberry Pi robot that delivers snacks using voice commands, follows AprilTags, and picks
             up objects using YOLO object recognition. It uses a vosk model for speech recognition and YOLO converted to the NCNN format to run at a useable speed on the pi. 
             Since I'm using monocular cameras, I got depth estimation by measuring the bottle width, finding my focal length (by measuring from a known distance), 
             and plugging into distance = (focal length * bottle width) / pixel width in frame found by using simple trig.
+          </figcaption>
+        </figure>
+
+        <figure>
+          <video width="320" height="240" controls preload="metadata">
+            <source src="videos/trashcan.mp4#t=0.001" type="video/mp4" />
+          </video>
+          <figcaption>
+            I converted my robot to the left into a auto-aiming trashcan.
           </figcaption>
         </figure>
 
@@ -314,7 +323,7 @@
 
         <figure>
           <video width="320" height="240" controls preload="metadata">
-            <source src="videos/arduino-lidar-bot.mp4#t=0.001" type="video/mp4" />
+            <source src="videos/lidar-bot.mp4#t=0.001" type="video/mp4" />
           </video>
           <figcaption>
             Arduino roomba using LiDAR (RPLiDAR A1M8), no SLAM.
@@ -324,7 +333,7 @@
         <figure>
           <video width="320" height="240" controls preload="metadata">
             <source
-              src="videos/plastic-bottle-bot.mp4#t=0.001"
+              src="videos/bottle-bot.mp4#t=0.001"
               type="video/mp4"
             />
           </video>
@@ -412,7 +421,7 @@
       <div class = "image-container">
         <figure>
           <video width="320" height="240" controls preload="metadata">
-            <source src="videos/rocker-bogie.mov#t=0.001" type="video/mp4" />
+            <source src="videos/rocker-bogie.mp4#t=0.001" type="video/mp4" />
           </video>
           <figcaption>
             I made a Rocker Bogie suspension rover inspired by the mars rover. This can be used for robots outside on rough terrain. It's just using an Arduino, I mainly wanted to see the concept.
@@ -422,7 +431,7 @@
 
         <figure>
           <video width="320" height="240" controls preload="metadata">
-            <source src="videos/water-rocket.mov#t=0.001" type="video/mp4" />
+            <source src="videos/water-rocket.mp4#t=0.001" type="video/mp4" />
           </video>
           <figcaption>
             I made a water rocket just for fun. I made it in middle school, its using a hand ball
@@ -487,7 +496,7 @@
 
         <figure>
           <video width="320" height="240" controls preload="metadata">
-            <source src="videos/self-balancer.mp4#t=0.001" type="video/mp4" />
+            <source src="videos/wip.mp4#t=0.001" type="video/mp4" />
           </video>
           <figcaption>
             I made an Arduino based 2 wheel self balancing robot (wheel inverted pendulum) that uses an MPU6050 and a complementary filter. The frame is from my old 3D printer, and the wheels are 3D-printed TPU.
@@ -496,7 +505,7 @@
 
          <figure>
           <video width="320" height="240" controls preload="metadata">
-            <source src="videos/wing-morph-orni.mp4#t=0.1" type="video/mp4" />
+            <source src="videos/wing-morph.mp4#t=0.1" type="video/mp4" />
           </video>
           <figcaption>
             I tried making a passive wing morphing mechanism for one of my rubber-band powered ornithopters (I also made dragonfly versions with pairs of wings).
@@ -514,7 +523,7 @@
 
         <figure>
           <video width="320" height="240" controls preload="metadata">
-            <source src="videos/aruco.mov#t=0.001" type="video/mp4" />
+            <source src="videos/aruco.mp4#t=0.001" type="video/mp4" />
           </video>
           <figcaption>
             ArUco marker pose display (also one of my Open Sauce 2024 projects).
@@ -579,7 +588,7 @@
 
         <figure>
           <video width="320" height="240" controls preload="metadata">
-            <source src="videos/helicopter-gyro.mp4#t=0.001" type="video/mp4" />
+            <source src="videos/heli-gyro.mp4#t=0.001" type="video/mp4" />
           </video>
           <figcaption>
             I experimented a bit with gyroscopic precession in helicopters. I also made a rubber-band powered helicopter with a tail rotor, inspired by Peter Sripol.
@@ -606,7 +615,7 @@
 
         <figure>
           <video width="320" height="240" controls preload="metadata">
-            <source src="videos/voltage-detector.mp4#t=0.001" type="video/mp4" />
+            <source src="videos/voltage-det.mp4#t=0.001" type="video/mp4" />
           </video>
           <figcaption>
             I made this voltage detector inspired by ElectroBoom's video...
@@ -615,7 +624,7 @@
 
         <figure>
           <video width="320" height="240" controls preload="metadata">
-            <source src="videos/dc-motor.mov#t=0.001" type="video/mp4" />
+            <source src="videos/dc-motor.mp4#t=0.001" type="video/mp4" />
           </video>
           <figcaption>
             I made this sketchy brushed DC motor
