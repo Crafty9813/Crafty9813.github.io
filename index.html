@@ -10,7 +10,7 @@
     <h1 style="color: lightskyblue">About Me!</h1>
 
     <figure>
-      <img src="images/Me.jpg" fetchpriority="high" alt="me" id="Me" />
+      <img src="images/me.jpg" fetchpriority="high" alt="me" id="Me" />
     </figure>
 
     <!--INTRO PARAGRAPH-->
@@ -46,7 +46,7 @@
 
     <!-- FILTER -->
     <div class="controls">
-      <button class = "button" onclick="showSection('internship')">"Research"</button>
+      <button class = "button" onclick="showSection('internship')">Research</button>
       <button class = "button" onclick="showSection('legged')">Legged robots</button>
       <button class = "button" onclick="showSection('ml-projects')">General ML & CV</button>
       <button class = "button" onclick="showSection('ROS-related')">ROS</button>
@@ -93,7 +93,7 @@
             <source src="videos/oscilloscope.mp4#t=0.001" type="video/mp4" />
           </video>
           <figcaption>
-            I created a little "oscilloscope" using an STM32, it reads data from a potentiometer and shows it on a python GUI. I learned more about ADCs.
+            I created a little "oscilloscope" using an STM32, it reads data from a potentiometer using ADCs and shows it on a python GUI.
           </figcaption>
         </figure>
       </div>
@@ -104,10 +104,12 @@
 
         <figure>
           <video width="320" height="240" controls preload="metadata">
-            <source src="videos/box-casp.mp4#t=0.001" type="video/mp4" />
+            <source src="videos/mini-casper.mp4#t=0.001" type="video/mp4" />
           </video>
           <figcaption>
-            I added a shoebox cover to Casper V2 (in the video I didn't secure it so its loud)
+            I made Mini Casper, my first quadruped with only 2 DOF per leg. Here I experimented with going over obstacles and running on rocks.
+            I used IK and parametric equations to make the stepping trajectory a sine wave. I found the trot gait to be the best balance between 
+            speed and stability for me (I tried others like crawl, pronk, & bound).
           </figcaption>
         </figure>
 
@@ -116,9 +118,8 @@
             <source src="videos/casper.mp4#t=0.001" type="video/mp4" />
           </video>
           <figcaption>
-            I made different iterations of Casper, my robot dog. For Casper V2 I made the legs 3 DOF so it can strafe and rotate in place more smoothly. I experimented with jogging outdoors and going over rocks & small obstacles.
-            I used skills I learned from Precalculus like trig (law of cosines) and parametric equations to make the stepping trajectory a sine wave. I found the trot gait to be the best balance between 
-            speed and stability for me (I tried others like crawl and pronk). I got the aluminum from Ace, drilled holes, 3D printed the legs, and used an Arduino. I named him Casper because I know a dog named Casper and he's really cute!
+            I made Casper, basically Mini Casper but with 3 DOF per leg (added abduction joint) so it can strafe. Casper is larger and I used aluminum (frome Ace which I manually drilled) for the body.
+            I'm still using an Arduino, and added a shoebox cover so it looks "cooler".
           </figcaption>
         </figure>
       </div>
@@ -129,7 +130,7 @@
         <figure>
           <img src="images/tumor-det.png" alt="tumor detection"/>
           <figcaption>
-            I played around with brain tumor detection and pneumonia detection using CNNs in PyTorch (I used Kaggle datasets). I wanted to see how ML could be used in healthcare.
+            I played with brain tumor detection and pneumonia detection using CNNs in PyTorch (I used Kaggle datasets). I wanted to see how ML could be used in healthcare.
           </figcaption>
         </figure>
 
@@ -177,6 +178,16 @@
           </figcaption>
         </figure>
 
+         <figure>
+          <video width="320" height="240" controls preload="metadata">
+            <source src="videos/RL-car.mp4#t=0.001" type="video/mp4" />
+          </video>
+          <figcaption>
+            I used RL (specifically Q-learning) for a "car" (yellow rectangle) to
+            reach a goal (green circle). The trained model is stored in a pickle file.
+          </figcaption>
+        </figure>
+
         <figure>
           <video width="320" height="240" controls preload="metadata">
             <source src="videos/cart-pole.webm#t=0.001" type="video/mp4" />
@@ -196,16 +207,6 @@
         <figure>
           <img src="images/ORB-detect.png" alt="orb"/>
           <figcaption>I played w/ ORB feature detection and mapping (BF matcher, FLANN).</figcaption>
-        </figure>
-
-        <figure>
-          <video width="320" height="240" controls preload="metadata">
-            <source src="videos/RL-car.mp4#t=0.001" type="video/mp4" />
-          </video>
-          <figcaption>
-            I used RL (specifically Q-learning) for a "car" (yellow rectangle) to
-            reach a goal (green circle). The trained model is stored in a pickle file.
-          </figcaption>
         </figure>
 
         <figure>
@@ -339,7 +340,7 @@
           </video>
           <figcaption>
             Arduino state-machine based autonomous robot to throw away trash (plastic
-            bottles). I used mecanum wheels since I wanted strafe capabilities but also less complexity than say a swerve or crab drive.
+            bottles). I used mecanum wheels since I wanted strafe capabilities but less complexity than say swerve or crab drive.
             I made this in 8th grade.
           </figcaption>
         </figure>
@@ -350,11 +351,11 @@
       <div class = "image-container">
         <figure>
           <video width="320" height="240" controls preload="metadata">
-            <source src="videos/pioneerV3.mp4#t=0.001" type="video/mp4" />
+            <source src="videos/pioneer3.mp4#t=0.001" type="video/mp4" />
           </video>
           <figcaption>
-            I made Pioneer V3. I used carbon fiber propellers and 3508 BLDC motors for heavier lifting weight. It's also using an Arduino, but since it's a larger drone less frequent IMU updates are needed.
-            I used a 200 Hz loop. Motor mounts and center hub are 3D-printed, aluminum is from Ace Hardware. In total Pioneer V3 weighs 5 lb.
+            I made Pioneer V3. I used carbon fiber propellers and 3508 BLDC motors for heavier lifting weight. It's also using an Arduino, but since it's larger less frequent IMU updates are needed.
+            I used a 200 Hz loop. Motor mounts and center 3D-printed, aluminum from Ace Hardware. Weighs 5 lb.
           </figcaption>
         </figure>
 
@@ -363,7 +364,7 @@
             <source src="videos/pioneerv2.mp4#t=0.001" type="video/mp4" />
           </video>
           <figcaption>
-            I gave myself a challenge and made Pioneer V2, a larger Arduino quadcopter (30 in dia) in only around 20 hours! I also used it to help plant seeds for my mom.
+            I gave myself a challenge and made Pioneer V2 in only around 20 hours! I also used it to help plant seeds for my mom.
             Sorry the video quality is kind of bad...you might be able to see the seeds falling.
           </figcaption>
         </figure>
@@ -477,7 +478,7 @@
         </figure>
 
         <figure>
-          <img src="images/swerve-cad.JPG" alt="swerve module cad"/>
+          <img src="images/swerve-cad.jpg" alt="swerve module cad"/>
           <figcaption>
             (Heres a photo of my swerve module CAD).
           </figcaption>
@@ -658,12 +659,12 @@
 
     <h1>Visiting Boston Dynamics!</h1>
     <img
-      src="images/bos-dynamics.webp"
-      alt="Me at boston dynamics"
+      src="images/bd.webp"
+      alt="Me at BD"
       class="boston-dynamics"
     />
 
-    <img src="images/quadruped.webp" alt="Quadruped" class="quadruped" />
+    <img src="images/bom-squad.webp" alt="Quadruped" class="quadruped" />
 
     <p style="text-align: center">
       I got to visit Boston Dynamics' headquarters in Waltham, MA! It was super
