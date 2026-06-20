@@ -16,14 +16,15 @@ h1 {
   color: transparent;
 }
 
-/* Paragraph styles*/
 p {
   color: white;
+  text-align: center;
   font-size: clamp(1rem, 2vw, 1.2rem);
   margin-bottom: 1.5rem;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
-/* Profile section */
 .profile-section {
   display: flex;
   flex-direction: row-reverse;
@@ -37,7 +38,7 @@ p {
 }
 
 .section.active {
-  display: block; /* Just reveals, doesn't touch grid inside */
+  display: block;
 }
 
 /* GOLD PULSE GLOW */
@@ -63,8 +64,6 @@ p {
   display: block;
   margin: auto;
   border-radius: 30%;
-  padding: 5px;
-  background: linear-gradient(45deg, blue, lightblue) border-box;
   width: 300px;
   height: 300px;
   object-fit: cover;
@@ -72,14 +71,6 @@ p {
   animation: pulse-glow 1.5s ease-in-out infinite;
 }
 
-#IntroP {
-  color: lightyellow;
-  margin-left: 30px;
-  margin-right: 30px;
-  flex: 1;
-}
-
-/* Booth section */
 .booth-section {
   display: flex;
   flex-direction: row;
@@ -89,26 +80,11 @@ p {
 }
 
 .booth-image {
-  border-radius: 20px;
-  padding: 3px;
-  background: linear-gradient(45deg, blue, lightblue);
+  border-radius: 30px;
   width: 20%;
   max-width: 500px;
   height: auto;
   flex-shrink: 0;
-
-  transition: box-shadow 0.3s ease;
-}
-
-.booth-image:hover {
-  box-shadow: 0 0 15px 5px gold;
-}
-
-#boothP {
-  color: lightskyblue;
-  margin-left: 50px;
-  margin-right: 50px;
-  flex: 1;
 }
 
 /* Img gallery */
@@ -156,7 +132,6 @@ figure img {
   height: auto;
 }
 
-/* Ppl photos */
 #people_photos {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -177,7 +152,6 @@ figure img {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Pop out effect */
 .people-met-photos:hover {
   transform: scale(1.05);
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3), 0 0 10px rgba(255, 0, 100, 0.6),
@@ -186,11 +160,9 @@ figure img {
 
 figcaption {
   color: lightsteelblue;
-  /*font-style: italic;*/
   padding: 0.5rem;
 }
 
-/* Button styles */
 .button {
   margin-left: 20px;
   background: linear-gradient(45deg, #00a8ff, #007bff);
