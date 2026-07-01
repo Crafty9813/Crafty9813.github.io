@@ -15,9 +15,9 @@
 
     <!--INTRO PARAGRAPH-->
     <p>
-      Hey there! My name is Jonathan Li, and I'm currently a sophomore in high
+      Hey there! My name is Jonathan Li, and I'm a rising junior in high
       school. I'm really into robotics and ML, and I've been building
-      cool things ever since I was young. I have a Youtube channel where I explain many of my projects, and my GitHub
+      cool things ever since I was young. I have a YouTube channel where I explain many of my projects, and my GitHub
       has most of the code for them. Scroll down to view some of my work!
       <br />
     </p>
@@ -38,7 +38,7 @@
         <source src="videos/dash-run.mp4#t=0.001" type="video/mp4" />
       </video>
       <figcaption>
-        I'm working at a lab at UMass Amherst for an upcoming humanoid project and arm! I so far helped with IsaacLab RL training, STM32 stuff, and got to learn PCB design.
+        I'm working at a lab at UMass Amherst for an upcoming humanoid project and arm! I so far helped with IsaacLab RL training, STM32 stuff, motor control, and PCB design.
       </figcaption>
     </figure>
 
@@ -64,7 +64,7 @@
             <source src="videos/pcb-forte.mp4#t=0.001" type="video/mp4" />
           </video>
           <figcaption>
-            I got to learn and design a PCB in KiCad!
+            I got to design a PCB in KiCad! This PCB is for an arm joint encoder.
           </figcaption>
         </figure>
 
@@ -79,22 +79,6 @@
             python script which also sends serial data via UART back to the STM32.
           </figcaption>
         </figure>
-
-         <figure>
-          <video width="320" height="240" controls preload="metadata">
-            <source src="videos/Isaac-Sim.mp4#t=0.001" type="video/mp4" />
-          </video>
-          <figcaption>Isaac Sim and Isaac Lab setup! I played with RL with the Franka arm and a couple of Unitree robots.</figcaption>
-        </figure>
-
-        <figure>
-          <video width="320" height="240" controls preload="metadata">
-            <source src="videos/oscilloscope.mp4#t=0.001" type="video/mp4" />
-          </video>
-          <figcaption>
-            I created a little "oscilloscope" using an STM32, it reads data from a potentiometer using ADCs and shows it on a python GUI.
-          </figcaption>
-        </figure>
       </div>
     </div>
 
@@ -105,7 +89,7 @@
             <source src="videos/casper.mp4#t=0.001" type="video/mp4" />
           </video>
           <figcaption>
-            I made Casper, basically Mini Casper but with 3 DOF per leg (added abduction joint) so it can strafe. Casper is larger and I used aluminum (from Ace which I drilled) for the body.
+            I made Casper, basically Mini Casper but with 3 DOF per leg (added abduction joint) so it can strafe. Casper is larger and I used aluminum (from Ace which I drilled and cut) for the body.
             I'm still using an Arduino, and added a shoebox cover so it looks "cooler" and a simple ultrasonic sensor which I used to shift gaits, step heights, speed, etc. when it senses a large obstacle.
           </figcaption>
         </figure>
@@ -153,7 +137,8 @@
             <source src="videos/vqa.mp4#t=0.001" type="video/mp4" />
           </video>
           <figcaption>
-            I played with VQA using the moondream VLM on a Jetson Orin Nano. VLA models are really useful for autonomy.
+            I played with VQA using the moondream VLM on a Jetson Orin Nano. VLA models are really useful for autonomy. Using moondream on my Legion
+            was fast, I could prompt and get live responses with my webcam.
           </figcaption>
         </figure>
 
@@ -352,7 +337,8 @@
           </video>
           <figcaption>
             I made different kinds of (very) odd electric scooters and skateboards in middle school. Its hard to see but for my scooter
-            I used an Arduino with a joystick to control a servo to pull the drill trigger.
+            I used an Arduino with a joystick to control a servo to pull the drill trigger. The wood and steel axles are from Home Depot and I
+            used my dremel and had to hand saw a lot.
           </figcaption>
         </figure>
 
@@ -375,8 +361,9 @@
             <source src="videos/lamp.mp4#t=0.001" type="video/mp4" />
           </video>
           <figcaption>
-            I made this HC-SR04 ultrasonic sensor motion lamp for my mom to make her life easier,
-            especially for when she needs to get up at midnight. I made this in middle school and may or may not have gotten shocked once.
+            I made this ultrasonic sensor motion lamp for my mom to make her life easier,
+            especially for when she needs to get up at midnight. I made this in middle school and may or may not have gotten shocked.
+            The frame is 3D printed (I designed in Fusion) and I'm using an Arduino to control a relay for the lightbulb.
           </figcaption>
         </figure>
 
@@ -477,6 +464,23 @@
             Sorry the video quality is kind of bad...you might be able to see the seeds falling.
           </figcaption>
         </figure>
+
+        <figure>
+          <video width="320" height="240" controls preload="metadata">
+            <source src="videos/plane.mp4#t=0.001" type="video/mp4" />
+          </video>
+          <figcaption>
+            I was really into aerospace in middle school and made a ton of model planes and competed in SciOly Flight.
+            This was an RC plane I made but it's foam wings with balsa support weren't strong enough (cracked mid-air).
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/dragonfly.jpg" alt="My dragonfly ornithopter mech"/>
+          <figcaption>
+            Heres my dragonfly ornithopter mechanism.
+          </figcaption>
+        </figure>
       </div>
     </div>
 
@@ -545,7 +549,7 @@
             <source src="videos/flywheel.mp4#t=0.001" type="video/mp4" />
           </video>
           <figcaption>
-            I added a flywheel to my line follower (using IR sensors) to launch bottle caps.
+            I added a flywheel to my line follower in 8th grade (using IR sensors) to launch bottle caps.
           </figcaption>
         </figure>
 
@@ -554,7 +558,7 @@
             <source src="videos/gyrobot.mp4#t=0.001" type="video/mp4" />
           </video>
           <figcaption>
-            I made a tiny state machine robot using an MPU6050 so it can drive straight. I tuned PID pretty fast after making my first quadcopter.
+            I made a tiny state machine robot using an MPU6050 in 8th grade so it can drive straight. I tuned PID pretty fast after making my first quadcopter.
           </figcaption>
         </figure>
       </div>
@@ -567,7 +571,8 @@
             <source src="videos/wip.mp4#t=0.001" type="video/mp4" />
           </video>
           <figcaption>
-            I made an Arduino wheel inverted pendulum that uses an MPU6050 and a complementary filter. The frame is from my old 3D printer, and the wheels are 3D-printed TPU.
+            I made an RC wheel inverted pendulum that uses an MPU6050 and a complementary filter. The frame is from my old 3D printer, and the wheels are 3D-printed TPU.
+            I'm using an Arduino.
           </figcaption>
         </figure>
 
@@ -585,7 +590,7 @@
             <source src="videos/ESP32-car.mp4#t=0.001" type="video/mp4" />
           </video>
           <figcaption>
-            I made an ESP32 controlled car (and boat). I learned about the ESP-NOW protocol.
+            I made an ESP32 controlled car (and boat) in 7th grade. I learned about the ESP-NOW protocol.
           </figcaption>
         </figure>
 
@@ -594,7 +599,7 @@
             <source src="videos/boat.mp4#t=0.001" type="video/mp4" />
           </video>
           <figcaption>
-            I made a large RC boat that could be used for water missions. I used a foam board that I cut with my DIY foam cutter!
+            I made a large RC boat in middle school that could be used for water missions. I used a foam board that I cut with my DIY foam cutter!
             I designed (in Fusion) and 3D printed the servo to rudder mount which also held the BLDC thruster.
           </figcaption>
         </figure>
@@ -604,25 +609,16 @@
             <source src="videos/battlebot.mp4#t=0.001" type="video/mp4" />
           </video>
           <figcaption>
-            I made my battlebot launch a bottle. Same mechanism as the water rocket but w/o water, servo to release the pressure.
+            I made my battlebot in middle school launch a bottle. Same mechanism as the water rocket but w/o water, servo to release the pressure.
           </figcaption>
         </figure>
 
         <figure>
           <video width="320" height="240" controls preload="metadata">
-            <source src="videos/air-traj.mp4#t=0.001" type="video/mp4" />
+            <source src="videos/rc-car.mp4#t=0.001" type="video/mp4" />
           </video>
           <figcaption>
-            I made a gravity powered ping-pong ball launcher for SciOly. I 3D printed a crank mechanism to angle the launcher barrel.
-          </figcaption>
-        </figure>
-
-        <figure>
-          <video width="320" height="240" controls preload="metadata">
-            <source src="videos/roller-coaster.mp4#t=0.001" type="video/mp4" />
-          </video>
-          <figcaption>
-            I made a marble roller coaster for SciOly. I 3D-printed the tracks. Heres a demo of the far air jump and funnel.
+            This was my first RC car I made in 7th grade! I used hot glue for the servo and legos for some parts...
           </figcaption>
         </figure>
 
@@ -631,7 +627,79 @@
             <source src="videos/dc-motor.mp4#t=0.001" type="video/mp4" />
           </video>
           <figcaption>
-            I made this sketchy brushed DC motor
+            I made this sketchy brushed DC motor in 7th grade.
+          </figcaption>
+        </figure>
+
+        <figure>
+          <video width="320" height="240" controls preload="metadata">
+            <source src="videos/oscilloscope.mp4#t=0.001" type="video/mp4" />
+          </video>
+          <figcaption>
+            I created a little "oscilloscope" using an STM32, it reads data from a potentiometer using ADCs and shows it on a python GUI.
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/over-under.png" alt="My VEX Over-under robot"/>
+          <figcaption>
+            I made a VEX Over Under robot in 7th grade summer. It can expand it's hanging mech using a 4 bar linkage and launch rubber bands (it looks cool transforming)
+            See <a href="https://www.youtube.com/watch?v=Nf6P58Oi3Jw" target="_blank">here</a> (I want to keep as little videos as possible here to save room).
+          </figcaption>
+        </figure>
+
+        <figure>
+          <video width="320" height="240" controls preload="metadata">
+            <source src="videos/spinup-bot.mp4#t=0.001" type="video/mp4" />
+          </video>
+          <figcaption>
+            Heres 1 of my VEX Spinup robots I made in 7th grade. It has the intake and flywheel both on the front.
+          </figcaption>
+        </figure>
+
+        <figure>
+          <video width="320" height="240" controls preload="metadata">
+            <source src="videos/spinup2.mp4#t=0.001" type="video/mp4" />
+          </video>
+          <figcaption>
+            Heres my other VEX Spinup robot I made in 7th grade. It has an intake on the back and flywheel on front.
+          </figcaption>
+        </figure>
+
+         <figure>
+          <img src="images/ev.jpg" alt="My VEX Over-under robot"/>
+          <figcaption>
+            I made a prototype for SciOly EV in 8th grade. I designed it in Fusion and printed the chassis and just used a wingnut braking mechanism.
+            I later on modified this design (same 1000kv BLDC motor) for my F1Tenth inspired "racecar".
+          </figcaption>
+        </figure>
+
+        <figure>
+          <video width="320" height="240" controls preload="metadata">
+            <source src="videos/air-traj.mp4#t=0.001" type="video/mp4" />
+          </video>
+          <figcaption>
+            I made a gravity powered ping-pong ball launcher for middle school SciOly. I 3D printed a crank mechanism to angle the launcher barrel.
+          </figcaption>
+        </figure>
+
+        <figure>
+          <video width="320" height="240" controls preload="metadata">
+            <source src="videos/roller-coaster.mp4#t=0.001" type="video/mp4" />
+          </video>
+          <figcaption>
+            I made a marble roller coaster for middle school SciOly. I 3D-printed the tracks. Heres a demo of the far air jump and funnel.
+          </figcaption>
+        </figure>
+
+         <figure>
+          <video width="320" height="240" controls preload="metadata">
+            <source src="videos/rubber-car.mp4#t=0.001" type="video/mp4" />
+          </video>
+          <figcaption>
+            I made a rubber band powered car that could go 4 laps across my school gym. I used low torque gearing and wound a rubberband
+            like you would for a model plane so it lasts really long with consistent torque. The downside was that I needed to use small and light wheels
+            and keep the weight low.
           </figcaption>
         </figure>
       </div>
