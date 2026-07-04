@@ -38,7 +38,8 @@
         <source src="videos/dash-run.mp4#t=0.001" type="video/mp4" />
       </video>
       <figcaption>
-        I'm working at a lab at UMass Amherst for an upcoming humanoid project and arm! I so far helped with IsaacLab RL training, STM32 stuff, motor control, and PCB design.
+        I'm working at the DARoS lab at UMass Amherst for a humanoid project and arm! 
+        I so far helped with IsaacLab RL training, STM32 & Teensy stuff, motor control & GUIs, PCB design, CAD, etc.
       </figcaption>
     </figure>
 
@@ -59,26 +60,7 @@
 
     <div id="internship" class="section">
       <div class = "image-container">
-        <figure>
-          <video width="320" height="240" controls preload="metadata">
-            <source src="videos/pcb-forte.mp4#t=0.001" type="video/mp4" />
-          </video>
-          <figcaption>
-            I got to design a PCB in KiCad! This PCB is for an arm joint encoder.
-          </figcaption>
-        </figure>
-
-        <figure>
-          <video width="320" height="240" controls preload="metadata">
-            <source src="videos/bldc-gui.mp4#t=0.001" type="video/mp4" />
-          </video>
-          <figcaption>
-            I created a GUI for tuning Kp and Kd values for BLDC motors. Angle, torque, & velocity graphs are shown. I learned about FOC too.
-            The code for the motor controller is actually modified from the MIT mini cheetah, but the PhD student I'm working with modified it, I just added the GUI and modified
-            the STM32 code to send & receive serial data about the torque, encoder angle, kp, kd, etc. The serial data gets sent to my laptop and is plotted on the GUI via a simple
-            python script which also sends serial data via UART back to the STM32.
-          </figcaption>
-        </figure>
+        <p>Full video link to come!</p>
       </div>
     </div>
 
@@ -112,7 +94,7 @@
           />
           <figcaption>
             My RC FPV strandbeest model using NRF24l01 modules. Goal was to mimic an animal so you could
-            use it to monitor species. I'm using an Arduino nano and N20 motors, and made this in 8th grade.
+            use it to monitor species. I made this in 8th grade using an Arduino nano and N20 motors.
           </figcaption>
         </figure>
       </div>
@@ -137,8 +119,8 @@
             <source src="videos/vqa.mp4#t=0.001" type="video/mp4" />
           </video>
           <figcaption>
-            I played with VQA using the moondream VLM on a Jetson Orin Nano. VLA models are really useful for autonomy. Using moondream on my Legion
-            was fast, I could prompt and get live responses with my webcam.
+            I played with VQA using the moondream VLM for live prompting with a webcam on my Legion. 
+            VLA models are really useful for autonomy, and I also tried it out on a Jetson.
           </figcaption>
         </figure>
 
@@ -147,7 +129,7 @@
             <source src="videos/disparity.mp4#t=0.001" type="video/mp4" />
           </video>
           <figcaption>
-            I played with the IMX219-83 stereo camera with the Jetson Orin Nano to create disparity maps
+            I used the IMX219-83 stereo camera with a Jetson Orin Nano to create disparity maps.
           </figcaption>
         </figure>
 
@@ -156,8 +138,8 @@
             <source src="videos/mp-mouse.mp4#t=0.001" type="video/mp4" />
           </video>
           <figcaption>
-            I made a gesture controlled mouse (using laptop webcam) using Google's Mediapipe API for hand
-            landmarks & PyAutoGUI to control the mouse. As you can see its quite hard to control...
+            I made a gesture controlled mouse using Google's Mediapipe API for hand
+            landmarks & PyAutoGUI to control the mouse. It's quite hard to control...
           </figcaption>
         </figure>
 
@@ -167,7 +149,7 @@
           </video>
           <figcaption>
             Displaying 3D models on Hiro (or other fiducial markers like QR codes)
-            using AR.js, I may look into VSLAM instead.
+            using AR.js.
           </figcaption>
         </figure>
 
@@ -199,7 +181,7 @@
 
         <figure>
           <img src="images/ORB-detect.png" alt="orb"/>
-          <figcaption>I played w/ ORB feature detection and mapping (BF matcher, FLANN).</figcaption>
+          <figcaption>I played w/ ORB feature detection and mapping (BF matcher, FLANN). This is used a lot for VSLAM.</figcaption>
         </figure>
 
         <figure>
@@ -233,24 +215,15 @@
             <source src="videos/gdino.mp4#t=0.001" type="video/mp4" />
           </video>
           <figcaption>
-            GroundingDINO and PyTorch for FRC 2025 algae detection, helped by
-            mentor.
+            I played with using GroundingDINO and PyTorch for FRC 2025 algae detection.
           </figcaption>
         </figure>
 
         <figure>
-          <video width="320" height="240" controls preload="metadata">
-            <source src="videos/lunar-lander.mp4#t=0.001" type="video/mp4" />
-          </video>
-          <figcaption>Lunar Lander RL using PPO.</figcaption>
-        </figure>
-
-        <figure>
-          <video width="320" height="240" controls preload="metadata">
-            <source src="videos/face-req.mp4#t=0.001" type="video/mp4" />
-          </video>
-          <figcaption>
-            I made this Raspberry Pi facial recognition security camera in middle school.
+          <img src="images/face-req.jpg" alt="facial recognition"/>
+          <figcaption>I made a Raspberry Pi facial recognition security camera in middle school.
+            I designed the case and camera servo mounts in Fusion and 3D printed them.
+            I used OpenCV and a Pi camera to detect faces and send alerts when my mom is detected.
           </figcaption>
         </figure>
 
@@ -276,7 +249,8 @@
         <figure>
           <img src="images/ROSLidar.png" alt="ROS Lidar Demo"/>
           <figcaption>
-            I learned the basics of ROS! ROS is mainly used in higher level robotics such as in universities and maybe even industry. Gazebo & RViz sim shown with LiDAR.
+            I learned the basics of ROS! ROS is used in higher level robotics in universities and maybe even industry.
+            Gazebo & RViz sim shown with LiDAR.
           </figcaption>
         </figure>
       </div>
@@ -290,7 +264,7 @@
           </video>
           <figcaption>
             I made an autonomous Raspberry Pi robot that delivers snacks using voice commands, follows AprilTags, and picks
-            up objects using YOLO object recognition. It uses a vosk model for speech recognition and YOLO converted to the NCNN format to run at a useable speed.
+            up objects using YOLO. It uses a vosk model for speech recognition and YOLO converted to the NCNN format to run at a useable speed.
             Since I'm using monocular cameras, I got depth estimation by measuring the bottle width, finding my focal length (by measuring from a known distance), 
             and plugging into distance = (focal len * bottle width) / pixel width found by using simple trig.
           </figcaption>
@@ -310,7 +284,8 @@
             <source src="videos/swerve-drive.mp4#t=0.001" type="video/mp4" />
           </video>
           <figcaption>
-            My custom Arduino swerve drive, I basically DIYed everything (except for raw metal and Arduino). Check out my YouTube video to see more on my 3D-printed module design!
+            My custom Arduino swerve drive I made during 8th grade summer. I basically DIYed everything (except for raw metal). 
+            The aluminum is from Ace and I had to manually cut and drill all of it. Check out my YouTube video to see more on my 3D-printed module design!
           </figcaption>
         </figure>
 
@@ -336,8 +311,7 @@
             <source src="videos/scooters.mp4#t=0.001" type="video/mp4" />
           </video>
           <figcaption>
-            I made different kinds of (very) odd electric scooters and skateboards in middle school. Its hard to see but for my scooter
-            I used an Arduino with a joystick to control a servo to pull the drill trigger. The wood and steel axles are from Home Depot and I
+            I made different kinds of (very) odd electric scooters and skateboards in middle school. The wood and steel axles are from Home Depot and I
             used my dremel and had to hand saw a lot.
           </figcaption>
         </figure>
@@ -491,7 +465,8 @@
             <source src="videos/swerve-arm.mp4#t=0.001" type="video/mp4" />
           </video>
           <figcaption>
-            I did a experiment converting my custom swerve module into an arm so 2 main motors are at the bottom. I thought this could help reduce inertia and be more efficient.
+            I did an experiment converting my custom swerve module into an arm so 2 main motors are at the bottom. 
+            This could help reduce inertia and be more efficient.
           </figcaption>
         </figure>
 
@@ -517,7 +492,7 @@
           <video width="320" height="240" controls preload="metadata">
             <source src ="videos/arm.mp4#t=0.001" type="video/mp4"/>
           </video>
-          <figcaption>6 DOF 3D-printed arm using an Arduino, I made this in 7th grade but the design was from Thingiverse. I printed it on my first Ender FDM printer.</figcaption>
+          <figcaption>6 DOF 3D-printed arm using an Arduino, I made this in 7th grade but the design was from Thingiverse. I printed it on my first FDM printer.</figcaption>
         </figure>
       </div>
     </div>
@@ -530,8 +505,8 @@
           </video>
           <figcaption>
             I made a simple but fairly fast mini autonomous race car just using ultrasonic sensors. I experimented with slowing down before accelerating near turns. I was inspired by F1Tenth although this is way less complicated...
-            I'm using a standard 1000kv BLDC drone motor geared down to drive and it works surprisingly well. The only limitation was the ultrasonic sensor reading updates not being fast enough so this is only considered low speed for the car.
-            I designed the car in Fusion.
+            I'm using a 1000kv BLDC drone motor geared down and it works surprisingly well. The only limitation was the ultrasonic sensor updates not being fast enough so this is low speed for the car.
+            I designed it in Fusion.
           </figcaption>
         </figure>
 
@@ -609,7 +584,8 @@
             <source src="videos/battlebot.mp4#t=0.001" type="video/mp4" />
           </video>
           <figcaption>
-            I made my battlebot in middle school launch a bottle. Same mechanism as the water rocket but w/o water, servo to release the pressure.
+            I made a unique battlebot in middle school that launches bottles. Same mechanism as the water rocket but w/o water, servo to release the pressure.
+            I designed and 3D printed the chassis to hold the ball pump/PVC pipe launcher mech to mount everything.
           </figcaption>
         </figure>
 
@@ -636,14 +612,14 @@
             <source src="videos/oscilloscope.mp4#t=0.001" type="video/mp4" />
           </video>
           <figcaption>
-            I created a little "oscilloscope" using an STM32, it reads data from a potentiometer using ADCs and shows it on a python GUI.
+            I created a little "oscilloscope" using an STM32, it reads data from a potentiometer using ADCs and shows it on a Python GUI.
           </figcaption>
         </figure>
 
         <figure>
           <img src="images/over-under.png" alt="My VEX Over-under robot"/>
           <figcaption>
-            I made a VEX Over Under robot in 7th grade summer. It can expand it's hanging mech using a 4 bar linkage and launch rubber bands (it looks cool transforming)
+            I made a VEX Over Under robot in 7th grade summer. It can expand its hanging mech using a 4 bar linkage and launch rubber bands (it looks cool transforming)
             See <a href="https://www.youtube.com/watch?v=Nf6P58Oi3Jw" target="_blank">here</a> (I want to keep as little videos as possible here to save room).
           </figcaption>
         </figure>
@@ -653,7 +629,7 @@
             <source src="videos/spinup-bot.mp4#t=0.001" type="video/mp4" />
           </video>
           <figcaption>
-            Heres 1 of my VEX Spinup robots I made in 7th grade. It has the intake and flywheel both on the front.
+            Heres 1 of my VEX Spinup robots I made in 7th grade. It has the intake and flywheel both at the front.
           </figcaption>
         </figure>
 
@@ -662,14 +638,14 @@
             <source src="videos/spinup2.mp4#t=0.001" type="video/mp4" />
           </video>
           <figcaption>
-            Heres my other VEX Spinup robot I made in 7th grade. It has an intake on the back and flywheel on front.
+            Heres my other VEX Spinup bot I made in 7th grade. It has an intake on the back and flywheel up front.
           </figcaption>
         </figure>
 
          <figure>
           <img src="images/ev.jpg" alt="My VEX Over-under robot"/>
           <figcaption>
-            I made a prototype for SciOly EV in 8th grade. I designed it in Fusion and printed the chassis and just used a wingnut braking mechanism.
+            I made a prototype for SciOly EV in 8th grade. I designed it in Fusion and printed the chassis and just used a wingnut braking mech.
             I later on modified this design (same 1000kv BLDC motor) for my F1Tenth inspired "racecar".
           </figcaption>
         </figure>
@@ -698,7 +674,7 @@
           </video>
           <figcaption>
             I made a rubber band powered car that could go 4 laps across my school gym. I used low torque gearing and wound a rubberband
-            like you would for a model plane so it lasts really long with consistent torque. The downside was that I needed to use small and light wheels
+            like you would for a model plane so it lasts really long with consistent torque. The downside was that I needed to use small wheels
             and keep the weight low.
           </figcaption>
         </figure>
