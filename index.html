@@ -7,7 +7,7 @@
     <title>Jonathan Li</title>
   </head>
   <body>
-    <h1 style="color: lightskyblue">About Me!</h1>
+    <h1 style="color: steelblue">About Me!</h1>
 
     <figure>
       <img src="images/me.jpg" fetchpriority="high" alt="me" id="Me" />
@@ -15,7 +15,7 @@
 
     <!--INTRO PARAGRAPH-->
     <p>
-      Hey there! My name is Jonathan Li, and I'm a rising junior in high
+      Hey there! I'm Jonathan Li, a rising junior in high
       school. I'm really into robotics and ML, and I've been building
       cool things ever since I was young. I have a YouTube channel where I explain many of my projects, and my GitHub
       has most of the code for them. Scroll down to view some of my work!
@@ -23,14 +23,14 @@
     </p>
 
     <a href="https://github.com/Crafty9813" target="_blank" class="button"
-      >My GitHub</a
+      >GitHub</a
     >
 
     <a
       href="https://www.youtube.com/@JonathanLi-9813/videos"
       target="_blank"
       class="button"
-      >My YouTube channel</a
+      >YouTube</a
     >
 
     <figure>
@@ -38,12 +38,12 @@
         <source src="videos/dash-run.mp4#t=0.001" type="video/mp4" />
       </video>
       <figcaption>
-        I'm working at the DARoS lab at UMass Amherst for a humanoid project and arm! 
+        I'm working at the DARoS lab at UMass Amherst for the Dash humanoid (collab w/ UIUC and U Notre Dame) and Forte arm! 
         I so far helped with IsaacLab RL training, STM32 & Teensy stuff, motor control & GUIs, PCB design, CAD, etc.
       </figcaption>
     </figure>
 
-    <h1>Some Projects I'm Proud of! Split into categories (I tried my best to classify)</h1>
+    <h1>Some Projects I'm Proud of! (I tried my best to classify)</h1>
 
     <!-- FILTER -->
     <div class="controls">
@@ -105,7 +105,7 @@
         <figure>
           <img src="images/tumor-det.png" alt="tumor detection"/>
           <figcaption>
-            I played with brain tumor detection and pneumonia detection using CNNs in PyTorch (I used Kaggle datasets). I wanted to see how ML could be used in healthcare.
+            Brain tumor and pneumonia detection using CNNs in PyTorch (using Kaggle datasets). I wanted to see how ML could be used in healthcare.
           </figcaption>
         </figure>
 
@@ -119,7 +119,7 @@
             <source src="videos/vqa.mp4#t=0.001" type="video/mp4" />
           </video>
           <figcaption>
-            I played with VQA using the moondream VLM for live prompting with a webcam on my Legion. 
+            VQA using the moondream VLM for live prompting via a webcam. 
             VLA models are really useful for autonomy, and I also tried it out on a Jetson.
           </figcaption>
         </figure>
@@ -129,7 +129,7 @@
             <source src="videos/disparity.mp4#t=0.001" type="video/mp4" />
           </video>
           <figcaption>
-            I used the IMX219-83 stereo camera with a Jetson Orin Nano to create disparity maps.
+            I used the IMX219-83 stereo camera with a Jetson to create disparity maps.
           </figcaption>
         </figure>
 
@@ -139,7 +139,7 @@
           </video>
           <figcaption>
             I made a gesture controlled mouse using Google's Mediapipe API for hand
-            landmarks & PyAutoGUI to control the mouse. It's quite hard to control...
+            landmarks & PyAutoGUI to control the mouse.
           </figcaption>
         </figure>
 
@@ -165,7 +165,7 @@
 
         <figure>
           <video width="320" height="240" controls preload="metadata">
-            <source src="videos/cart-pole.webm#t=0.001" type="video/mp4" />
+            <source src="videos/cart-pole.mp4#t=0.001" type="video/mp4" />
           </video>
           <figcaption>I used the NEAT algorithm for CartPole.</figcaption>
         </figure>
@@ -181,26 +181,17 @@
 
         <figure>
           <img src="images/ORB-detect.png" alt="orb"/>
-          <figcaption>I played w/ ORB feature detection and mapping (BF matcher, FLANN). This is used a lot for VSLAM.</figcaption>
+          <figcaption>ORB feature detection and mapping (BF matcher, FLANN). This is used a lot for VSLAM.</figcaption>
         </figure>
 
         <figure>
-          <video width="320" height="240" controls preload="metadata">
-            <source src="videos/facial-feature.mp4#t=0.001" type="video/mp4" />
-          </video>
-          <figcaption>
-            Facial feature recognition using Haar Cascades (pretty old but powerful algorithm).
-          </figcaption>
+          <img src="images/facial-features.png"/>
+          <figcaption>Facial feature recognition using Haar Cascades.</figcaption>
         </figure>
 
         <figure>
-          <video width="320" height="240" controls preload="metadata">
-            <source src="videos/num_pred.mp4#t=0.001" type="video/mp4" />
-          </video>
-          <figcaption>
-            PyTorch digit classification using a CNN. Data is from the MNIST
-            dataset.
-          </figcaption>
+          <img src="images/num-pred.png"/>
+          <figcaption>PyTorch digit classification using a CNN. Data is from the MNIST dataset.</figcaption>
         </figure>
 
         <figure>
@@ -221,9 +212,9 @@
 
         <figure>
           <img src="images/face-req.jpg" alt="facial recognition"/>
-          <figcaption>I made a Raspberry Pi facial recognition security camera in middle school.
-            I designed the case and camera servo mounts in Fusion and 3D printed them.
-            I used OpenCV and a Pi camera to detect faces and send alerts when my mom is detected.
+          <figcaption>I made a Raspberry Pi facial recognition security camera in middle school
+            that sends alerts when my mom is detected. I designed the case and servo mounts in Fusion.
+            I used HOG.
           </figcaption>
         </figure>
 
@@ -249,7 +240,7 @@
         <figure>
           <img src="images/ROSLidar.png" alt="ROS Lidar Demo"/>
           <figcaption>
-            I learned the basics of ROS! ROS is used in higher level robotics in universities and maybe even industry.
+            I learned the basics of ROS! ROS is used in higher level robotics in universities and sometimes even industry.
             Gazebo & RViz sim shown with LiDAR.
           </figcaption>
         </figure>
@@ -265,8 +256,8 @@
           <figcaption>
             I made an autonomous Raspberry Pi robot that delivers snacks using voice commands, follows AprilTags, and picks
             up objects using YOLO. It uses a vosk model for speech recognition and YOLO converted to the NCNN format to run at a useable speed.
-            Since I'm using monocular cameras, I got depth estimation by measuring the bottle width, finding my focal length (by measuring from a known distance), 
-            and plugging into distance = (focal len * bottle width) / pixel width found by using simple trig.
+            I'm using monocular cameras, so I got depth by measuring the bottle width, finding my focal length (by measuring from a known distance), 
+            and plugging into dist = (focal len * bottle width) / px width found by using simple trig.
           </figcaption>
         </figure>
 
@@ -275,7 +266,7 @@
             <source src="videos/trashcan.mp4#t=0.001" type="video/mp4" />
           </video>
           <figcaption>
-            I converted my robot to the left into an auto-aiming trashcan.
+            I converted my robot to the left into an auto-aiming trashcan. I'm lazy.
           </figcaption>
         </figure>
 
@@ -284,15 +275,15 @@
             <source src="videos/swerve-drive.mp4#t=0.001" type="video/mp4" />
           </video>
           <figcaption>
-            My custom Arduino swerve drive I made during 8th grade summer. I basically DIYed everything (except for raw metal). 
-            The aluminum is from Ace and I had to manually cut and drill all of it. Check out my YouTube video to see more on my 3D-printed module design!
+            My custom Arduino swerve drive I made during 8th grade summer. I DIYed everything except for raw metal. 
+            The aluminum is from Ace and I manually cut and drilled it. Check out my YouTube video to see more on my 3D-printed module design!
           </figcaption>
         </figure>
 
         <figure>
           <img src="images/swerve-cad.jpg" alt="swerve module cad"/>
           <figcaption>
-            (Heres a photo of my swerve module CAD).
+            (Heres my swerve module CAD).
           </figcaption>
         </figure>
 
@@ -301,18 +292,39 @@
             <source src="videos/rocker-bogie.mp4#t=0.001" type="video/mp4" />
           </video>
           <figcaption>
-            I made a Rocker Bogie suspension rover inspired by the mars rover. This can be used for robots outside on rough terrain. It's just using an Arduino, I mainly wanted to see the concept.
-            The aluminum is from Ace and the joints and wheels (TPU) are 3D printed, I designed it in Fusion. I later on added a ATGM336H GPS and HMC5883L compass for waypoint nav.
+            I made a Rocker Bogie suspension rover inspired by the mars rover. 
+            It's just using an Arduino, and I added an ATGM336H GPS and HMC5883L compass for waypoint nav. 
+            The aluminum is from Ace and the joints and wheels (TPU) are 3D printed, I designed it in Fusion.
           </figcaption>
         </figure>
 
-         <figure>
+        <figure>
+          <video width="320" height="240" controls preload="metadata">
+            <source src="videos/tank.mp4#t=0.001" type="video/mp4" />
+          </video>
+          <figcaption>
+            I made a treaded robot using exercise bands. It can go over large obstacles but is simpler and more compact than
+            my rocker bogie rover.
+          </figcaption>
+        </figure>
+
+        <figure>
+          <video width="320" height="240" controls preload="metadata">
+            <source src="videos/wip.mp4#t=0.001" type="video/mp4" />
+          </video>
+          <figcaption>
+            I made an RC wheel inverted pendulum that uses an MPU6050 and a complementary filter. The frame is from my old 3D printer and the wheels are 3D-printed TPU.
+            I'm using an Arduino.
+          </figcaption>
+        </figure>
+
+        <figure>
           <video width="320" height="240" controls preload="metadata">
             <source src="videos/scooters.mp4#t=0.001" type="video/mp4" />
           </video>
           <figcaption>
-            I made different kinds of (very) odd electric scooters and skateboards in middle school. The wood and steel axles are from Home Depot and I
-            used my dremel and had to hand saw a lot.
+            I made (very) odd electric scooters and skateboards in middle school. The wood and steel axles are from Home Depot and I
+            used my dremel and hand saw to cut them.
           </figcaption>
         </figure>
 
@@ -324,9 +336,9 @@
             />
           </video>
           <figcaption>
-            Arduino state-machine based autonomous robot to throw away trash (plastic
-            bottles) with a linear slide. I used mecanum wheels since I wanted strafe capabilities but less complexity than say swerve or crab drive.
-            I made this in 8th grade. The aluminum is from Ace and I designed and 3D printed the claw and parts for the linear slide.
+            Arduino state-machine based autonomous robot to throw away trash with a linear slide. I used mecanum wheels 
+            since I wanted strafe capabilities but less complexity than say swerve or crab drive.
+            I made this in 8th grade. The aluminum is from Ace and I designed and printed the claw and parts for the linear slide.
           </figcaption>
         </figure>
 
@@ -341,21 +353,17 @@
           </figcaption>
         </figure>
 
-        <figure>
-          <video width="320" height="240" controls preload="metadata">
-            <source src="videos/lidar-bot.mp4#t=0.001" type="video/mp4" />
-          </video>
+         <figure>
+          <img src="images/roomba.png" style="width: 70%"/>
           <figcaption>
             Arduino roomba using LiDAR (RPLiDAR A1M8), no SLAM.
           </figcaption>
         </figure>
 
         <figure>
-          <video width="320" height="240" controls preload="metadata">
-            <source src="videos/lightbulb.mp4#t=0.001" type="video/mp4" />
-          </video>
+          <img src="images/lightbulb.png" style="width: 70%"/>
           <figcaption>
-            I made a lightbulb in middle school using graphite and a poorly sealed glass body using a 3D-printed TPU closure...
+            I made a lightbulb in middle school using graphite and a glass cup with a 3D-printed TPU seal
           </figcaption>
         </figure>
 
@@ -377,7 +385,8 @@
             <source src="videos/pioneer3.mp4#t=0.001" type="video/mp4" />
           </video>
           <figcaption>
-            I made Pioneer V3. I used carbon fiber props and 3508 BLDC motors for heavier lifting weight. It's also using an Arduino, but since it's larger less frequent IMU updates are needed.
+            I made Pioneer V3. I used carbon fiber props and 3508 BLDC motors for heavier lifting weight. 
+            It's also using an Arduino, but since it's larger less frequent IMU updates are needed.
             I used a 200 Hz loop. Motor mounts and center 3D-printed, aluminum from Ace Hardware. Weighs 5 lb.
           </figcaption>
         </figure>
@@ -387,7 +396,8 @@
             <source src="videos/drone-drop.mp4#t=0.001" type="video/mp4" />
           </video>
           <figcaption>
-            I added a dropping mech to my first Arduino quadcopter I made in 8th grade. I noticed during the winter rabbits and coyotes were looking for food so I thought this could be used to prevent animal starvation.
+            I added a dropping mech to my first Arduino quadcopter I made in 8th grade and used it to drop food. I noticed during the winter rabbits and coyotes were starving 
+            so I thought this could be used to prevent animal starvation.
           </figcaption>
         </figure>
 
@@ -396,8 +406,15 @@
             <source src="videos/wing-morph.mp4#t=0.1" type="video/mp4" />
           </video>
           <figcaption>
-            I tried making a passive wing morphing mechanism for one of my rubber-band powered ornithopters (I also made dragonfly versions with pairs of wings).
-            This could improve efficiency by creating less drag on the upstroke, and some universities already did this.
+            I made a passive wing morphing mech for one of my rubber-band powered ornithopters (I also made dragonfly versions w/ pairs of wings, look right).
+            This improves efficiency by creating less drag on the upstroke, and some universities already did this.
+          </figcaption>
+        </figure>
+
+         <figure>
+          <img src="images/dragonfly.jpg" style="width: 90%"/>
+          <figcaption>
+            My dragonfly ornithopter mech.
           </figcaption>
         </figure>
 
@@ -406,7 +423,7 @@
             <source src="videos/mapleseed.mp4#t=0.001" type="video/mp4" />
           </video>
           <figcaption>
-            I made a super capacitor monocoper/mapleseed inspired by nature
+            I made a super capacitor monocoper/mapleseed inspired by nature, the gyro stick passively stabilizes it.
           </figcaption>
         </figure>
 
@@ -415,8 +432,8 @@
             <source src="videos/water-rocket.mp4#t=0.001" type="video/mp4" />
           </video>
           <figcaption>
-            I made a water rocket just for fun. Its using a hand ball
-            pump and the rocket is just a plastic bottle.
+            I made a water rocket using a ball pump. The rocket is just a plastic bottle 
+            with fins + a nosecone that deploys the parachute.
           </figcaption>
         </figure>
 
@@ -425,7 +442,7 @@
             <source src="videos/heli-gyro.mp4#t=0.001" type="video/mp4" />
           </video>
           <figcaption>
-            I experimented with gyroscopic precession in helicopters. I also made a rubber-band powered helicopter with a tail rotor, inspired by Peter Sripol.
+            I experimented with gyroscopic precession in helicopters. I also made a rubber-band powered heli with a tail rotor.
           </figcaption>
         </figure>
 
@@ -434,7 +451,7 @@
             <source src="videos/pioneerv2.mp4#t=0.001" type="video/mp4" />
           </video>
           <figcaption>
-            I gave myself a challenge and made Pioneer V2 in only 20 hours! I also used it to help plant seeds for my mom.
+            I made Pioneer V2 in only 20 hrs! I used it to help plant seeds for my mom.
             Sorry the video quality is kind of bad...you might be able to see the seeds falling.
           </figcaption>
         </figure>
@@ -444,15 +461,9 @@
             <source src="videos/plane.mp4#t=0.001" type="video/mp4" />
           </video>
           <figcaption>
-            I was really into aerospace in middle school and made a ton of model planes and competed in SciOly Flight.
-            This was an RC plane I made but it's foam wings with balsa support weren't strong enough (cracked mid-air).
-          </figcaption>
-        </figure>
-
-        <figure>
-          <img src="images/dragonfly.jpg" alt="My dragonfly ornithopter mech"/>
-          <figcaption>
-            Heres my dragonfly ornithopter mechanism.
+            I made a ton of model planes and competed and coached SciOly Flight 
+            (I was the main coach in middle school for our team and got our alternate teams to come in first!).
+            This was an RC plane I made but it's foam wings w/ balsa support weren't strong enough (cracked mid-air).
           </figcaption>
         </figure>
       </div>
@@ -465,7 +476,7 @@
             <source src="videos/swerve-arm.mp4#t=0.001" type="video/mp4" />
           </video>
           <figcaption>
-            I did an experiment converting my custom swerve module into an arm so 2 main motors are at the bottom. 
+            I converted my custom swerve module into an arm so 2 main motors (yaw and pitch) are at the bottom. 
             This could help reduce inertia and be more efficient.
           </figcaption>
         </figure>
@@ -475,14 +486,12 @@
             <source src="videos/ik-sim.mp4#t=0.001" type="video/mp4" />
           </video>
           <figcaption>
-            I made a little 2D inverse kinematics demo. Its sort of like a SCARA arm.
+            2D IK demo, it's sort of like a SCARA arm.
           </figcaption>
         </figure>
 
         <figure>
-          <video width="320" height="240" controls preload="metadata">
-            <source src="videos/mini-arm.mp4#t=0.001" type="video/mp4" />
-          </video>
+          <img src="images/tiny-arm.png" style="width: 70%"/>
           <figcaption>
             Mini 3D printed 3 DOF arm (not my design, from Thingiverse) but I'm using an STM32. It's very silent because of the small stepper motors.
           </figcaption>
@@ -492,7 +501,7 @@
           <video width="320" height="240" controls preload="metadata">
             <source src ="videos/arm.mp4#t=0.001" type="video/mp4"/>
           </video>
-          <figcaption>6 DOF 3D-printed arm using an Arduino, I made this in 7th grade but the design was from Thingiverse. I printed it on my first FDM printer.</figcaption>
+          <figcaption>6 DOF 3D-printed arm using an Arduino, I made this in 7th grade. I printed it on my first FDM printer.</figcaption>
         </figure>
       </div>
     </div>
@@ -504,18 +513,18 @@
             <source src="videos/auto-car.mp4#t=0.001" type="video/mp4" />
           </video>
           <figcaption>
-            I made a simple but fairly fast mini autonomous race car just using ultrasonic sensors. I experimented with slowing down before accelerating near turns. I was inspired by F1Tenth although this is way less complicated...
-            I'm using a 1000kv BLDC drone motor geared down and it works surprisingly well. The only limitation was the ultrasonic sensor updates not being fast enough so this is low speed for the car.
-            I designed it in Fusion.
+            I made a simple but fairly fast mini autonomous race car just using ultrasonic sensors. I experimented with slowing down before accelerating near turns. 
+            I was inspired by F1Tenth. I'm using a 1000kv BLDC drone motor geared down and it works surprisingly well. The only limitation was the ultrasonic sensor 
+            updates not being fast enough so this is low speed for the car. I designed it in Fusion.
           </figcaption>
         </figure>
 
         <figure>
           <video width="320" height="240" controls preload="metadata">
-            <source src="videos/lane-demo.webm#t=0.001" type="video/mp4" />
+            <source src="videos/lane-demo.mp4#t=0.001" type="video/mp4" />
           </video>
           <figcaption>
-            I played with lane detection in OpenCV for autonomous driving. I used Canny edge detection and the Hough Transform.
+            I used Canny edge detection and the Hough Transform for lane detection in OpenCV for autonomous driving.
           </figcaption>
         </figure>
 
@@ -533,7 +542,7 @@
             <source src="videos/gyrobot.mp4#t=0.001" type="video/mp4" />
           </video>
           <figcaption>
-            I made a tiny state machine robot using an MPU6050 in 8th grade so it can drive straight. I tuned PID pretty fast after making my first quadcopter.
+            I made a tiny state machine robot using an MPU6050 in 8th grade so it can drive straight. I tuned PID quickly after making my first quadcopter.
           </figcaption>
         </figure>
       </div>
@@ -541,16 +550,6 @@
 
     <div id="other" class="section">
       <div class = "image-container">
-        <figure>
-          <video width="320" height="240" controls preload="metadata">
-            <source src="videos/wip.mp4#t=0.001" type="video/mp4" />
-          </video>
-          <figcaption>
-            I made an RC wheel inverted pendulum that uses an MPU6050 and a complementary filter. The frame is from my old 3D printer, and the wheels are 3D-printed TPU.
-            I'm using an Arduino.
-          </figcaption>
-        </figure>
-
         <figure>
           <video width="320" height="240" controls preload="metadata">
             <source src="videos/aruco.mp4#t=0.001" type="video/mp4" />
@@ -574,7 +573,7 @@
             <source src="videos/boat.mp4#t=0.001" type="video/mp4" />
           </video>
           <figcaption>
-            I made a large RC boat in middle school that could be used for water missions. I used a foam board that I cut with my DIY foam cutter!
+            I made a large RC boat in middle school that could be used for water missions. I used my DIY foam cutter to cut the foam.
             I designed (in Fusion) and 3D printed the servo to rudder mount which also held the BLDC thruster.
           </figcaption>
         </figure>
@@ -584,7 +583,7 @@
             <source src="videos/battlebot.mp4#t=0.001" type="video/mp4" />
           </video>
           <figcaption>
-            I made a unique battlebot in middle school that launches bottles. Same mechanism as the water rocket but w/o water, servo to release the pressure.
+            I made a unique battlebot in middle school that launches bottles. Same mech as the water rocket but w/o water, servo to release the pressure.
             I designed and 3D printed the chassis to hold the ball pump/PVC pipe launcher mech to mount everything.
           </figcaption>
         </figure>
@@ -612,15 +611,15 @@
             <source src="videos/oscilloscope.mp4#t=0.001" type="video/mp4" />
           </video>
           <figcaption>
-            I created a little "oscilloscope" using an STM32, it reads data from a potentiometer using ADCs and shows it on a Python GUI.
+            I made an "oscilloscope" using an STM32, it reads data from a potentiometer using ADCs and plots on a Python GUI.
           </figcaption>
         </figure>
 
         <figure>
           <img src="images/over-under.png" alt="My VEX Over-under robot"/>
           <figcaption>
-            I made a VEX Over Under robot in 7th grade summer. It can expand its hanging mech using a 4 bar linkage and launch rubber bands (it looks cool transforming)
-            See <a href="https://www.youtube.com/watch?v=Nf6P58Oi3Jw" target="_blank">here</a> (I want to keep as little videos as possible here to save room).
+            1 of my VEX Over Under robots I made in 7th grade summer. It expands its hanging mech using a 4 bar linkage and launches rubber bands (it looks cool transforming)
+            See <a href="https://www.youtube.com/watch?v=Nf6P58Oi3Jw" target="_blank">here</a> (I want to keep as few videos as possible here to save room).
           </figcaption>
         </figure>
 
@@ -629,7 +628,7 @@
             <source src="videos/spinup-bot.mp4#t=0.001" type="video/mp4" />
           </video>
           <figcaption>
-            Heres 1 of my VEX Spinup robots I made in 7th grade. It has the intake and flywheel both at the front.
+            1 of my VEX Spinup bots I made in 7th grade. It has the intake and flywheel both at the front.
           </figcaption>
         </figure>
 
@@ -638,14 +637,14 @@
             <source src="videos/spinup2.mp4#t=0.001" type="video/mp4" />
           </video>
           <figcaption>
-            Heres my other VEX Spinup bot I made in 7th grade. It has an intake on the back and flywheel up front.
+            My other VEX Spinup bot I made in 7th grade. It has an intake on the back and flywheel up front.
           </figcaption>
         </figure>
 
          <figure>
           <img src="images/ev.jpg" alt="My VEX Over-under robot"/>
           <figcaption>
-            I made a prototype for SciOly EV in 8th grade. I designed it in Fusion and printed the chassis and just used a wingnut braking mech.
+            My prototype for SciOly EV in 8th grade. I designed it in Fusion and just used a wingnut braking mech.
             I later on modified this design (same 1000kv BLDC motor) for my F1Tenth inspired "racecar".
           </figcaption>
         </figure>
@@ -655,7 +654,8 @@
             <source src="videos/air-traj.mp4#t=0.001" type="video/mp4" />
           </video>
           <figcaption>
-            I made a gravity powered ping-pong ball launcher for middle school SciOly. I 3D printed a crank mechanism to angle the launcher barrel.
+            My sketchy gravity powered ping-pong ball launcher for middle school SciOly. 
+            I designed and printed the crank mech to angle the barrel.
           </figcaption>
         </figure>
 
@@ -664,7 +664,7 @@
             <source src="videos/roller-coaster.mp4#t=0.001" type="video/mp4" />
           </video>
           <figcaption>
-            I made a marble roller coaster for middle school SciOly. I 3D-printed the tracks. Heres a demo of the far air jump and funnel.
+            My marble roller coaster for middle school SciOly. I designed and printed the tracks. Heres a demo of the far air jump and funnel.
           </figcaption>
         </figure>
 
@@ -673,9 +673,8 @@
             <source src="videos/rubber-car.mp4#t=0.001" type="video/mp4" />
           </video>
           <figcaption>
-            I made a rubber band powered car that could go 4 laps across my school gym. I used low torque gearing and wound a rubberband
-            like you would for a model plane so it lasts really long with consistent torque. The downside was that I needed to use small wheels
-            and keep the weight low.
+            My rubber band powered car that could go 4 laps across my school gym. I used low torque gearing and wound a rubberband
+            like you would for a model plane so it lasts long with consistent torque.
           </figcaption>
         </figure>
       </div>
@@ -701,7 +700,7 @@
     </p>
 
     <!-- OPEN SAUCE SECTION -->
-    <h1>My Open Sauce 2024 experience & some cool people I met!</h1>
+    <h1>My Open Sauce 2024 experience & some people I met!</h1>
 
     <figure>
       <img src="images/booth-image.jpg" alt="Booth" class="booth-image" />
@@ -741,6 +740,15 @@
         <figcaption>I met James Hobson (The Hacksmith)!</figcaption>
       </figure>
 
+       <figure>
+        <img
+          src="images/Styropyro.jpg"
+          alt="Styropyro"
+          class="people-met-photos"
+        />
+        <figcaption>I met Styropyro (Drake)!</figcaption>
+      </figure>
+
       <figure>
         <img
           src="images/allen-pan.JPG"
@@ -757,15 +765,6 @@
           class="people-met-photos"
         />
         <figcaption>I met Tom Stanton!</figcaption>
-      </figure>
-
-      <figure>
-        <img
-          src="images/Styropyro.jpg"
-          alt="Styropyro"
-          class="people-met-photos"
-        />
-        <figcaption>I met Styropyro (Drake)!</figcaption>
       </figure>
 
       <figure>
