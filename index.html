@@ -17,8 +17,7 @@
     <p>
       Hey there! I'm Jonathan Li, a rising junior in high
       school. I'm really into robotics and ML, and I've been building
-      cool things ever since I was young. I have a YouTube channel where I explain many of my projects, and my GitHub
-      has most of the code for them. Scroll down to view some of my work!
+      cool things ever since I was young. Scroll down to view some of my work!
       <br />
     </p>
 
@@ -43,19 +42,19 @@
       </figcaption>
     </figure>
 
-    <h1>Some Projects I'm Proud of! (I tried my best to classify)</h1>
+    <h1>Some Projects I'm Proud of! (I tried my best to classify), more on OS 2024 section below</h1>
 
     <!-- FILTER -->
     <div class="controls">
       <button class = "button" onclick="showSection('internship')">Research</button>
       <button class = "button" onclick="showSection('legged')">Legged robots</button>
       <button class = "button" onclick="showSection('ml-projects')">General ML & CV</button>
-      <button class = "button" onclick="showSection('household-bots')">Delivery/household uses</button>
-      <button class = "button" onclick="showSection('drones')">Flight</button>
+      <button class = "button" onclick="showSection('household-bots')">Delivery/household/outdoor uses</button>
+      <button class = "button" onclick="showSection('drones')">Flight+hybrid</button>
       <button class = "button" onclick="showSection('arms')">Arm</button>
+      <button class = "button" onclick="showSection('autonomous-cars')">Car-ish</button>
       <button class = "button" onclick="showSection('ROS-related')">ROS</button>
-      <button class = "button" onclick="showSection('autonomous-cars')">Autonomous racing</button>
-      <button class = "button" onclick="showSection('other')">OTHER!</button>
+      <button class = "button" onclick="showSection('other')">OTHER</button>
     </div>
 
     <div id="internship" class="section">
@@ -81,20 +80,21 @@
             <source src="videos/mini-casper.mp4#t=0.001" type="video/mp4" />
           </video>
           <figcaption>
-            I made Mini Casper, my first quadruped with only 2 DOF per leg. Here I experimented with going over obstacles and running on rocks.
+            I made Mini Casper (name inspired by the MIT Mini Cheetah), my first quadruped with only 2 DOF per leg. Here I experimented with going over obstacles and running on rocks.
             I used IK and parametric equations to make the stepping trajectory a sine wave. I found the trot gait to be the best balance between 
-            speed and stability for me (I tried others like crawl, pronk, & bound).
+            speed and stability (I tried others like crawl, pronk, & bound).
           </figcaption>
         </figure>
 
         <figure>
           <img
-            src="images/strandbeest.JPG"
+            src="images/strandb.png"
             alt="RC strandbeest"
           />
           <figcaption>
-            My RC FPV strandbeest model using NRF24l01 modules. Goal was to mimic an animal so you could
-            use it to monitor species. I made this in 8th grade using an Arduino nano and N20 motors.
+            My RC FPV strandbeest using NRF24l01 modules. Goal was to mimic an animal so you could
+            use it to monitor species. I made this in 8th grade using an Arduino nano and N20 motors,
+            and hand soldered all the PCBs. A 10 uF capacitor is used for the NRF modules to help with power spikes.
           </figcaption>
         </figure>
       </div>
@@ -120,7 +120,8 @@
           </video>
           <figcaption>
             VQA using the moondream VLM for live prompting via a webcam. 
-            VLA models are really useful for autonomy, and I also tried it out on a Jetson.
+            VLA models are really useful for autonomy, and I also used it on my Jetson
+            for scene understanding for robots.
           </figcaption>
         </figure>
 
@@ -206,7 +207,7 @@
             <source src="videos/gdino.mp4#t=0.001" type="video/mp4" />
           </video>
           <figcaption>
-            I played with using GroundingDINO and PyTorch for FRC 2025 algae detection.
+            I used GroundingDINO and PyTorch for FRC 2025 algae and coral detection.
           </figcaption>
         </figure>
 
@@ -215,6 +216,15 @@
           <figcaption>I made a Raspberry Pi facial recognition security camera in middle school
             that sends alerts when my mom is detected. I designed the case and servo mounts in Fusion.
             I used HOG.
+          </figcaption>
+        </figure>
+
+        <figure>
+          <video width="320" height="240" controls preload="metadata">
+            <source src="videos/aruco.mp4#t=0.001" type="video/mp4" />
+          </video>
+          <figcaption>
+            ArUco marker pose display (also one of my Open Sauce 2024 projects).
           </figcaption>
         </figure>
 
@@ -329,6 +339,13 @@
         </figure>
 
         <figure>
+          <img src="images/bike.jpg" style="width: 70%"/>
+          <figcaption>
+            Drill powered bike I made in middle school using syringe hydraulics...
+          </figcaption>
+        </figure>
+
+        <figure>
           <video width="320" height="240" controls preload="metadata">
             <source
               src="videos/bottle-bot.mp4#t=0.001"
@@ -353,10 +370,64 @@
           </figcaption>
         </figure>
 
-         <figure>
+        <figure>
+          <video width="320" height="240" controls preload="metadata">
+            <source src="videos/roomba.mp4#t=0.001" type="video/mp4" />
+          </video>
+          <figcaption>
+            I made this simple ultrasonic sensor roomba with a spinning toothbrush head in middle school. I'm using an Arduino nano.
+          </figcaption>
+        </figure>
+
+        <figure>
           <img src="images/roomba.png" style="width: 70%"/>
           <figcaption>
             Arduino roomba using LiDAR (RPLiDAR A1M8), no SLAM.
+          </figcaption>
+        </figure>
+
+        <figure>
+          <video width="320" height="240" controls preload="metadata">
+            <source src="videos/voltage-det.mp4#t=0.001" type="video/mp4" />
+          </video>
+          <figcaption>
+            I made this AC voltage detector
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/alarm.jpeg" style="width: 80%"/>
+          <figcaption>
+            This was a "security alarm" I made in elementary school. It uses an ultrasonic sensor to detect motion and 
+            then a piezo buzzer and LEDs go off, and an LCD displays some text. This was my first ever Arduino project.
+          </figcaption>
+        </figure>
+
+        <figure>
+          <video width="320" height="240" controls preload="metadata">
+            <source src="videos/fast-box.mp4#t=0.001" type="video/mp4" />
+          </video>
+          <figcaption>
+            I made this fast mini bottle cap pickup robot using N20 motors. (If there was a container the bottle caps wouldn't fall out,
+            imagine the robot as a box) - this is just the intake mech. I spent a month designing it in Fusion to be as neat and compact/light
+            as I could get it.
+          </figcaption>
+        </figure>
+
+        <figure>
+          <video width="320" height="240" controls preload="metadata">
+            <source src="videos/disco.mp4#t=0.001" type="video/mp4" />
+          </video>
+          <figcaption>
+            LED disco...
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/boat.jpeg" style="width: 70%"/>
+          <figcaption>
+            I made a plastic bottle raft/boat in 6th grade with a sled and bottles I got every day from school
+            but my mom didn't allow me to actually sit on it
           </figcaption>
         </figure>
 
@@ -366,20 +437,21 @@
             I made a lightbulb in middle school using graphite and a glass cup with a 3D-printed TPU seal
           </figcaption>
         </figure>
-
-        <figure>
-          <video width="320" height="240" controls preload="metadata">
-            <source src="videos/voltage-det.mp4#t=0.001" type="video/mp4" />
-          </video>
-          <figcaption>
-            I made this AC voltage detector inspired by ElectroBoom's video...
-          </figcaption>
-        </figure>
       </div>
     </div>
 
     <div id="drones" class="section">
       <div class = "image-container">
+        <figure>
+          <img src="images/plane.png"/>
+          <figcaption>
+            I made a ton of model planes and competed and coached SciOly Flight in middle school
+            (I was the main coach for our team and got our alternate teams to come in first!).
+            Here's an RC plane I made recently, see <a href="https://www.youtube.com/watch?v=IaAbOiH2r1g" target="_blank">here.</a>
+            I used a Clark Y airfoil. Landing gear 3D printed, it has a screwable tail for easy transport.
+          </figcaption>
+        </figure>
+
         <figure>
           <video width="320" height="240" controls preload="metadata">
             <source src="videos/pioneer3.mp4#t=0.001" type="video/mp4" />
@@ -387,7 +459,7 @@
           <figcaption>
             I made Pioneer V3. I used carbon fiber props and 3508 BLDC motors for heavier lifting weight. 
             It's also using an Arduino, but since it's larger less frequent IMU updates are needed.
-            I used a 200 Hz loop. Motor mounts and center 3D-printed, aluminum from Ace Hardware. Weighs 5 lb.
+            I used a 200 Hz loop. Motor mounts and center 3D-printed, aluminum from Ace Hardware. Weighs ~4.5 lb.
           </figcaption>
         </figure>
 
@@ -396,8 +468,9 @@
             <source src="videos/drone-drop.mp4#t=0.001" type="video/mp4" />
           </video>
           <figcaption>
-            I added a dropping mech to my first Arduino quadcopter I made in 8th grade and used it to drop food. I noticed during the winter rabbits and coyotes were starving 
-            so I thought this could be used to prevent animal starvation.
+            I added a dropping mech to my first Arduino quadcopter I made in 8th grade and used it to drop food. 
+            I noticed during the winter rabbits and coyotes were starving so I thought this could be used to 
+            prevent animal starvation. Of course you could use it to drop anything, like agriculture uses and so on.
           </figcaption>
         </figure>
 
@@ -411,7 +484,7 @@
           </figcaption>
         </figure>
 
-         <figure>
+        <figure>
           <img src="images/dragonfly.jpg" style="width: 90%"/>
           <figcaption>
             My dragonfly ornithopter mech.
@@ -448,22 +521,43 @@
 
         <figure>
           <video width="320" height="240" controls preload="metadata">
-            <source src="videos/pioneerv2.mp4#t=0.001" type="video/mp4" />
+            <source src="videos/rocket.mp4#t=0.001" type="video/mp4" />
           </video>
           <figcaption>
-            I made Pioneer V2 in only 20 hrs! I used it to help plant seeds for my mom.
-            Sorry the video quality is kind of bad...you might be able to see the seeds falling.
+            I made a simple model rocket in middle school, no thrust vectoring.
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/atmo.jpeg"/>
+          <figcaption>
+            This is my hybrid quadcopter/car prototype inspired by ATMO by Caltech.
           </figcaption>
         </figure>
 
         <figure>
           <video width="320" height="240" controls preload="metadata">
-            <source src="videos/plane.mp4#t=0.001" type="video/mp4" />
+            <source src="videos/ornithop.mp4#t=0.001" type="video/mp4" />
           </video>
           <figcaption>
-            I made a ton of model planes and competed and coached SciOly Flight 
-            (I was the main coach in middle school for our team and got our alternate teams to come in first!).
-            This was an RC plane I made but it's foam wings w/ balsa support weren't strong enough (cracked mid-air).
+            This was my first ornithopter, I used grocery plastic bags for the wing membrane. Crankshaft 3D printed.
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/tiny-drone.png"/>
+          <figcaption>
+            Tiny FPV drone, one of my OS 2024 projects.
+          </figcaption>
+        </figure>
+
+        <figure>
+          <video width="320" height="240" controls preload="metadata">
+            <source src="videos/pioneerv2.mp4#t=0.001" type="video/mp4" />
+          </video>
+          <figcaption>
+            I made Pioneer V2 in only 20 hrs! Here I used it to help plant seeds for my mom.
+            Sorry for the video quality...you may be able to see the seeds falling.
           </figcaption>
         </figure>
       </div>
@@ -530,10 +624,19 @@
 
         <figure>
           <video width="320" height="240" controls preload="metadata">
-            <source src="videos/flywheel.mp4#t=0.001" type="video/mp4" />
+            <source src="videos/ESP32-car.mp4#t=0.001" type="video/mp4" />
           </video>
           <figcaption>
-            I added a flywheel to my line follower in 8th grade (using IR sensors) to launch bottle caps.
+            I made an ESP32 controlled car (and boat) in 7th grade. I learned about the ESP-NOW protocol.
+          </figcaption>
+        </figure>
+
+        <figure>
+          <video width="320" height="240" controls preload="metadata">
+            <source src="videos/box-car.mp4#t=0.001" type="video/mp4" />
+          </video>
+          <figcaption>
+            I made this fast RC square thing in middle school.
           </figcaption>
         </figure>
 
@@ -542,7 +645,54 @@
             <source src="videos/gyrobot.mp4#t=0.001" type="video/mp4" />
           </video>
           <figcaption>
-            I made a tiny state machine robot using an MPU6050 in 8th grade so it can drive straight. I tuned PID quickly after making my first quadcopter.
+            I made a tiny state machine robot using an MPU6050 in 8th grade so it can drive straight and resist external disturbance. 
+            I tuned PID quickly after making my first quadcopter.
+          </figcaption>
+        </figure>
+
+        <figure>
+          <video width="320" height="240" controls preload="metadata">
+            <source src="videos/flywheel.mp4#t=0.001" type="video/mp4" />
+          </video>
+          <figcaption>
+            I added a flywheel to my line follower in 8th grade (using IR sensors) to launch bottle caps. One of my OS 2024 projects.
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/ev.jpg" alt="My VEX Over-under robot"/>
+          <figcaption>
+            My prototype for SciOly EV in 8th grade. I designed it in Fusion and just used a wingnut braking mech.
+            I later on modified this design (same 1000kv BLDC motor) for my F1Tenth inspired "racecar". I used an Arduino nano.
+          </figcaption>
+        </figure>
+
+        <figure>
+          <video width="320" height="240" controls preload="metadata">
+            <source src="videos/rc-car.mp4#t=0.001" type="video/mp4" />
+          </video>
+          <figcaption>
+            This was my first RC car I made in 7th grade! I used hot glue for the servo and legos for some parts...
+          </figcaption>
+        </figure>
+
+        <figure>
+          <video width="320" height="240" controls preload="metadata">
+            <source src="videos/rubber-car.mp4#t=0.001" type="video/mp4" />
+          </video>
+          <figcaption>
+            My rubber band powered car that could go 4 laps across my school gym. I used low torque gearing and wound a rubberband
+            like you would for a model plane so it lasts long with consistent torque. I made this in middle school when I didn't think
+            SciOly wheeled vehicle was that fun since I thought the competition would be cooler if it was for a longest travelling car.
+          </figcaption>
+        </figure>
+
+        <figure>
+          <video width="320" height="240" controls preload="metadata">
+            <source src="videos/piston.mp4#t=0.001" type="video/mp4" />
+          </video>
+          <figcaption>
+            I 3D printed a model piston engine and just drove it with a cheap brushed motor for a model car.
           </figcaption>
         </figure>
       </div>
@@ -550,24 +700,6 @@
 
     <div id="other" class="section">
       <div class = "image-container">
-        <figure>
-          <video width="320" height="240" controls preload="metadata">
-            <source src="videos/aruco.mp4#t=0.001" type="video/mp4" />
-          </video>
-          <figcaption>
-            ArUco marker pose display (also one of my Open Sauce 2024 projects).
-          </figcaption>
-        </figure>
-
-        <figure>
-          <video width="320" height="240" controls preload="metadata">
-            <source src="videos/ESP32-car.mp4#t=0.001" type="video/mp4" />
-          </video>
-          <figcaption>
-            I made an ESP32 controlled car (and boat) in 7th grade. I learned about the ESP-NOW protocol.
-          </figcaption>
-        </figure>
-
         <figure>
           <video width="320" height="240" controls preload="metadata">
             <source src="videos/boat.mp4#t=0.001" type="video/mp4" />
@@ -590,10 +722,10 @@
 
         <figure>
           <video width="320" height="240" controls preload="metadata">
-            <source src="videos/rc-car.mp4#t=0.001" type="video/mp4" />
+            <source src="videos/glove.mp4#t=0.001" type="video/mp4" />
           </video>
           <figcaption>
-            This was my first RC car I made in 7th grade! I used hot glue for the servo and legos for some parts...
+            I played with a flex sensor (just a variable resistor) to control a servo. I used this as a simple glove control mech.
           </figcaption>
         </figure>
 
@@ -641,11 +773,34 @@
           </figcaption>
         </figure>
 
-         <figure>
-          <img src="images/ev.jpg" alt="My VEX Over-under robot"/>
+        <figure>
+          <img src="images/linear.png" style="width: 90%"/>
           <figcaption>
-            My prototype for SciOly EV in 8th grade. I designed it in Fusion and just used a wingnut braking mech.
-            I later on modified this design (same 1000kv BLDC motor) for my F1Tenth inspired "racecar".
+            This was my first super simple GT pulley driven "linear slide" I made for middle school FTC. I also designed the sketchy claw in Fusion.
+          </figcaption>
+        </figure>
+
+        <figure>
+          <video width="320" height="240" controls preload="metadata">
+            <source src="videos/game.mp4#t=0.001" type="video/mp4" />
+          </video>
+          <figcaption>
+            I made a simple 2D Java game in 6th grade. I used LibGDX and custom designed the sprites in GIMP.
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/mpc.png" style="width: 90%"/>
+          <figcaption>
+            I learned about MPC (Model Predictive Control) during my internship and implemented a very simple
+            learning demo in Python.
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/sorting.png" style="width: 90%"/>
+          <figcaption>
+            I made a simple sorting algorithm viz (not many options rn) using HTML, CSS, and JS.
           </figcaption>
         </figure>
 
@@ -667,23 +822,33 @@
             My marble roller coaster for middle school SciOly. I designed and printed the tracks. Heres a demo of the far air jump and funnel.
           </figcaption>
         </figure>
-
-         <figure>
-          <video width="320" height="240" controls preload="metadata">
-            <source src="videos/rubber-car.mp4#t=0.001" type="video/mp4" />
-          </video>
-          <figcaption>
-            My rubber band powered car that could go 4 laps across my school gym. I used low torque gearing and wound a rubberband
-            like you would for a model plane so it lasts long with consistent torque.
-          </figcaption>
-        </figure>
       </div>
     </div>
 
-    <!-- IMAGES & VIDEOS OF PROJECTS -->
-    <div class="image-container">
+    <p>I have many more projects, these are just a few. It's kind of a pain to list them all.</p>
 
-    </div>
+    <!-- OPEN SAUCE SECTION -->
+    <h1>My Open Sauce 2024 Experience!</h1>
+
+    <figure>
+      <img src="images/booth-image.jpeg" alt="Booth" class="booth-image" />
+      <figcaption>
+        My booth! Me explaning a dragonfly ornithopter mechanism which many
+        <br />
+        found interest in (even a professor at MIT!) This simple mech could be used for tiny drones,
+        although <br />
+        I'm not too sure if it would be more efficient than just using
+        propellers.
+      </figcaption>
+    </figure>
+
+    <p style="font-weight: bold;">
+      At my booth I showed my: Arduino quadcopter, 3D-printed humanoid hand, 
+      line follower, facial recognition on a Raspi, ornithopter, ArUco marker
+      detection, HC-05 bluetooth RC car, and tiny FPV drone. I met famous people like Veritasium, 
+      see <a href="https://www.youtube.com/watch?v=qIugDnRcoYg" target="_blank">here</a> and 
+      <a href="https://www.youtube.com/watch?v=ZNp0ZdjzXpA" target="_blank">here</a>!
+    </p>
 
     <h1>Visiting Boston Dynamics!</h1>
     <img
@@ -699,121 +864,6 @@
       fun seeing their robots & driving some of their quadrupeds. I saw how Spot had stereo cameras on each side.
     </p>
 
-    <!-- OPEN SAUCE SECTION -->
-    <h1>My Open Sauce 2024 experience & some people I met!</h1>
-
-    <figure>
-      <img src="images/booth-image.jpg" alt="Booth" class="booth-image" />
-      <figcaption>
-        My booth! Me explaning a dragonfly ornithopter mechanism which many
-        <br />
-        found interest in (even a professor at MIT!) This simple mechanism could be used for tiny drones,
-        although <br />
-        I'm not too sure if it would be more efficient than just using
-        propellers
-      </figcaption>
-    </figure>
-
-    <p>
-      At my booth I showed my Arduino quadcopter which uses an MPU-6050 gyro &
-      accelerometer, a 3D-printed humanoid hand, a line follower using 2 IR sensors,
-      facial recognition on a Raspberry Pi, an ornithopter, ArUco marker
-      detection, and a HC-05 bluetooth RC car. It was very fun!
-    </p>
-
-    <div id="people_photos">
-      <figure>
-        <img
-          src="images/Veritasium.jpg"
-          alt="Veritasium"
-          class="people-met-photos"
-        />
-        <figcaption>I met Veritasium!</figcaption>
-      </figure>
-
-      <figure>
-        <img
-          src="images/Hacksmith.JPG"
-          alt="The Hacksmith"
-          class="people-met-photos"
-        />
-        <figcaption>I met James Hobson (The Hacksmith)!</figcaption>
-      </figure>
-
-       <figure>
-        <img
-          src="images/Styropyro.jpg"
-          alt="Styropyro"
-          class="people-met-photos"
-        />
-        <figcaption>I met Styropyro (Drake)!</figcaption>
-      </figure>
-
-      <figure>
-        <img
-          src="images/allen-pan.JPG"
-          alt="Allen Pan"
-          class="people-met-photos"
-        />
-        <figcaption>I met Allen Pan!</figcaption>
-      </figure>
-
-      <figure>
-        <img
-          src="images/tom-stanton.JPG"
-          alt="Tom Stanton"
-          class="people-met-photos"
-        />
-        <figcaption>I met Tom Stanton!</figcaption>
-      </figure>
-
-      <figure>
-        <img
-          src="images/JLaser.jpg"
-          alt="Jake Laser"
-          class="people-met-photos"
-        />
-        <figcaption>I met Jake Laser (JLaserVideo)</figcaption>
-      </figure>
-
-      <figure>
-        <img
-          src="images/Joel-creates.jpg"
-          alt="Joel Creates"
-          class="people-met-photos"
-        />
-        <figcaption>I met Joel (Joel Creates)!</figcaption>
-      </figure>
-
-      <figure>
-        <img
-          src="images/peter-sripol.JPG"
-          alt="Peter Sripol"
-          class="people-met-photos"
-        />
-        <figcaption>I met Peter Sripol!</figcaption>
-      </figure>
-
-      <figure>
-        <img
-          src="images/ProjectAir.JPG"
-          alt="Project Air"
-          class="people-met-photos"
-        />
-        <figcaption>I met James Whomsley (Project Air)!</figcaption>
-      </figure>
-
-      <figure>
-        <img
-          src="images/eternal-progression.jpg"
-          alt="Eternal Progression"
-          class="people-met-photos"
-        />
-        <figcaption>
-          Eternal Progression (Josh) was in the same hotel!
-        </figcaption>
-      </figure>
-    </div>
     <script src="script.js"></script>
   </body>
 </html>

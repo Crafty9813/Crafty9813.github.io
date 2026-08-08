@@ -132,32 +132,6 @@ figure img {
   height: auto;
 }
 
-#people_photos {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 30px;
-  padding: 10px;
-  box-sizing: border-box;
-}
-
-.people-met-photos {
-  width: 100%;
-  aspect-ratio: 1/1;
-  padding: 3px;
-  background: linear-gradient(45deg, blue, red);
-  background-clip: padding-box;
-  object-fit: cover;
-  display: block;
-
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.people-met-photos:hover {
-  transform: scale(1.05);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3), 0 0 10px rgba(255, 0, 100, 0.6),
-    0 0 20px rgba(255, 0, 100, 0.4), 0 0 30px rgba(255, 0, 100, 0.3);
-}
-
 figcaption {
   color: lightsteelblue;
   padding: 0.5rem;
