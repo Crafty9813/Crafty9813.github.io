@@ -38,7 +38,7 @@
       </video>
       <figcaption>
         I'm working at the DARoS lab at UMass Amherst for the Dash humanoid (collab w/ UIUC and U Notre Dame) and Forte arm! 
-        I so far helped with IsaacLab RL training, STM32 & Teensy stuff, motor control & GUIs, PCB design, CAD, etc.
+        I so far helped with IsaacLab & mjlab RL and IL, STM32 & Teensy stuff, motor control & GUIs, PCB design, CAD, soldering, etc.
       </figcaption>
     </figure>
 
@@ -95,6 +95,14 @@
             My RC FPV strandbeest using NRF24l01 modules. Goal was to mimic an animal so you could
             use it to monitor species. I made this in 8th grade using an Arduino nano and N20 motors,
             and hand soldered all the PCBs. A 10 uF capacitor is used for the NRF modules to help with power spikes.
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/leg.png" style="width: 70%"/>
+          <figcaption>
+            My WIP CAD (I kind of just ditched the project since cost is way too high) 
+            for a 3 DOF leg inspired by the MIT Mini Cheetah, but I'm using RobStride actuators.
           </figcaption>
         </figure>
       </div>
@@ -281,6 +289,14 @@
         </figure>
 
         <figure>
+          <img src="images/jetbot.jpeg" style="width: 90%"/>
+          <figcaption>
+            Similar household robot but using a Jetson and mecanum wheels for strafing 
+            (chassis from my linear slide robot down below). I also used a bigger speaker.
+          </figcaption>
+        </figure>
+
+        <figure>
           <video width="320" height="240" controls preload="metadata">
             <source src="videos/swerve-drive.mp4#t=0.001" type="video/mp4" />
           </video>
@@ -324,7 +340,7 @@
           </video>
           <figcaption>
             I made an RC wheel inverted pendulum that uses an MPU6050 and a complementary filter. The frame is from my old 3D printer and the wheels are 3D-printed TPU.
-            I'm using an Arduino.
+            I'm using an Arduino. It took a while to tune the PID gains.
           </figcaption>
         </figure>
 
@@ -341,7 +357,7 @@
         <figure>
           <img src="images/bike.jpg" style="width: 70%"/>
           <figcaption>
-            Drill powered bike I made in middle school using syringe hydraulics...
+            Drill powered bike I made in 7th grade using syringe hydraulics...
           </figcaption>
         </figure>
 
@@ -365,7 +381,7 @@
           </video>
           <figcaption>
             I made this ultrasonic sensor motion lamp for my mom to make her life easier,
-            especially for when she needs to get up at midnight. I made this in middle school and may or may not have gotten shocked.
+            especially for when she needs to get up at midnight. I made this in 8th grade.
             The frame is 3D printed (I designed in Fusion) and I'm using an Arduino to control a relay for the lightbulb.
           </figcaption>
         </figure>
@@ -383,6 +399,13 @@
           <img src="images/roomba.png" style="width: 70%"/>
           <figcaption>
             Arduino roomba using LiDAR (RPLiDAR A1M8), no SLAM.
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/roomba-cad.png"/>
+          <figcaption>
+            Here's the general CAD of my LiDAR roomba.
           </figcaption>
         </figure>
 
@@ -415,6 +438,13 @@
         </figure>
 
         <figure>
+          <img src="images/cap-bot-cad.png"/>
+          <figcaption>
+            Here's the CAD of my bottle cap pickup robot.
+          </figcaption>
+        </figure>
+
+        <figure>
           <video width="320" height="240" controls preload="metadata">
             <source src="videos/disco.mp4#t=0.001" type="video/mp4" />
           </video>
@@ -437,11 +467,27 @@
             I made a lightbulb in middle school using graphite and a glass cup with a 3D-printed TPU seal
           </figcaption>
         </figure>
+
+        <figure>
+          <img src="images/fish-rod.jpeg" style="width: 70%"/>
+          <figcaption>
+            I made a fishing rod in elementary school using a random metal pole, straws, and a tape reel as the "spool"
+          </figcaption>
+        </figure>
       </div>
     </div>
 
     <div id="drones" class="section">
       <div class = "image-container">
+        <figure>
+          <img src="images/bicopter.jpeg"/>
+          <figcaption>
+            My thrust vectoring Bicopter using an Arduino Nano and MPU-6050. 
+            I wrote my custom flight controller using a complementary filter and cascaded PID loop structure. 
+            The 2 servos tilt the rotors.
+          </figcaption>
+        </figure>
+
         <figure>
           <img src="images/plane.png"/>
           <figcaption>
@@ -459,7 +505,7 @@
           <figcaption>
             I made Pioneer V3. I used carbon fiber props and 3508 BLDC motors for heavier lifting weight. 
             It's also using an Arduino, but since it's larger less frequent IMU updates are needed.
-            I used a 200 Hz loop. Motor mounts and center 3D-printed, aluminum from Ace Hardware. Weighs ~4.5 lb.
+            I used a 200 Hz loop. Motor mounts and center 3D-printed, aluminum from Ace Hardware. Weighs ~3.8 lb.
           </figcaption>
         </figure>
 
@@ -501,6 +547,15 @@
         </figure>
 
         <figure>
+          <img src="images/heli.jpeg"/>
+          <figcaption>
+            My simple RC helicopter using only flybars for stability. 
+            I designed it in Fusion and went through a lot of iterations to make the flybars sturdy due to centrifugal force.
+            See <a href="https://www.youtube.com/watch?v=YRpRqGPJm-c" target="_blank">here</a> for the first (actually last) test flight.
+          </figcaption>
+        </figure>
+
+        <figure>
           <video width="320" height="240" controls preload="metadata">
             <source src="videos/water-rocket.mp4#t=0.001" type="video/mp4" />
           </video>
@@ -515,7 +570,15 @@
             <source src="videos/heli-gyro.mp4#t=0.001" type="video/mp4" />
           </video>
           <figcaption>
-            I experimented with gyroscopic precession in helicopters. I also made a rubber-band powered heli with a tail rotor.
+            I experimented with gyroscopic precession in helicopters.
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/rbh.png" style="width: 90%"/>
+          <figcaption>
+            I made a rubber band powered heli with a tail rotor.
+            See <a href="https://www.youtube.com/shorts/Tyw1hgvnFI8" target="_blank">here</a>.
           </figcaption>
         </figure>
 
@@ -614,6 +677,13 @@
         </figure>
 
         <figure>
+          <img src="images/f1tenth.png" style="width: 90%"/>
+          <figcaption>
+            Here's the general chassis CAD for my F1Tenth inspired roboracer.
+          </figcaption>
+        </figure>
+
+        <figure>
           <video width="320" height="240" controls preload="metadata">
             <source src="videos/lane-demo.mp4#t=0.001" type="video/mp4" />
           </video>
@@ -664,6 +734,14 @@
           <figcaption>
             My prototype for SciOly EV in 8th grade. I designed it in Fusion and just used a wingnut braking mech.
             I later on modified this design (same 1000kv BLDC motor) for my F1Tenth inspired "racecar". I used an Arduino nano.
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/kalman.png"/>
+          <figcaption>
+            I implemented a simple Kalman Filter on an STM32 for IR sensor distance measurements.
+            See <a href="https://www.youtube.com/watch?v=CbdztzORtTU" target="_blank">here</a>.
           </figcaption>
         </figure>
 
@@ -801,6 +879,26 @@
           <img src="images/sorting.png" style="width: 90%"/>
           <figcaption>
             I made a simple sorting algorithm viz (not many options rn) using HTML, CSS, and JS.
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/spiral.png" style="width: 70%"/>
+          <figcaption>
+            I was following a Java course for 3D game dev in middle school and thought this could be used as a cool drawing thing.
+            See <a href="https://www.youtube.com/shorts/Ep6-LjvbNhc" target="_blank">here</a> and 
+            <a href="https://www.youtube.com/shorts/KFAS0_ewBJ8" target="_blank">here</a>.
+          </figcaption>
+        </figure>
+
+        <figure>
+          <video width="320" height="240" controls preload="metadata">
+            <source src="videos/web.mp4#t=0.001" type="video/mp4" />
+          </video>
+          <figcaption>
+            I was into Spiderman in elementary school and made a "web shooter". The straw
+            is a spool for the string and I used a skewer with a magnet as the main projectile
+            to stick to magnetic objects.
           </figcaption>
         </figure>
 
