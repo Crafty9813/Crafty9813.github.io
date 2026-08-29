@@ -46,7 +46,7 @@
 
     <!-- FILTER -->
     <div class="controls">
-      <button class = "button" onclick="showSection('internship')">Research</button>
+      <button class = "button" onclick="showSection('internship')">Research @ DARoS Lab</button>
       <button class = "button" onclick="showSection('legged')">Legged robots</button>
       <button class = "button" onclick="showSection('ml-projects')">General ML & CV</button>
       <button class = "button" onclick="showSection('household-bots')">Delivery/household/outdoor uses</button>
@@ -272,8 +272,8 @@
             <source src="videos/raspi-bot.mp4#t=0.001" type="video/mp4" />
           </video>
           <figcaption>
-            I made an autonomous Raspberry Pi robot that delivers snacks using voice commands, follows AprilTags, and picks
-            up objects using YOLO. It uses a vosk model for speech recognition and YOLO converted to the NCNN format to run at a useable speed.
+            I made an autonomous Raspberry Pi robot that delivers snacks to people using voice commands, follows AprilTags, and picks
+            up commanded objects using YOLO. It uses a vosk model for speech recognition and YOLO converted to the NCNN format to run at a useable speed.
             I'm using monocular cameras, so I got depth by measuring the bottle width, finding my focal length (by measuring from a known distance), 
             and plugging into dist = (focal len * bottle width) / px width found by using simple trig.
           </figcaption>
@@ -284,7 +284,7 @@
             <source src="videos/trashcan.mp4#t=0.001" type="video/mp4" />
           </video>
           <figcaption>
-            I converted my robot to the left into an auto-aiming trashcan. I'm lazy.
+            I converted my robot to the left into an auto-aiming trashcan
           </figcaption>
         </figure>
 
@@ -292,7 +292,8 @@
           <img src="images/jetbot.jpeg" style="width: 90%"/>
           <figcaption>
             Similar household robot but using a Jetson and mecanum wheels for strafing 
-            (chassis from my linear slide robot down below). I also used a bigger speaker.
+            (chassis from my linear slide robot down below). I also used a bigger speaker. 
+            The Jetson sends serial commands to the Arduino for motor control.
           </figcaption>
         </figure>
 
@@ -302,7 +303,8 @@
           </video>
           <figcaption>
             My custom Arduino swerve drive I made during 8th grade summer. I DIYed everything except for raw metal. 
-            The aluminum is from Ace and I manually cut and drilled it. Check out my YouTube video to see more on my 3D-printed module design!
+            The aluminum is from Ace and I manually cut and drilled it. See <a href="https://www.youtube.com/watch?v=aqNaRZ-8xvA" target="_blank">here</a>
+            for more on my 3D-printed module design!
           </figcaption>
         </figure>
 
@@ -341,6 +343,14 @@
           <figcaption>
             I made an RC wheel inverted pendulum that uses an MPU6050 and a complementary filter. The frame is from my old 3D printer and the wheels are 3D-printed TPU.
             I'm using an Arduino. It took a while to tune the PID gains.
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/force-anal.webp"/>
+          <figcaption>
+            I made a big arm for household use (like reaching shelves) and did stress analysis for it in Fusion. 
+            See <a href="https://www.youtube.com/watch?v=R7QKuT_Au7Q" target="_blank">here</a>.
           </figcaption>
         </figure>
 
@@ -405,7 +415,7 @@
         <figure>
           <img src="images/roomba-cad.png"/>
           <figcaption>
-            Here's the general CAD of my LiDAR roomba.
+            Here's the CAD of my LiDAR roomba with a claw and Raspi for CV stuff.
           </figcaption>
         </figure>
 
@@ -483,7 +493,7 @@
           <img src="images/bicopter.jpeg"/>
           <figcaption>
             My thrust vectoring Bicopter using an Arduino Nano and MPU-6050. 
-            I wrote my custom flight controller using a complementary filter and cascaded PID loop structure. 
+            I wrote my custom flight controller using a complementary filter and cascaded PID loop structure (tuning was rough). 
             The 2 servos tilt the rotors.
           </figcaption>
         </figure>
@@ -677,7 +687,7 @@
         </figure>
 
         <figure>
-          <img src="images/f1tenth.png" style="width: 90%"/>
+          <img src="images/f1tenth.png"/>
           <figcaption>
             Here's the general chassis CAD for my F1Tenth inspired roboracer.
           </figcaption>
@@ -730,7 +740,7 @@
         </figure>
 
         <figure>
-          <img src="images/ev.jpg" alt="My VEX Over-under robot"/>
+          <img src="images/ev.png"/>
           <figcaption>
             My prototype for SciOly EV in 8th grade. I designed it in Fusion and just used a wingnut braking mech.
             I later on modified this design (same 1000kv BLDC motor) for my F1Tenth inspired "racecar". I used an Arduino nano.
@@ -755,6 +765,13 @@
         </figure>
 
         <figure>
+          <img src="images/hc05.jpeg"/>
+          <figcaption>
+            My HC-05 Bluetooth RC car (OS 2024 project)
+          </figcaption>
+        </figure>
+
+        <figure>
           <video width="320" height="240" controls preload="metadata">
             <source src="videos/rubber-car.mp4#t=0.001" type="video/mp4" />
           </video>
@@ -771,6 +788,22 @@
           </video>
           <figcaption>
             I 3D printed a model piston engine and just drove it with a cheap brushed motor for a model car.
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/drift.jpg"/>
+          <figcaption>
+            After making a little RC boat by turning servos into ESCs, I made a little drift RC car using
+            a servo PCB as the ESC. See <a href="https://www.youtube.com/shorts/fP9YJSThiL4" target="_blank">here</a>.
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/atmo-car.jpg" style="width: 30%"/>
+          <figcaption>
+            Little atmospheric pressure powered car. 
+            See <a href="https://www.youtube.com/shorts/CZb53uUhrvw" target="_blank">here</a>.
           </figcaption>
         </figure>
       </div>
@@ -808,6 +841,13 @@
         </figure>
 
         <figure>
+          <img src="images/esp32-boat.jpg" style="width: 80%"/>
+          <figcaption>
+            My ESP32 RC boat using air propellers from 7th grade. See <a href="https://www.youtube.com/watch?v=3K_4MxPqb5I" target="_blank">here</a>.
+          </figcaption>
+        </figure>
+
+        <figure>
           <video width="320" height="240" controls preload="metadata">
             <source src="videos/dc-motor.mp4#t=0.001" type="video/mp4" />
           </video>
@@ -822,6 +862,45 @@
           </video>
           <figcaption>
             I made an "oscilloscope" using an STM32, it reads data from a potentiometer using ADCs and plots on a Python GUI.
+          </figcaption>
+        </figure>
+
+        <figure>
+          <video width="320" height="240" controls preload="metadata">
+            <source src="videos/game.mp4#t=0.001" type="video/mp4" />
+          </video>
+          <figcaption>
+            I made a simple 2D Java game in 6th grade. I used LibGDX and custom designed the sprites in GIMP.
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/mpc.png" style="width: 90%"/>
+          <figcaption>
+            I learned about MPC (Model Predictive Control) during my internship and implemented a very simple
+            learning demo in Python.
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/sorting.png" style="width: 90%"/>
+          <figcaption>
+            I made a simple sorting algorithm viz (not many options rn) using HTML, CSS, and JS.
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/as.jpg"/>
+          <figcaption>
+            I worked on AdvantageScope data viz for FRC 2025. See initial test video <a href="https://www.youtube.com/shorts/XAX7A9pr1F4" target="_blank">here</a>.
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/ball-balancer.jpg" style="width: 90%"/>
+          <figcaption>
+            I made this ball balancer using PID in middle school. It's not that great since it's just using
+            a cheap ultrasonic sensor with max like 40 Hz updates. I designed the red 3D printed parts in Fusion.
           </figcaption>
         </figure>
 
@@ -859,30 +938,6 @@
         </figure>
 
         <figure>
-          <video width="320" height="240" controls preload="metadata">
-            <source src="videos/game.mp4#t=0.001" type="video/mp4" />
-          </video>
-          <figcaption>
-            I made a simple 2D Java game in 6th grade. I used LibGDX and custom designed the sprites in GIMP.
-          </figcaption>
-        </figure>
-
-        <figure>
-          <img src="images/mpc.png" style="width: 90%"/>
-          <figcaption>
-            I learned about MPC (Model Predictive Control) during my internship and implemented a very simple
-            learning demo in Python.
-          </figcaption>
-        </figure>
-
-        <figure>
-          <img src="images/sorting.png" style="width: 90%"/>
-          <figcaption>
-            I made a simple sorting algorithm viz (not many options rn) using HTML, CSS, and JS.
-          </figcaption>
-        </figure>
-
-        <figure>
           <img src="images/spiral.png" style="width: 70%"/>
           <figcaption>
             I was following a Java course for 3D game dev in middle school and thought this could be used as a cool drawing thing.
@@ -899,6 +954,37 @@
             I was into Spiderman in elementary school and made a "web shooter". The straw
             is a spool for the string and I used a skewer with a magnet as the main projectile
             to stick to magnetic objects.
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/os-badge.jpeg" style="width: 90%"/>
+          <figcaption>
+            I soldered the components to my OS 2024 badge. It brings back good memories.
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/ir-pcb.jpeg" style="width: 90%"/>
+          <figcaption>
+            I made this tiny IR receiver PCB (thumb size) in 8th grade with a piezo buzzer and LED that buzzes when
+            I use a TV or any IR remote. I pranked my friends and science teacher by buzzing them in class.
+            I found it in my old backpack otherwise I wouldn't have any pictures :)
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/boat.png" style="width: 90%"/>
+          <figcaption>
+            I made a tiny RC boat (design from Thingiverse) in middle school by converting servos to ESCs. 
+            Sadly since it's 3D printed it gets water in it easily.
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/heart.jpg" style="width: 80%"/>
+          <figcaption>
+            A little gift I made for my mom (heart kind of broken)
           </figcaption>
         </figure>
 
