@@ -100,6 +100,38 @@ p {
   justify-content: center;
 }
 
+/* Text/link blocks that shouldn't be laid out in the image grid */
+.link-list {
+  max-width: 700px;
+  margin: 3rem auto;
+  padding: 0 50px;
+}
+
+.link-list p {
+  margin: 0 0 0.5rem;
+  padding: 0;
+  text-align: left;
+}
+
+.link-list ul {
+  color: white;
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  margin: 0;
+  padding-left: 1.5rem;
+}
+
+.link-list li {
+  margin-bottom: 0.4rem;
+}
+
+.link-list a {
+  color: #00a8ff;
+}
+
+.link-list a:hover {
+  opacity: 0.7;
+}
+
 figure {
   text-align: center;
   margin: 0;
