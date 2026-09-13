@@ -100,6 +100,18 @@ p {
   justify-content: center;
 }
 
+/* A gallery item that spans two grid columns */
+.image-container > figure.wide {
+  grid-column: span 2;
+}
+
+/* Grid drops to one column below ~632px, so don't force a second */
+@media (max-width: 650px) {
+  .image-container > figure.wide {
+    grid-column: auto;
+  }
+}
+
 /* Text/link blocks that shouldn't be laid out in the image grid */
 .link-list {
   max-width: 700px;
