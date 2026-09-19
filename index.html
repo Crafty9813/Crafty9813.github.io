@@ -15,14 +15,15 @@
 
     <!--INTRO PARAGRAPH-->
     <p>
-      Hey there! I'm Jonathan Li, a junior in high
-      school. I'm really into robotics and ML, and I've been building
-      cool things ever since I was young. Scroll down to view some of my work!
+      Hey there! I'm Jonathan Li and this is my maker portfolio! I'm really into robotics, ML, aerospace, and all of engineering. I've been building
+      cool things ever since I was young, pretty much all self taught as I don't have many resources and only live with my mom (who isn't an engineer).
+      My YouTube channel has tutorials and more info on my projects.
+      Scroll down to view some of my work, which ranges from elementary school to now!
       <br />
     </p>
 
     <a href="https://github.com/Crafty9813" target="_blank" class="button"
-      >GitHub</a
+      >GitHub (code for my projects)</a
     >
 
     <a
@@ -33,12 +34,18 @@
     >
 
     <figure>
-      <video class="dash-humanoid" width="320" height="240" controls>
+      <video width="320" height="240" controls>
         <source src="videos/dash-run.mp4#t=0.001" type="video/mp4" />
+      </video>
+      <video width="320" height="240" controls>
+        <source src="videos/dash.mp4#t=0.001" type="video/mp4" />
+      </video>
+      <video width="320" height="240" controls>
+        <source src="videos/walk.mp4#t=0.001" type="video/mp4" />
       </video>
       <figcaption>
         I'm working at the DARoS lab at UMass Amherst for the Dash humanoid (collab w/ UIUC and U Notre Dame) and Forte arm! 
-        I so far helped with IsaacLab & mjlab RL and IL, STM32 & Teensy stuff, motor control & GUIs, PCB design, CAD, soldering, etc.
+        I so far helped with IsaacLab & mjlab RL and IL, STM32 & Teensy stuff, motor control & GUIs like sending MIT mode commands, PCB design, CAD, soldering, etc.
         Sadly Prof. Kim is going back to KAIST soon, so I'm not sure if the lab will still exist.
       </figcaption>
     </figure>
@@ -50,13 +57,13 @@
       <button class = "button" onclick="showSection('internship')">Research @ DARoS Lab</button>
       <button class = "button" onclick="showSection('legged')">Legged robots</button>
       <button class = "button" onclick="showSection('ml-projects')">General ML & CV</button>
-      <button class = "button" onclick="showSection('household-bots')">Delivery/household/outdoor uses</button>
+      <button class = "button" onclick="showSection('household')">Delivery/household/outdoor uses</button>
       <button class = "button" onclick="showSection('drones')">Flight+hybrid</button>
       <button class = "button" onclick="showSection('arms')">Arm</button>
-      <button class = "button" onclick="showSection('autonomous-cars')">Car-ish</button>
-      <button class = "button" onclick="showSection('ROS-related')">ROS</button>
+      <button class = "button" onclick="showSection('cars')">Car</button>
       <button class = "button" onclick="showSection('other')">OTHER</button>
-      <button class = "button" onclick="showSection('just-for-memories')">Workshop+more</button>
+      <button class = "button" onclick="showSection('workshop')">Workshop/process/more</button>
+      <button class = "button" onclick="showSection('ROS')">ROS</button>
     </div>
 
     <div id="internship" class="section">
@@ -73,6 +80,46 @@
           <li><a href="https://www.youtube.com/shorts/ISAehuZ_3Ek" target="_blank">Walking motion tethered</a></li>
         </ul>
       </div>
+
+      <div class="image-container">
+        <figure>
+          <img src="images/tb.jpeg"/>
+        </figure>
+
+        <figure>
+          <img src="images/rw.jpeg"/>
+        </figure>
+
+        <figure>
+          <img src="images/leisaac.jpg"/>
+          <figcaption>
+            I used LeIsaac for Lerobot to bridge IsaacLab and LeRobot for Forte.
+            Here's a simple SO101 arm test.
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/leisaac2.jpg"/>
+        </figure>
+
+        <figure>
+          <img src="images/pd.jpg"/>
+          <figcaption>
+            PD (stiffness and damping) tuning for Forte in IsaacLab.
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/schem.png"/>
+          <figcaption>
+            Initial SPI schematic for encoder board.
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/vmax.png"/>
+        </figure>
+      </div>
     </div>
 
     <div id="legged" class="section">
@@ -84,6 +131,7 @@
           <figcaption>
             I made Casper, basically Mini Casper but with 3 DOF per leg (added abduction joint) so it can strafe. Casper is larger and I used aluminum (from Ace which I drilled and cut) for the body.
             I'm still using an Arduino, and added a shoebox cover so it looks "cooler" and a simple ultrasonic sensor which I used to shift gaits, step heights, speed, etc. when it senses a large obstacle.
+            See process <a href="https://www.youtube.com/watch?v=JRvZPAb3mh4" target="_blank">here</a>!
           </figcaption>
         </figure>
 
@@ -94,7 +142,7 @@
           <figcaption>
             I made Mini Casper (name inspired by the MIT Mini Cheetah), my first quadruped with only 2 DOF per leg. Here I experimented with going over obstacles and running on rocks.
             I used IK and parametric equations to make the stepping trajectory a sine wave. I found the trot gait to be the best balance between 
-            speed and stability (I tried others like crawl, pronk, & bound).
+            speed and stability (I tried others like crawl, pronk, & bound). See process <a href="https://www.youtube.com/watch?v=riJ84y71naY" target="_blank">here</a>!
           </figcaption>
         </figure>
 
@@ -107,6 +155,7 @@
             My RC FPV strandbeest using NRF24l01 modules. Goal was to mimic an animal so you could
             use it to monitor species. I made this in 8th grade using an Arduino nano and N20 motors,
             and hand soldered all the PCBs. A 10 uF capacitor is used for the NRF modules to help with power spikes.
+            See <a href="https://youtu.be/L_DF6hFrrzc?t=260" target="_blank">here</a>!
           </figcaption>
         </figure>
 
@@ -122,6 +171,13 @@
           <figcaption>
             My WIP CAD (I kind of just ditched the project since cost is way too high) 
             for a 3 DOF leg inspired by the MIT Mini Cheetah, but I'm using RobStride actuators.
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/ik.jpeg"/>
+          <figcaption>
+            Simple 2D IK derivations I used in code.
           </figcaption>
         </figure>
       </div>
@@ -162,6 +218,13 @@
         </figure>
 
         <figure>
+          <img src="images/chess.png"/>
+          <figcaption>Here I'm calibrating my stereo camera using a chessboard pattern.
+            You take a bunch of images at different angles and distances, and then can calculate the camera matrix and distortion coefficients.
+          </figcaption>
+        </figure>
+
+        <figure>
           <video width="320" height="240" controls preload="metadata">
             <source src="videos/mp-mouse.mp4#t=0.001" type="video/mp4" />
           </video>
@@ -192,6 +255,14 @@
         </figure>
 
         <figure>
+          <img src="images/face-req.jpg" alt="facial recognition"/>
+          <figcaption>I made a Raspberry Pi facial recognition security camera in middle school
+            that sends alerts when my mom is detected. I designed the case and servo mounts in Fusion.
+            I used HOG.
+          </figcaption>
+        </figure>
+
+        <figure>
           <video width="320" height="240" controls preload="metadata">
             <source src="videos/cart-pole.mp4#t=0.001" type="video/mp4" />
           </video>
@@ -214,7 +285,12 @@
 
         <figure>
           <img src="images/facial-features.png"/>
-          <figcaption>Facial feature recognition using Haar Cascades.</figcaption>
+          <figcaption>Facial feature recognition using Haar Cascades. See my tutorial <a href="https://www.youtube.com/watch?v=0BJJuezhv3o">here</a>.</figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/da.png" style="width: 110%"/>
+          <figcaption>I played with DepthAnything for depth estimation using monocular cameras</figcaption>
         </figure>
 
         <figure>
@@ -239,14 +315,6 @@
         </figure>
 
         <figure>
-          <img src="images/face-req.jpg" alt="facial recognition"/>
-          <figcaption>I made a Raspberry Pi facial recognition security camera in middle school
-            that sends alerts when my mom is detected. I designed the case and servo mounts in Fusion.
-            I used HOG.
-          </figcaption>
-        </figure>
-
-        <figure>
           <video width="320" height="240" controls preload="metadata">
             <source src="videos/aruco.mp4#t=0.001" type="video/mp4" />
           </video>
@@ -262,7 +330,7 @@
       </div>
     </div>
 
-    <div id="ROS-related" class="section">
+    <div id="ROS" class="section">
       <div class = "image-container">
         <figure>
           <video width="320" height="240" controls preload="metadata">
@@ -284,13 +352,13 @@
       </div>
     </div>
 
-    <div id="household-bots" class="section">
+    <div id="household" class="section">
       <div class = "image-container">
         <figure>
           <img src="images/hovercraft.jpeg"/>
           <figcaption>
-            I made a RC hovercraft that can be used for amphibious purposes. The EDF enclosures
-            are the same as my wall climber bot.
+            I made a really fast RC hovercraft that can be used for amphibious purposes. The EDF enclosures
+            are the same as my wall climber bot. See <a href="https://www.youtube.com/watch?v=01py-2Y3DK4" target="_blank">here</a> (1:57 for fast beach test)
           </figcaption>
         </figure>
 
@@ -302,7 +370,15 @@
             I made an autonomous Raspberry Pi robot that delivers snacks to people using voice commands, follows AprilTags, and picks
             up commanded objects using YOLO. It uses a vosk model for speech recognition and YOLO converted to the NCNN format to run at a useable speed.
             I'm using monocular cameras, so I got depth by measuring the bottle width, finding my focal length (by measuring from a known distance), 
-            and plugging into dist = (focal len * bottle width) / px width found by using simple trig.
+            and plugging into dist = (focal len * bottle width) / px width found by using simple trig. Hardware wise, I got aluminum channels from Ace and hand sawed them
+            to make the chassis.
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/claw.jpeg"/>
+          <figcaption>
+            Here's my custom designed 3D printed claw I used for my robot to the left (CAD in the video to the left)
           </figcaption>
         </figure>
 
@@ -345,10 +421,23 @@
         </figure>
 
         <figure>
-          <img src="images/swerve-cad.jpg" alt="swerve module cad"/>
+          <img src="images/swerve-cad.jpg"/>
           <figcaption>
-            (Heres my swerve module CAD).
+            Here's part of my swerve module CAD. As you can see I used bevel gears and some spur gears
+            for the drive motor -> wheel and the steering motor directly drives the bottom
+            spur gear screwed into the whole module.
           </figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/swerve2.jpeg"/>
+          <figcaption>
+            My swerve module CAD with the motor mount cover
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/fix.jpeg" style="width: 80%"/>
         </figure>
 
         <figure>
@@ -364,12 +453,31 @@
         </figure>
 
         <figure>
+          <img src="images/rb-side.jpeg"/>
+          <figcaption>
+            Here's my rocker bogie mechanism.
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/rb-full.jpeg"/>
+        </figure>
+
+        <figure>
           <video width="320" height="240" controls preload="metadata">
             <source src="videos/tank.mp4#t=0.001" type="video/mp4" />
           </video>
           <figcaption>
             I made a treaded robot using exercise bands. It can go over large obstacles but is simpler and more compact than
-            my rocker bogie rover. See more <a href="https://www.youtube.com/watch?v=K8nPBGye_7A" target="_blank">here</a>.
+            my rocker bogie rover. I'm using an Arduino and designed and printed out the white PLA parts. 
+            See more <a href="https://www.youtube.com/watch?v=K8nPBGye_7A" target="_blank">here</a>.
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/tank.jpeg"/>
+          <figcaption>
+            Close up of my treaded robot w/o the treads
           </figcaption>
         </figure>
 
@@ -378,8 +486,8 @@
             <source src="videos/wip.mp4#t=0.001" type="video/mp4" />
           </video>
           <figcaption>
-            I made an RC wheel inverted pendulum that uses an MPU6050 and a complementary filter. The frame is from my old 3D printer and the wheels are 3D-printed TPU.
-            I'm using an Arduino. It took a while to tune the PID gains.
+            I made an RC wheel inverted pendulum (segway inspired) that uses an MPU6050 and a complementary filter. The frame is from my old 3D printer and the wheels are 3D-printed TPU.
+            I'm using an Arduino, and it took a while to tune the PID gains.
           </figcaption>
         </figure>
 
@@ -404,19 +512,19 @@
           </video>
           <figcaption>
             I made (very) odd electric scooters and skateboards in middle school. The wood and steel axles are from Home Depot and I
-            used my dremel and hand saw to cut them.
+            used my dremel and hand saw to cut them. See me ride my skateboard more <a href="https://www.youtube.com/shorts/G2sRuYODGPQ" target="_blank">here</a>!
           </figcaption>
         </figure>
 
         <figure>
-          <img src="images/scoot.jpeg" style="width:70%"/>
+          <img src="images/scoot.jpeg" style="width:90%"/>
           <figcaption>
-            Drill scooter V1
+            Drill scooter V1, more info in video to the left.
           </figcaption>
         </figure>
 
         <figure>
-          <img src="images/bike.jpg" style="width: 70%"/>
+          <img src="images/bike.jpg" style="width: 80%"/>
           <figcaption>
             Drill powered bike I made in 7th grade using syringe hydraulics...
           </figcaption>
@@ -457,7 +565,7 @@
         </figure>
 
         <figure>
-          <img src="images/roomba.png" style="width: 70%"/>
+          <img src="images/roomba.png" style="width: 80%"/>
           <figcaption>
             Arduino roomba using LiDAR (RPLiDAR A1M8), no SLAM.
           </figcaption>
@@ -480,7 +588,7 @@
         </figure>
 
         <figure>
-          <img src="images/alarm.jpeg" style="width: 80%"/>
+          <img src="images/alarm.jpeg" style="width: 90%"/>
           <figcaption>
             This was a "security alarm" I made in elementary school. It uses an ultrasonic sensor to detect motion and 
             then a piezo buzzer and LEDs go off, and an LCD displays some text. This was my first ever Arduino project.
@@ -515,7 +623,7 @@
         </figure>
 
         <figure>
-          <img src="images/boat.jpeg" style="width: 70%"/>
+          <img src="images/boat.jpeg"/>
           <figcaption>
             I made a plastic bottle raft/boat in 6th grade with a sled and bottles I got every day from school
             but my mom didn't allow me to actually sit on it
@@ -543,16 +651,17 @@
         <figure>
           <img src="images/bicopter2.jpeg"/>
           <figcaption>
-            My 2nd thrust vectoring Bicopter, just a bit larger and 3D printed landing gear, a bit more optimized.
+            My thrust vectoring bicopter with 3D printed landing gear.
           </figcaption>
         </figure>
 
         <figure>
           <img src="images/bicopter.jpeg"/>
           <figcaption>
-            My thrust vectoring Bicopter using an Arduino Nano and MPU-6050. 
+            My thrust vectoring bicopter using an Arduino Nano and MPU-6050. 
             I wrote my custom flight controller using a complementary filter and cascaded PID loop structure (tuning was rough). 
-            The 2 servos tilt the rotors.
+            The 2 servos tilt the rotors, so I used high torque high speed metal gear ones. See a flight <a href="https://www.youtube.com/watch?v=fYxHqfenkeY" target="_blank">here</a>
+            or the process/iterations <a href="https://www.youtube.com/watch?v=GTLqbHlzeyA" target="_blank">here</a>
           </figcaption>
         </figure>
 
@@ -561,7 +670,8 @@
           <figcaption>
             I made a ton of model planes and competed and coached SciOly Flight in middle school
             (I was the main coach for our team and got our alternate teams to come in first!).
-            Here's an RC plane I made recently, see <a href="https://www.youtube.com/watch?v=IaAbOiH2r1g" target="_blank">here.</a>
+            Here's an RC plane I made recently, see flight <a href="https://www.youtube.com/watch?v=IaAbOiH2r1g" target="_blank">here.</a>
+            or more on my design <a href="https://www.youtube.com/watch?v=uYjNdQTpraU" target="_blank">here</a>.
             I used a Clark Y airfoil. Landing gear 3D printed, it has a screwable tail for easy transport.
           </figcaption>
         </figure>
@@ -573,7 +683,8 @@
           <figcaption>
             I made Pioneer V3. I used carbon fiber props and 3508 BLDC motors for heavier lifting weight. 
             It's also using an Arduino, but since it's larger less frequent IMU updates are needed.
-            I used a 200 Hz loop. Motor mounts and center 3D-printed, aluminum from Ace Hardware. Weighs ~3.8 lb.
+            I used a 200 Hz loop. Motor mounts and center 3D-printed, aluminum from Ace Hardware. Weighs ~3.8 lb, 37 in dia.
+            See process <a href="https://www.youtube.com/watch?v=cRUrrjAQg6I" target="_blank">here</a>.
           </figcaption>
         </figure>
 
@@ -690,6 +801,25 @@
           <figcaption>
             I made Pioneer V2 in only 20 hrs! Here I used it to help plant seeds for my mom.
             Sorry for the video quality...you may be able to see the seeds falling.
+            See process <a href="https://www.youtube.com/watch?v=QmCtW8vHyMI" target="_blank">here</a>.
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/soldering.jpeg" style="width: 70%"/>
+        </figure>
+
+        <figure>
+          <img src="images/p2-props.png"/>
+          <figcaption>
+            Mounting props on Pioneer V2
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/pioneer2.png" style="width: 120%"/>
+          <figcaption>
+            Close up of Pioneer V2
           </figcaption>
         </figure>
 
@@ -754,7 +884,7 @@
       </div>
     </div>
 
-    <div id="autonomous-cars" class="section">
+    <div id="cars" class="section">
       <div class = "image-container">
         <figure>
           <video width="320" height="240" controls preload="metadata">
@@ -797,7 +927,7 @@
             <source src="videos/box-car.mp4#t=0.001" type="video/mp4" />
           </video>
           <figcaption>
-            I made this fast RC square thing in middle school.
+            I made this fast RC square thing in middle school using 2 1000kv BLDC motors and wood from Home Depot.
           </figcaption>
         </figure>
 
@@ -831,8 +961,8 @@
         <figure>
           <img src="images/kalman.png"/>
           <figcaption>
-            I implemented a simple Kalman Filter on an STM32 for IR sensor distance measurements.
-            See <a href="https://www.youtube.com/watch?v=CbdztzORtTU" target="_blank">here</a>.
+            I implemented a simple Kalman Filter on an STM32 for IR sensor distance measurements,
+            see <a href="https://www.youtube.com/watch?v=CbdztzORtTU" target="_blank">here</a>!
           </figcaption>
         </figure>
 
@@ -1037,7 +1167,7 @@
         <figure>
           <img src="images/click.png" style="width: 80%"/>
           <figcaption>
-            I made a funny clicking robot in 7th grade to play cookie clicker.
+            I made a funny Arduino clicking robot in 7th grade to play cookie clicker. It uses a servo to press the pen onto the trackpad.
             See <a href="https://www.youtube.com/shorts/bhNppRt9v8o" target="_blank">here</a>
           </figcaption>
         </figure>
@@ -1124,15 +1254,29 @@
             Middle school SciOly tower
           </figcaption>
         </figure>
+
+        <figure>
+          <img src="images/jig.jpg"/>
+          <figcaption>
+            Printing a jig for the tower
+          </figcaption>
+        </figure>
       </div>
     </div>
 
-    <div id="just-for-memories" class="section">
+    <div id="workshop" class="section">
       <div class="image-container">
         <figure class="wide">
           <img src="images/workshop.jpeg"/>
           <figcaption>
             Here's some photos of my middle school basement workshop.
+          </figcaption>
+        </figure>
+
+        <figure class="wide">
+          <img src="images/printer.jpeg" style="width: 80%"/>
+          <figcaption>
+            Fixing my first 3D printer in 6th grade.
           </figcaption>
         </figure>
 
@@ -1162,6 +1306,9 @@
 
         <figure>
           <img src="images/ftc-bot.jpeg"/>
+          <figcaption>
+            Carbon fiber FTC robot in (7th or 8th?) grade.
+          </figcaption>
         </figure>
 
         <figure>
@@ -1174,11 +1321,39 @@
             2023-2024 FTC match.
           </figcaption>
         </figure>
+
+        <figure>
+          <img src="images/servo.jpeg"/>
+          <figcaption>
+            Taking apart a servo to use as a custom ESC.
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/clock.jpeg"/>
+          <figcaption>
+            Clock config for STM32
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/pins.jpg"/>
+          <figcaption>
+            Pin setup for STM32
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/dremel.jpg"/>
+          <figcaption>
+            Dremeling wood for a SciOly project in middle school.
+          </figcaption>
+        </figure>
         
       </div>
     </div>
 
-    <p>I have many more projects, these are just a few. It's painful to list them all.</p>
+    <p>I have many more projects, these are just a few!</p>
 
     <!-- OPEN SAUCE SECTION -->
     <h1>My Open Sauce 2024 Experience!</h1>
@@ -1198,8 +1373,8 @@
     <p style="font-weight: bold;">
       At my booth I showed my: Arduino quadcopter, 3D-printed humanoid hand, 
       line follower, facial recognition on a Raspi, ornithopter, ArUco marker
-      detection, HC-05 bluetooth RC car, and tiny FPV drone. I met famous people like Veritasium, 
-      see <a href="https://www.youtube.com/watch?v=qIugDnRcoYg" target="_blank">here</a> and 
+      detection, HC-05 bluetooth RC car, and tiny FPV drone. I also met famous people like Veritasium, Mark Rober, Hacksmith, and more!
+      See <a href="https://www.youtube.com/watch?v=qIugDnRcoYg" target="_blank">here</a> and 
       <a href="https://www.youtube.com/watch?v=ZNp0ZdjzXpA" target="_blank">here</a>!
     </p>
 
