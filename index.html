@@ -16,7 +16,8 @@
     <!--INTRO PARAGRAPH-->
     <p>
       Hey there! I'm Jonathan Li and this is my maker portfolio! I'm really into robotics, ML, aerospace, and all of engineering. I've been building
-      cool things ever since I was young, pretty much all self taught as I don't have many resources and only live with my mom (who isn't an engineer).
+      cool things ever since I was young, pretty much all self taught as I don't have many resources and only live with my mom (who isn't an engineer, 
+      neither of my parents are engineers).
       My YouTube channel has tutorials and more info on my projects.
       Scroll down to view some of my work, which ranges from elementary school to now!
       <br />
@@ -50,7 +51,7 @@
       </figcaption>
     </figure>
 
-    <h1>Maker Portfolio (I tried my best to classify projects), more on OS 2024 section below</h1>
+    <h1>Maker Portfolio (click the blue buttons to view projects/process, I tried my best to classify)</h1>
 
     <!-- FILTER -->
     <div class="controls">
@@ -68,15 +69,16 @@
 
     <div id="internship" class="section">
       <div class="link-list">
-        <p>Full video link to come! But here's some stuff so far:</p>
+        <p>Full video link to come once the paper is published! But here's some stuff so far:</p>
         <ul>
           <li><a href="https://www.youtube.com/watch?v=OzixWgDghNU" target="_blank">Homing sequence for upper body</a></li>
           <li><a href="https://www.youtube.com/watch?v=oQw490ltlgE" target="_blank">Actuator control via CAN ID</a></li>
           <li><a href="https://www.youtube.com/watch?v=chNH1uO2mus" target="_blank">RL walking policy</a></li>
           <li><a href="https://www.youtube.com/watch?v=mGSUyg_uHX8" target="_blank">Imitation Learning</a></li>
           <li><a href="https://www.youtube.com/watch?v=QO2nbzElmEE" target="_blank">RL pick place policy</a></li>
-          <li><a href="https://www.youtube.com/watch?v=mGFMvQ5uttM" target="_blank">Encoder PCB design</a></li>
+          <li><a href="https://www.youtube.com/watch?v=mGFMvQ5uttM" target="_blank">Encoder PCB design in KiCAD</a></li>
           <li><a href="https://www.youtube.com/watch?v=Zwm-jmB_5Uc" target="_blank">RL running policy</a></li>
+          <li><a href="https://www.youtube.com/watch?v=nOIj7djkZ4M" target="_blank">Motor GUI control (with cmds & feedback like torque, velocity, pos, kP, kD</a></li>
           <li><a href="https://www.youtube.com/shorts/ISAehuZ_3Ek" target="_blank">Walking motion tethered</a></li>
         </ul>
       </div>
@@ -118,6 +120,102 @@
 
         <figure>
           <img src="images/vmax.png"/>
+        </figure>
+
+        <figure>
+          <img src="images/pcb.jpeg"/>
+          <figcaption>
+            My custom PCB for the encoder board.
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/legs.jpeg"/>
+          <figcaption>
+            Dash legs with 3D printed motor controller holders and wiring setup
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/torso.jpeg"/>
+          <figcaption>
+            Dash torso setup with UPXtreme, Teensy board, 3D printed battery holder and other mounts (I designed), ethernet switch, IMU, etc.
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/md-mount.jpeg"/>
+          <figcaption>
+            Testing my 3D printed motor driver mount
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/shoulder.jpg"/>
+          <figcaption>
+            CAD of a shoulder motor driver mount.
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/mount.jpg"/>
+        </figure>
+
+        <figure>
+          <img src="images/forte.jpeg"/>
+          <figcaption>
+            3D printed Forte
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/teensy.jpeg"/>
+          <figcaption>
+            Soldering to custom Teensy board for Dash
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/back.jpeg"/>
+        </figure>
+
+        <figure>
+          <img src="images/dash-cad.jpg"/>
+          <figcaption>Dash CAD</figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/torque.jpeg"/>
+          <figcaption>Torque testing to find KT (torque constant) for each actuator</figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/imu.jpg"/>
+          <figcaption>
+            Testing VectorNav IMU for Dash
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/imu-data.jpg"/>
+        </figure>
+
+        <figure>
+          <img src="images/gm6010.jpeg"/>
+          <figcaption>I did a lot of actuator CAD</figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/actuator.jpeg"/>
+        </figure>
+
+        <figure>
+          <img src="images/mini-cheetah.jpg"/>
+          <figcaption>Mini Cheetah parts! But this was for Pat, a biped I wasn't involved in.</figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/poster.jpeg" style = "width: 120%"/>
         </figure>
       </div>
     </div>
@@ -327,6 +425,11 @@
           <img src="images/YOLO.png" alt="yolo"/>
           <figcaption>Played w/ YOLO11</figcaption>
         </figure>
+
+        <figure>
+          <img src="images/lunar.png"/>
+          <figcaption>Lunar Lander RL using PPO, see <a href="https://www.youtube.com/watch?v=s9MNkzxXVgQ" target="_blank">here</a></figcaption>
+        </figure>
       </div>
     </div>
 
@@ -347,6 +450,15 @@
           <figcaption>
             I learned the basics of ROS! ROS is used in higher level robotics in universities and sometimes even industry.
             Gazebo & RViz sim shown with LiDAR.
+          </figcaption>
+        </figure>
+
+        <figure>
+          <video width="320" height="240" controls preload="metadata">
+            <source src="videos/ros-arm.mp4#t=0.001" type="video/mp4" />
+          </video>
+          <figcaption>
+            ROS arm pendulum simulation with TF frames
           </figcaption>
         </figure>
       </div>
@@ -401,7 +513,7 @@
         </figure>
 
         <figure>
-          <img src="images/jetbot.jpeg" style="width: 90%"/>
+          <img src="images/jetbot.jpeg"/>
           <figcaption>
             Similar household robot but using a Jetson and mecanum wheels for strafing 
             (chassis from my linear slide robot down below). I also used a bigger speaker. 
@@ -482,6 +594,20 @@
         </figure>
 
         <figure>
+          <img src="images/tank2.jpeg"/>
+          <figcaption>
+            Side view
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/tank3.jpeg"/>
+          <figcaption>
+            My treaded robot outside
+          </figcaption>
+        </figure>
+
+        <figure>
           <video width="320" height="240" controls preload="metadata">
             <source src="videos/wip.mp4#t=0.001" type="video/mp4" />
           </video>
@@ -517,16 +643,25 @@
         </figure>
 
         <figure>
-          <img src="images/scoot.jpeg" style="width:90%"/>
+          <img src="images/sboard.jpeg"/>
+          <figcaption>
+            First skateboard design, I calculated the gearing to get the torque needed for the 2 drone motors to move me.
+            Gears, wheels, and bearing holders 3D printed PETG, I designed it in Fusion. As you can see I cut a exercise band for the "tires".
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/scoot.jpeg"/>
           <figcaption>
             Drill scooter V1, more info in video to the left.
           </figcaption>
         </figure>
 
         <figure>
-          <img src="images/bike.jpg" style="width: 80%"/>
+          <img src="images/bike.jpg"/>
           <figcaption>
             Drill powered bike I made in 7th grade using syringe hydraulics...
+            See me ride it <a href="https://www.youtube.com/watch?v=O2YB0duJgtc" target="_blank">here</a>
           </figcaption>
         </figure>
 
@@ -623,6 +758,20 @@
         </figure>
 
         <figure>
+          <img src="images/hand.png" style="width: 70%"/>
+          <figcaption>
+            3D printed humanoid hand, initial test of 2 servos <a href="https://www.youtube.com/watch?v=-rBwDIJE-Qo" target="_blank">here</a>
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/string.jpeg"/>
+          <figcaption>
+            Routing fishing line on the humanoid hand for the servos to pull on.
+          </figcaption>
+        </figure>
+
+        <figure>
           <img src="images/boat.jpeg"/>
           <figcaption>
             I made a plastic bottle raft/boat in 6th grade with a sled and bottles I got every day from school
@@ -633,14 +782,29 @@
         <figure>
           <img src="images/lightbulb.png" style="width: 70%"/>
           <figcaption>
-            I made a lightbulb in middle school using graphite and a glass cup with a 3D-printed TPU seal
+            I made a lightbulb in middle school using graphite and a glass cup with a 3D-printed TPU seal.
+            See it in action <a href="https://www.youtube.com/shorts/KQTxja6VCxs" target="_blank">here</a>!
           </figcaption>
         </figure>
 
         <figure>
-          <img src="images/fish-rod.jpeg" style="width: 60%"/>
+          <img src="images/ev3.jpg"/>
+          <figcaption>
+            My EV3 tank in 6th grade that launches rubber bands
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/fish-rod.jpeg" style="width: 70%"/>
           <figcaption>
             I made a fishing rod in elementary school using a random metal pole, straws, and a tape reel as the "spool"
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/shoebox.jpeg"/>
+          <figcaption>
+            Helping my sister and her roommates by building a shoebox they ordered
           </figcaption>
         </figure>
       </div>
@@ -648,6 +812,13 @@
 
     <div id="drones" class="section">
       <div class = "image-container">
+        <figure>
+          <img src="images/rc-orni.jpg"/>
+          <figcaption>
+            Carbon fiber RC ornithopter (banana for scale)
+          </figcaption>
+        </figure>
+
         <figure>
           <img src="images/bicopter2.jpeg"/>
           <figcaption>
@@ -666,6 +837,13 @@
         </figure>
 
         <figure>
+          <img src="images/fin.jpg"/>
+          <figcaption>
+            Fin version of my thrust vectoring bicopter, I didn't pursue this further since I thought direct thrust vectoring was more reliable at lower motor rpm.
+          </figcaption>
+        </figure>
+
+        <figure>
           <img src="images/plane.png"/>
           <figcaption>
             I made a ton of model planes and competed and coached SciOly Flight in middle school
@@ -673,6 +851,20 @@
             Here's an RC plane I made recently, see flight <a href="https://www.youtube.com/watch?v=IaAbOiH2r1g" target="_blank">here.</a>
             or more on my design <a href="https://www.youtube.com/watch?v=uYjNdQTpraU" target="_blank">here</a>.
             I used a Clark Y airfoil. Landing gear 3D printed, it has a screwable tail for easy transport.
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/size.jpeg"/>
+          <figcaption>
+            Adding dihedral was crucial for my RC plane w/o an IMU
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/cs.jpeg"/>
+          <figcaption>
+            Adding control surfaces (just using rudder & elevator) to my RC plane
           </figcaption>
         </figure>
 
@@ -722,6 +914,15 @@
           </video>
           <figcaption>
             I made a super capacitor monocoper/mapleseed inspired by nature, the gyro stick passively stabilizes it.
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/maple.jpg"/>
+          <figcaption>
+            I don't have any close ups of my mapleseed but here's a screenshot.
+            Passive gyro stick on the left, rotational thrust propeller on top, main lift blade bottom right.
+            Super cap is the blue thing behind my thumb.
           </figcaption>
         </figure>
 
@@ -831,11 +1032,64 @@
         </figure>
 
         <figure>
+          <img src="images/tv-heli.png" style="width: 70%"/>
+          <figcaption>
+            My thrust vectoring heli prototype in middle school, see flights in link to the left.
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/tv-heli.jpg"/>
+          <figcaption>
+            Without the fin
+          </figcaption>
+        </figure>
+
+        <figure>
           <img src="images/ws.jpeg"/>
           <figcaption>
             My first ever ultralight rubber band powered plane for 7th grade SciOly. See <a href="https://www.youtube.com/watch?v=mwm7zOkxIus" target="_blank">here</a>
             for a flight of a more optimized version.
           </figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/eplane.jpeg"/>
+          <figcaption>
+            Super cap plane V1, I made many more different super cap planes. For example,
+            I think this was my <a href="https://www.youtube.com/watch?v=qo098_qZvYk" target="_blank">first one</a>
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/planes.jpeg"/>
+          <figcaption>My first custom rubber band powered planes used 3D printed props,
+            I'm surprised they actually worked really well. The props didn't even have a proper airfoil shape, they
+            were just angled by dipping them in boiling water.
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/servo-drone.jpeg"/>
+          <figcaption>
+            My quadcopter experiment using servo PCBs as ESCs
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/wing.jpg"/>
+          <figcaption>
+            Rubber band powered flying wing (I had a dream of it so decided to make it)
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/plane2.jpeg"/>
+        </figure>
+
+        <figure>
+          <img src="images/airfoil.jpeg"/>
+          <figcaption>Clark-Y airfoil profile</figcaption>
         </figure>
       </div>
     </div>
@@ -881,11 +1135,40 @@
             Me programming my arm to the left.
           </figcaption>
         </figure>
+
+        <figure>
+          <img src="images/tissue-bot.png" style="width: 80%"/>
+          <figcaption>
+            My string driven claw arm in middle school, see <a href="https://www.youtube.com/watch?v=5iFvNTYMB4w" target="_blank">here</a>
+            I used an Arduino Mega, I believe this was my one of my 2nd Arduino projects after my first Arduino project (the security alarm) in elementary school.
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/cnc-claw.jpg" style="width: 70%"/>
+          <figcaption>
+            Custom CNCed claw using worm gears I got from my internship and fixed, we actually used worm gears for our 2025 FRC robot initial claw too
+          </figcaption>
+        </figure>
       </div>
     </div>
 
     <div id="cars" class="section">
       <div class = "image-container">
+        <figure>
+          <img src="images/car-fix.jpeg"/>
+          <figcaption>
+            I was curious to how car engines worked so my mom let me mess around under the hood of her car
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/cool.jpeg"/>
+          <figcaption>
+            Pouring coolant
+          </figcaption>
+        </figure>
+
         <figure>
           <video width="320" height="240" controls preload="metadata">
             <source src="videos/auto-car.mp4#t=0.001" type="video/mp4" />
@@ -990,6 +1273,7 @@
             My rubber band powered car that could go 4 laps across my school gym. I used low torque gearing and wound a rubberband
             like you would for a model plane so it lasts long with consistent torque. I made this in middle school when I didn't think
             SciOly wheeled vehicle was that fun since I thought the competition would be cooler if it was for a longest travelling car.
+            See <a href="https://www.youtube.com/watch?v=Okkd6qCa8Aw" target="_blank">here</a> for more
           </figcaption>
         </figure>
 
@@ -1131,6 +1415,17 @@
         </figure>
 
         <figure>
+          <img src="images/4-bar.jpeg"/>
+          <figcaption>
+            4 bar linkage closeup
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/4b2.jpeg"/>
+        </figure>
+
+        <figure>
           <video width="320" height="240" controls preload="metadata">
             <source src="videos/spinup-bot.mp4#t=0.001" type="video/mp4" />
           </video>
@@ -1184,6 +1479,13 @@
         </figure>
 
         <figure>
+          <img src="images/starfish.jpg"/>
+          <figcaption>
+            My first 2D Java game in 6th grade
+          </figcaption>
+        </figure>
+
+        <figure>
           <img src="images/os-badge.jpeg" style="width: 90%"/>
           <figcaption>
             I soldered the components to my OS 2024 badge. It brings back good memories.
@@ -1218,7 +1520,7 @@
           <img src="images/mech.png"/>
           <figcaption>
             I CADed this device for a 9th grade engineering class to demonstrate the crank and slider, swash plate, and gear ratios.
-            We later on built it out of wood using tools like drill press, mill, band saw, etc.
+            We later on built it out of wood using tools like drill press, mill, band saw, etc. and it got into the hall of fame!
           </figcaption>
         </figure>
 
@@ -1261,11 +1563,50 @@
             Printing a jig for the tower
           </figcaption>
         </figure>
+
+        <figure>
+          <img src="images/dna3.jpg" style="width: 80%"/>
+          <figcaption>
+            I CADed a DNA model in TinkerCAD (lol) for my 7th grade science class and printed it out!
+            I gave it to my science teacher!
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/dna.jpeg" style="width: 80%"/>
+            <figcaption>I also made this more informative model with Adenine, Cytosine, Thymine, and Guanine rungs.</figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/lego.jpeg"/>
+            <figcaption>I designed and printed these lego figures for 6th grade FLL,
+              it was the most popular team gift to other teams. I had to mass print like 100 only with my one FDM printer!
+            </figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/crossbow.jpeg"/>
+            <figcaption>Crossbow I made back in 2018</figcaption>
+        </figure>
       </div>
     </div>
 
     <div id="workshop" class="section">
       <div class="image-container">
+         <figure>
+          <img src="images/heating.jpeg"/>
+          <figcaption>
+            I learned how to fix heating systems in my basement
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/drone-fix.jpeg"/>
+          <figcaption>
+            Fixing my middle school Principal's drone
+          </figcaption>
+        </figure>
+        
         <figure class="wide">
           <img src="images/workshop.jpeg"/>
           <figcaption>
@@ -1349,11 +1690,34 @@
             Dremeling wood for a SciOly project in middle school.
           </figcaption>
         </figure>
+
+        <figure>
+          <img src="images/dremeling.webp"/>
+          <figcaption>
+            Dremeling steel axles, see <a href="https://www.youtube.com/watch?v=664RQ4vrpHo" target="_blank">here</a> if interested
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/lin-slide.jpeg"/>
+          <figcaption>
+            Testing out my linear slide for the trash pickup robot in delivery/household section.
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/pulley.jpeg"/>
+          <figcaption>
+            Custom 3D printed pulley for FTC
+          </figcaption>
+        </figure>
         
       </div>
     </div>
 
-    <p>I have many more projects, these are just a few!</p>
+    <p>I have many more projects, these are just a few! One I'm proud of is my coil gun using
+      a disposable camera flash capacitor but I don't have any pictures of it sadly
+    </p>
 
     <!-- OPEN SAUCE SECTION -->
     <h1>My Open Sauce 2024 Experience!</h1>
