@@ -15,7 +15,7 @@
 
     <!--INTRO PARAGRAPH-->
     <p>
-      Hey there! I'm Jonathan Li and this is my maker portfolio! I'm really into robotics, ML, aerospace, and all of engineering. I've been building
+      Hey there! I'm Jonathan Li and this is essentially my maker portfolio! I'm really into robotics, ML, aerospace, and all of engineering. I've been building
       cool things ever since I was young, pretty much all self taught as I don't have many resources and only live with my mom (who isn't an engineer, 
       neither of my parents are engineers).
       My YouTube channel has tutorials and more info on my projects.
@@ -46,18 +46,25 @@
       </video>
       <figcaption>
         I'm working at the DARoS lab at UMass Amherst for the Dash humanoid (collab w/ UIUC and U Notre Dame) and Forte arm! 
-        I so far helped with IsaacLab & mjlab RL and IL, STM32 & Teensy stuff, motor control & GUIs like sending MIT mode commands, PCB design, CAD, soldering, etc.
+        I so far helped with IsaacLab & mjlab RL and IL, STM32 & Teensy stuff, motor control & GUIs like sending MIT mode commands, PCB design, CAD, soldering, CNCing, 3D printing, etc.
         Sadly Prof. Kim is going back to KAIST soon, so I'm not sure if the lab will still exist.
       </figcaption>
     </figure>
 
     <figure>
-      <img src="images/weld.webp" style="width: 15%"/>
-      <img src="images/weld-joint.jpg" style="width: 15%"/>
-      <img src="images/steering.jpg" style="width: 15%"/>
+      <span style="display: inline-block; width: 18%; position: relative; margin-bottom: 1.5em">
+        <img src="images/weld.webp"/>
+        <a href="https://www.youtube.com/watch?v=Ct8sVeMkBNI" target="_blank" style="position: absolute; top: 100%; left: 0; right: 0">Welding process video</a>
+      </span>
+      <img src="images/weld-joint.jpg" style="width: 18%"/>
+      <img src="images/steering.jpg" style="width: 18%"/>
+      <img src="images/weel.jpeg" style="width: 18%"/>
+      <img src="images/gokart.jpeg" style="width: 18%"/>
       <figcaption>
-        I'm currently working on a Go-Kart in my garage. I designed the frame in Fusion and learned how to weld (by watching youtube videos).
-        I'm using a rack and pinion steering system with ackermann geometry.
+        I'm currently working on a Go-Kart in my garage to learn more about vehicle design but also mainly just for fun. 
+        I designed the frame in Fusion and learned how to weld (by watching youtube videos).
+        I'm using a rack and pinion steering system with standard ackermann geometry (the inner wheel angles more during a turn to reduce wear). 
+        I chose negative camber for the front wheels to hopefully help with cornering (I also like the look)
       </figcaption>
     </figure>
 
@@ -73,7 +80,7 @@
       <button class = "button" onclick="showSection('arms')">Arm</button>
       <button class = "button" onclick="showSection('cars')">Car</button>
       <button class = "button" onclick="showSection('other')">OTHER</button>
-      <button class = "button" onclick="showSection('workshop')">Workshop/process/more</button>
+      <button class = "button" onclick="showSection('workshop')">Workshop/process</button>
       <button class = "button" onclick="showSection('ROS')">ROS</button>
     </div>
 
@@ -454,6 +461,7 @@
           </video>
           <figcaption>
             I used GroundingDINO and PyTorch for FRC 2025 algae and coral detection.
+            A test script is <a href="https://github.com/CCHS-FIRST-Robotics/ComputerVision/blob/main/tools/auto_bb.py" target="_blank">here</a>
           </figcaption>
         </figure>
 
@@ -474,6 +482,14 @@
         <figure>
           <img src="images/lunar.png"/>
           <figcaption>Lunar Lander RL using PPO, see <a href="https://www.youtube.com/watch?v=s9MNkzxXVgQ" target="_blank">here</a></figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/hsv.png"/>
+          <figcaption>HSV color detection (I also used it for 2025 FRC algae detection with center approximation), see code 
+            <a href="https://github.com/CCHS-FIRST-Robotics/ComputerVision/blob/main/HSV/HSV_detection.py" target="_blank">here</a> (I deleted a video of it)
+            but I also have a general HSV test video <a href="https://www.youtube.com/shorts/8WiddnAxXjk" target="_blank">here</a>
+          </figcaption>
         </figure>
       </div>
     </div>
@@ -512,6 +528,17 @@
     <div id="household" class="section">
       <div class = "image-container">
         <figure>
+          <img src="images/boat2.jpeg"/>
+          <figcaption>
+            A mini 3D printed catamaran RC boat I made recently, I converted servo PCBs to ESCs as I did with
+            many of my other mini RC vehicles. This project gives me nostalgia of my middle school days, I mainly made it because I really like lakes and nature
+            and like to go to our local lakes/reservoirs a lot.
+            Watch <a href="https://www.youtube.com/watch?v=IKYYWd8LeNw" target="_blank">here</a>!
+            I like boats and someday want to learn sailing lol
+          </figcaption>
+        </figure>
+
+        <figure>
           <img src="images/hovercraft.jpeg"/>
           <figcaption>
             I made a really fast RC hovercraft that can be used for amphibious purposes. The EDF enclosures
@@ -536,6 +563,14 @@
           <img src="images/claw.jpeg"/>
           <figcaption>
             Here's my custom designed 3D printed claw I used for my robot to the left (CAD in the video to the left)
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/raspi-bot.jpeg"/>
+          <figcaption>
+            Closeup of my raspi bot without the cover (1 camera here, another on top for the human detection).
+            See <a href="https://www.youtube.com/watch?v=7lKfoh9OSJE" target="_blank">here</a> for initial object rec testing.
           </figcaption>
         </figure>
 
@@ -639,24 +674,7 @@
         </figure>
 
         <figure>
-          <img src="images/tank.jpeg"/>
-          <figcaption>
-            Close up of my treaded robot w/o the treads
-          </figcaption>
-        </figure>
-
-        <figure>
-          <img src="images/tank2.jpeg"/>
-          <figcaption>
-            Side view
-          </figcaption>
-        </figure>
-
-        <figure>
           <img src="images/tank3.jpeg"/>
-          <figcaption>
-            My treaded robot outside
-          </figcaption>
         </figure>
 
         <figure>
@@ -690,6 +708,21 @@
           <img src="images/arm-bot.jpg"/>
           <figcaption>
             Here's my big arm bot. Wheels are PETG, I designed in Fusion. I used my old 3D printer as the chassis.
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/pickup.jpg"/>
+          <figcaption>
+            Picking up a bottle at any orientation. 
+            Watch it put a bottle onto a shelf <a href="https://www.youtube.com/shorts/EUxHB61I23A" target="_blank">here</a>
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/bottom.jpg"/>
+          <figcaption>
+            Chassis underside
           </figcaption>
         </figure>
 
@@ -810,6 +843,13 @@
         </figure>
 
         <figure>
+          <img src="images/cap-bot.jpg"/>
+          <figcaption>
+            Close up of initial bottle cap bot (flywheel launcher not attached)
+          </figcaption>
+        </figure>
+
+        <figure>
           <video width="320" height="240" controls preload="metadata">
             <source src="videos/disco.mp4#t=0.001" type="video/mp4" />
           </video>
@@ -872,7 +912,7 @@
         <figure>
           <img src="images/scoot1.jpg"/>
           <figcaption>
-            First drill scooter
+            First drill scooter, watch me ride it <a href="https://www.youtube.com/shorts/q1bZXyYsm2w" target="_blank">here</a>
           </figcaption>
         </figure>
 
@@ -1041,7 +1081,7 @@
           <img src="images/rbh.png" style="width: 90%"/>
           <figcaption>
             I made a rubber band powered heli with a tail rotor.
-            See <a href="https://www.youtube.com/shorts/Tyw1hgvnFI8" target="_blank">here</a>.
+            See <a href="https://www.youtube.com/shorts/Tyw1hgvnFI8" target="_blank">here</a>
           </figcaption>
         </figure>
 
@@ -1051,14 +1091,15 @@
           </video>
           <figcaption>
             I made a simple model rocket in middle school, no thrust vectoring. I designed the rocket in Fusion and printed it out,
-            see CAD to the right.
+            see CAD to the right
           </figcaption>
         </figure>
 
         <figure>
           <img src="images/atmo.jpeg"/>
           <figcaption>
-            This is my hybrid quadcopter/car prototype inspired by ATMO by Caltech.
+            This is my hybrid quadcopter/car prototype inspired by ATMO by Caltech. It uses 2 servos to "transform" or
+            rotate the 2 sets of rotors mounted on aluminum bars where the wheels will then be exposed for ground movement.
           </figcaption>
         </figure>
 
@@ -1090,7 +1131,7 @@
         </figure>
 
         <figure>
-          <img src="images/soldering.jpeg" style="width: 70%"/>
+          <img src="images/soldering.jpeg"/>
         </figure>
 
         <figure>
@@ -1170,6 +1211,8 @@
           <img src="images/wood-drone.jpeg"/>
           <figcaption>
             My first Arduino quadcopter prototype using plywood and legos...
+            watch <a href="https://www.youtube.com/shorts/t_9TPRZ9lE4" target="_blank">here</a> for failed/last flight
+            as I later on just used a nylon frame for Pioneer V1.
           </figcaption>
         </figure>
 
@@ -1177,7 +1220,7 @@
           <img src="images/under-plane.jpeg"/>
           <figcaption>
             Underside of another RC plane I made, it has 3D printed Clark-Y airfoils and landing gear I custom
-            designed in Fusion.
+            designed in Fusion. If curious, you can check out some of my failed planes <a href="https://youtu.be/uYjNdQTpraU?t=147" target="_blank">here</a>
           </figcaption>
         </figure>
 
@@ -1209,6 +1252,10 @@
         <figure>
           <img src="images/heli1.jpeg"/>
           <figcaption>I thought this square fuselage was more efficient than the sphere toy body it came in</figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/long-plane.jpeg"/>
         </figure>
       </div>
     </div>
@@ -1274,6 +1321,7 @@
           <img src="images/cnc-claw.jpg" style="width: 70%"/>
           <figcaption>
             Custom CNCed claw using worm gears I got from my internship and fixed, we actually used worm gears for our 2025 FRC robot initial claw too
+            See <a href="https://www.youtube.com/watch?v=fmr2Fa5TECw" target="_blank">here</a>
           </figcaption>
         </figure>
       </div>
@@ -1360,6 +1408,7 @@
           </video>
           <figcaption>
             I made this fast RC square thing in middle school using 2 1000kv BLDC motors and wood from Home Depot.
+            There's no suspension so as you can see it bumps quite a lot over cracks in the floor.
           </figcaption>
         </figure>
 
@@ -1369,7 +1418,7 @@
           </video>
           <figcaption>
             I made a tiny state machine robot using an MPU6050 in 8th grade so it can drive straight and resist external disturbance. 
-            I tuned PID quickly after making my first quadcopter.
+            I tuned PID quickly after making my first quadcopter. I made a tutorial on tuning P and D gains on my channel.
           </figcaption>
         </figure>
 
@@ -1386,6 +1435,8 @@
           </video>
           <figcaption>
             I added a flywheel to my line follower in 8th grade (using IR sensors) to launch bottle caps. One of my OS 2024 projects.
+            The line follower is just using a bang-bang controller and an Arduino nano and L298N (as I usually use although it's quite
+            inefficient and outdated). White parts 3D printed, I designed in Fusion.
           </figcaption>
         </figure>
 
@@ -1394,6 +1445,7 @@
           <figcaption>
             My prototype for SciOly EV in 8th grade. I designed it in Fusion and just used a wingnut braking mech.
             I later on modified this design (same 1000kv BLDC motor) for my F1Tenth inspired "racecar". I used an Arduino nano.
+            Watch a test run <a href="https://www.youtube.com/watch?v=_mCpjk4dK-M" target="_blank">here</a>
           </figcaption>
         </figure>
 
@@ -1438,7 +1490,8 @@
             <source src="videos/piston.mp4#t=0.001" type="video/mp4" />
           </video>
           <figcaption>
-            I 3D printed a model piston engine and just drove it with a cheap brushed motor for a model car.
+            I 3D printed a V6 model piston engine and just drove it with a cheap brushed motor for a model car.
+            See more <a href="https://www.youtube.com/watch?v=60_XdDAzb3k" target="_blank">here</a>
           </figcaption>
         </figure>
 
@@ -1472,6 +1525,21 @@
           <figcaption>
             I really like the feel of my custom transmitters lol
           </figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/bob.png"/>
+          <figcaption>
+            Bob my first little IR remote controlled thing I made at a EE CTY camp in 7th grade.
+            Watch <a href="https://www.youtube.com/shorts/2fXkHIbUlrU" target="_blank">here</a>!
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/rubber-vex.jpeg"/>
+          <figcaption>Initial rubber band powered car using VEX parts I used to compete in 8th grade SciOly (I later on added 3D printed trigger mech, steering mech, and wingnut braking but
+            deleted the video of it, part of channel image in "other" section is all I have.
+            Some more really not ideally engineered rubber band cars <a href="https://www.youtube.com/watch?v=_VjGBd_L98g" target="_blank">here</a></figcaption>
         </figure>
       </div>
     </div>
@@ -1646,7 +1714,7 @@
         <figure>
           <img src="images/starfish.jpg"/>
           <figcaption>
-            My first 2D Java game in 6th grade
+            My first 2D Java game in 6th grade, watch initial test (no sprite animation) <a href="https://www.youtube.com/watch?v=adzMy0LTo4E" target="_blank">here</a>
           </figcaption>
         </figure>
 
@@ -1667,7 +1735,7 @@
         </figure>
 
         <figure>
-          <img src="images/boat.png" style="width: 90%"/>
+          <img src="images/boat.png"/>
           <figcaption>
             I made a tiny RC boat (design from Thingiverse) in middle school by converting servos to ESCs. 
             Sadly since it's 3D printed it gets water in it easily.
@@ -1675,9 +1743,11 @@
         </figure>
 
         <figure>
-          <img src="images/heart.jpg" style="width: 80%"/>
+          <img src="images/heart.jpg"/>
           <figcaption>
-            A little gift I made for my mom (heart kind of broken)
+            A little gift I made for my mom using LED matrix (heart kind of broken), I probably
+            made a mistake while soldering or my resistors were inconsistent.
+            Watch it in action <a href="https://www.youtube.com/shorts/RTnu6R3G7aI" target="_blank">here</a>
           </figcaption>
         </figure>
 
@@ -1723,6 +1793,13 @@
         </figure>
 
         <figure>
+          <img src="images/shelf.jpg"/>
+          <figcaption>
+            I used it as a bookshelf
+          </figcaption>
+        </figure>
+
+        <figure>
           <img src="images/jig.jpg"/>
           <figcaption>
             Printing a jig for the tower
@@ -1763,8 +1840,18 @@
         </figure>
 
         <figure>
-          <img src="images/slingshot.jpg"/>
-            <figcaption>Tiny slingshot I made in 2020 using a glove finger and bottle cap to launch beans for planting seeds from afar.
+          <img src="images/neopixel.PNG"/>
+            <figcaption>I really really regret deleting a lot of my old videos :( but here's the only thing I have of
+              my neopixel LED ring project. This was my old channel screenshot. Bottom right is the wheeled vehicle I used to
+              compete for middle school SciOly using VEX parts and balloons and 3D printed blue steering pivot and trigger mechanism.
+            </figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/faraday.jpg"/>
+            <figcaption>I made videos explaining Faraday's Law of Induction and Lenz's Law for electromagnetism and it's application to
+              my DIY brushed DC motor
+              but sadly deleted the videos. I also made other tutorials
             </figcaption>
         </figure>
 
@@ -1776,6 +1863,18 @@
         <figure>
           <img src="images/cup.jpg"/>
         </figure>
+
+        <figure>
+          <img src="images/3dheart.png"/>
+          <figcaption>Another gift for my mom on valentines day</figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/slingshot.jpg"/>
+            <figcaption>Tiny slingshot I made in 2020 using a glove finger and bottle cap to launch beans.
+              I tried planting seeds with it
+            </figcaption>
+        </figure>
       </div>
     </div>
 
@@ -1784,7 +1883,7 @@
          <figure>
           <img src="images/heating.jpeg"/>
           <figcaption>
-            I learned how to fix heating systems in my basement
+            I learned how to fix oil-based heating systems in my basement
           </figcaption>
         </figure>
 
@@ -1801,12 +1900,13 @@
             Replacing steppers on 3D printer board
           </figcaption>
         </figure>
+
+        <figure class="wide">
+          <img src="images/ws2.png"/>
+        </figure>
         
         <figure class="wide">
           <img src="images/workshop.jpeg"/>
-          <figcaption>
-            Here's some photos of my middle school basement workshop.
-          </figcaption>
         </figure>
 
         <figure class="wide">
@@ -1814,6 +1914,10 @@
           <figcaption>
             Fixing my first 3D printer in 6th grade.
           </figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/nozzle.jpeg"/>
         </figure>
 
         <figure>
@@ -1908,17 +2012,47 @@
         </figure>
 
         <figure>
+          <img src="images/steppers.jpeg"/>
+          <figcaption>
+            Harvesting stepper motors
+          </figcaption>
+        </figure>
+
+        <figure>
           <img src="images/generator.jpeg"/>
           <figcaption>
             Generator I used for a simple FLL project in 6th grade.
           </figcaption>
         </figure>
+
+        <figure>
+          <img src="images/lidar.jpg"/>
+          <figcaption>
+            LiDAR setup test
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/claw1.jpeg"/>
+          <figcaption>
+            My first sketchy claw design
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/tank.jpeg"/>
+        </figure>
+
+        <figure>
+          <img src="images/tank2.jpeg"/>
+        </figure>
         
       </div>
     </div>
 
-    <p>I have many more projects, these are just a few! One I'm proud of is my coil gun using
-      a disposable camera flash capacitor but I don't have any pictures of it sadly
+    <p>I have many more projects! Some others are my coil gun using
+      a disposable camera flash capacitor, refracting telescope, Arduino piano, monorail train using CDs as a mechanical gyro,
+       but I don't have any pictures of them sadly
     </p>
 
     <!-- OPEN SAUCE SECTION -->
@@ -1927,7 +2061,7 @@
     <figure>
       <img src="images/booth-image.jpeg" alt="Booth" class="booth-image" />
       <figcaption>
-        My booth! Me explaning a dragonfly ornithopter mechanism which many
+        My booth! Me explaning a dragonfly ornithopter mechanism (see in flight/hybrid section above) which many
         <br />
         found interest in (even a professor at MIT!) This simple mech could be used for tiny drones,
         although <br />
@@ -1955,7 +2089,8 @@
 
     <p>
       I got to visit BD's headquarters in Waltham, MA! It was super
-      fun seeing their robots & driving some of their quadrupeds. I saw how Spot had stereo cameras on each side.
+      cool seeing their robot progression/iterations & being able to drive some of their quadrupeds. I saw how Spot had stereo cameras on each side and some others had fancy 3D LiDARs as shown in the image above.
+      Just a cool life experience I wanted to share, watch <a href="https://www.youtube.com/watch?v=piJnL_Atjj4" target="_blank">here</a>!
     </p>
 
     <script src="script.js"></script>
