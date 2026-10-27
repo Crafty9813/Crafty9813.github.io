@@ -15,10 +15,9 @@
 
     <!--INTRO PARAGRAPH-->
     <p>
-      Hey there! I'm Jonathan Li and this is essentially my maker portfolio! I'm really into robotics, ML, aerospace, and all of engineering. I've been building
-      cool things ever since I was young, pretty much all self taught as I don't have many resources and only live with my mom (who isn't an engineer, 
-      neither of my parents are engineers).
-      My YouTube channel has tutorials and more info on my projects.
+      Hey there! I'm Jonathan Li and this is essentially my maker portfolio! I'm really into robotics, ML, aerospace, and all of engineering. Currently I'm quite
+      interested in submarines too and sea exploration. I've been building
+      cool things ever since I was young, pretty much all self taught.
       Scroll down to view some of my work, which ranges from elementary school to now!
       <br />
     </p>
@@ -46,20 +45,34 @@
       </video>
       <figcaption>
         I'm working at the DARoS lab at UMass Amherst for the Dash humanoid (collab w/ UIUC and U Notre Dame) and Forte arm! 
-        I so far helped with IsaacLab & mjlab RL and IL, STM32 & Teensy stuff, motor control & GUIs like sending MIT mode commands, PCB design, CAD, soldering, CNCing, 3D printing, etc.
+        I so far helped with IsaacLab & mjlab RL and IL, STM32 & Teensy stuff, motor control & GUIs like sending MIT mode commands, finding torque constants, PCB design, CAD, soldering, CNCing, 3D printing, etc.
         Sadly Prof. Kim is going back to KAIST soon, so I'm not sure if the lab will still exist.
       </figcaption>
     </figure>
 
     <figure>
-      <span style="display: inline-block; width: 18%; position: relative; margin-bottom: 1.5em">
-        <img src="images/weld.webp"/>
-        <a href="https://www.youtube.com/watch?v=Ct8sVeMkBNI" target="_blank" style="position: absolute; top: 100%; left: 0; right: 0">Welding process video</a>
-      </span>
-      <img src="images/weld-joint.jpg" style="width: 18%"/>
-      <img src="images/steering.jpg" style="width: 18%"/>
-      <img src="images/weel.jpeg" style="width: 18%"/>
-      <img src="images/gokart.jpeg" style="width: 18%"/>
+      <div class="photo-row">
+        <div class="photo">
+          <img src="images/weld.webp"/>
+          <a href="https://www.youtube.com/watch?v=Ct8sVeMkBNI" target="_blank">Click here for welding process video</a>
+        </div>
+        <div class="photo">
+          <img src="images/weld-joint.jpg"/>
+          <span>My first weld joint</span>
+        </div>
+        <div class="photo">
+          <img src="images/steering.jpg"/>
+          <span>Bolt for wheel pivot mount instead of just surface weld so stronger</span>
+        </div>
+        <div class="photo">
+          <img src="images/weel.jpeg"/>
+          <span>Measuring wheelbase</span>
+        </div>
+        <div class="photo">
+          <img src="images/gokart2.jpeg"/>
+          <span>Progress so far, I need to add the motor/power system and brakes next</span>
+        </div>
+      </div>
       <figcaption>
         I'm currently working on a Go-Kart in my garage to learn more about vehicle design but also mainly just for fun. 
         I designed the frame in Fusion and learned how to weld (by watching youtube videos).
@@ -68,18 +81,18 @@
       </figcaption>
     </figure>
 
-    <h1>Maker Portfolio (click the blue buttons to view projects/process, I tried my best to classify)</h1>
+    <h1>Click the blue buttons to view projects/process, I tried to classify</h1>
 
     <!-- FILTER -->
     <div class="controls">
       <button class = "button" onclick="showSection('internship')">Research @ DARoS Lab</button>
       <button class = "button" onclick="showSection('legged')">Legged robots</button>
       <button class = "button" onclick="showSection('ml-projects')">General ML & CV</button>
-      <button class = "button" onclick="showSection('household')">Delivery/household/outdoor uses</button>
+      <button class = "button" onclick="showSection('household')">Delivery/household uses</button>
       <button class = "button" onclick="showSection('drones')">Flight+hybrid</button>
       <button class = "button" onclick="showSection('arms')">Arm</button>
       <button class = "button" onclick="showSection('cars')">Car</button>
-      <button class = "button" onclick="showSection('other')">OTHER</button>
+      <button class = "button" onclick="showSection('other')">OTHER (please click too)</button>
       <button class = "button" onclick="showSection('workshop')">Workshop/process</button>
       <button class = "button" onclick="showSection('ROS')">ROS</button>
     </div>
@@ -237,8 +250,17 @@
         </figure>
 
         <figure>
+          <img src="images/odrive.jpg"/>
+        </figure>
+
+        <figure>
+          <img src="images/dash-cart.jpeg"/>
+          <figcaption>How we transported Dash...</figcaption>
+        </figure>
+
+        <figure>
           <img src="images/mini-cheetah.jpg"/>
-          <figcaption>Mini Cheetah parts! But this was for Pat, a biped I wasn't involved in.</figcaption>
+          <figcaption>Mini Cheetah parts!</figcaption>
         </figure>
 
         <figure>
@@ -258,6 +280,11 @@
             I'm still using an Arduino, and added a shoebox cover so it looks "cooler" and a simple ultrasonic sensor which I used to shift gaits, step heights, speed, etc. when it senses a large obstacle.
             See process <a href="https://www.youtube.com/watch?v=JRvZPAb3mh4" target="_blank">here</a>!
           </figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/casp-wiring.jpeg"/>
+          <figcaption>Casper inside (yes I used a shoebox as the body)</figcaption>
         </figure>
 
         <figure>
@@ -491,6 +518,11 @@
             but I also have a general HSV test video <a href="https://www.youtube.com/shorts/8WiddnAxXjk" target="_blank">here</a>
           </figcaption>
         </figure>
+
+        <figure>
+          <img src="images/snek.png"/>
+          <figcaption>Snake RL using DQN</figcaption>
+        </figure>
       </div>
     </div>
 
@@ -556,6 +588,7 @@
             I'm using monocular cameras, so I got depth by measuring the bottle width, finding my focal length (by measuring from a known distance), 
             and plugging into dist = (focal len * bottle width) / px width found by using simple trig. Hardware wise, I got aluminum channels from Ace and hand sawed them
             to make the chassis.
+            More AprilTag following <a href="https://www.youtube.com/watch?v=mGfdPcIcMgQ" target="_blank">here</a>!
           </figcaption>
         </figure>
 
@@ -722,7 +755,7 @@
         <figure>
           <img src="images/bottom.jpg"/>
           <figcaption>
-            Chassis underside
+            Chassis underside, all custom 3D printed parts.
           </figcaption>
         </figure>
 
@@ -781,6 +814,14 @@
             I made this ultrasonic sensor motion lamp for my mom to make her life easier,
             especially for when she needs to get up at midnight. I made this in 8th grade.
             The frame is 3D printed (I designed in Fusion) and I'm using an Arduino to control a relay for the lightbulb.
+            Watch more <a href="https://www.youtube.com/shorts/rdI2JSxVCLY" target="_blank">here</a>!
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/lamp.jpeg"/>
+          <figcaption>
+            Back view of my lamp, blue thing is the relay and Arduino Nano pcb shown.
           </figcaption>
         </figure>
 
@@ -1285,6 +1326,7 @@
           <img src="images/tiny-arm.png" style="width: 70%"/>
           <figcaption>
             Mini 3D printed 3 DOF arm (not my design, from Thingiverse) but I'm using an STM32. It's very silent because of the small stepper motors.
+            Watch <a href="https://www.youtube.com/watch?v=Ny4f4uQS_Fo" target="_blank">here</a>
           </figcaption>
         </figure>
 
@@ -1350,7 +1392,8 @@
           <figcaption>
             I made a simple but fairly fast mini autonomous race car just using ultrasonic sensors. I experimented with slowing down before accelerating near turns. 
             I was inspired by F1Tenth. I'm using a 1000kv BLDC drone motor geared down and it works surprisingly well. The only limitation was the ultrasonic sensor 
-            updates not being fast enough so this is low speed for the car. I designed it in Fusion. See more <a href="https://www.youtube.com/watch?v=AOXkyarQy0k" target="_blank">here</a>.
+            updates not being fast enough so this is low speed for the car. I designed it in Fusion. See more <a href="https://www.youtube.com/watch?v=AOXkyarQy0k" target="_blank">here</a>
+            or skip to design explanation <a href="https://youtu.be/AOXkyarQy0k?t=86" target="_blank">here</a>
           </figcaption>
         </figure>
 
@@ -1366,6 +1409,10 @@
           <figcaption>
             Top view
           </figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/f1.jpeg"/>
         </figure>
 
         <figure>
@@ -1398,7 +1445,8 @@
             <source src="videos/ESP32-car.mp4#t=0.001" type="video/mp4" />
           </video>
           <figcaption>
-            I made an ESP32 controlled car (and boat) in 7th grade. I learned about the ESP-NOW protocol.
+            I made an ESP32 controlled car (and boat, see in "OTHER" section) in 7th grade. I learned about the ESP-NOW protocol.
+            I later on designed and printed a chassis for it, see <a href="https://www.youtube.com/shorts/Wohbz0YDOyY" target="_blank">here</a>
           </figcaption>
         </figure>
 
@@ -1409,6 +1457,7 @@
           <figcaption>
             I made this fast RC square thing in middle school using 2 1000kv BLDC motors and wood from Home Depot.
             There's no suspension so as you can see it bumps quite a lot over cracks in the floor.
+            Watch more <a href="https://www.youtube.com/watch?v=zWH2G6ztxc4" target="_blank">here</a>
           </figcaption>
         </figure>
 
@@ -1452,7 +1501,7 @@
         <figure>
           <img src="images/kalman.png"/>
           <figcaption>
-            I implemented a simple Kalman Filter on an STM32 for IR sensor distance measurements,
+            I implemented a simple Kalman Filter on an STM32 for IR sensor distance measurements after learning about the KF in 9th grade FRC,
             see <a href="https://www.youtube.com/watch?v=CbdztzORtTU" target="_blank">here</a>!
           </figcaption>
         </figure>
@@ -1504,10 +1553,10 @@
         </figure>
 
         <figure>
-          <img src="images/atmo-car.jpg" style="width: 30%"/>
+          <img src="images/atmo-car.jpg" style="width: 50%"/>
           <figcaption>
             Little atmospheric pressure powered car. 
-            See <a href="https://www.youtube.com/shorts/CZb53uUhrvw" target="_blank">here</a>.
+            Watch <a href="https://www.youtube.com/shorts/CZb53uUhrvw" target="_blank">here</a>
           </figcaption>
         </figure>
 
@@ -1536,6 +1585,13 @@
         </figure>
 
         <figure>
+          <img src="images/esp32.jpeg"/>
+          <figcaption>
+            What remains of my ESP32 remote
+          </figcaption>
+        </figure>
+
+        <figure>
           <img src="images/rubber-vex.jpeg"/>
           <figcaption>Initial rubber band powered car using VEX parts I used to compete in 8th grade SciOly (I later on added 3D printed trigger mech, steering mech, and wingnut braking but
             deleted the video of it, part of channel image in "other" section is all I have.
@@ -1546,6 +1602,28 @@
 
     <div id="other" class="section">
       <div class = "image-container">
+        <figure>
+          <img src="images/sub.jpeg"/>
+          <figcaption>
+            RC submarine I made recently using PVC pipe. Watch initial test <a href="https://www.youtube.com/watch?v=3K_4MxPqb5I" target="_blank">here</a>.
+            Drawback is the depth can only go up to the straw length (since I stuck the radio receiver antenna inside)
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/sub-back.jpeg"/>
+          <figcaption>
+            3D printed propeller and rudder for my RC sub
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/sub-cam.jpg"/>
+          <figcaption>
+            With a fishing camera so I can see what's under the water
+          </figcaption>
+        </figure>
+
         <figure>
           <video width="320" height="240" controls preload="metadata">
             <source src="videos/boat.mp4#t=0.001" type="video/mp4" />
@@ -1810,7 +1888,16 @@
           <img src="images/dna3.jpg" style="width: 80%"/>
           <figcaption>
             I CADed a DNA model in TinkerCAD (lol) for my 7th grade science class and printed it out!
-            I gave it to my science teacher!
+            I gave it to my science teacher! Watch <a href="https://www.youtube.com/shorts/QYKZjN5I8VM" target="_blank">here</a> for printing
+          </figcaption>
+        </figure>
+
+        <figure>
+          <video width="320" height="240" controls preload="metadata">
+            <source src="videos/coil-accel.mp4#t=0.001" type="video/mp4" />
+          </video>
+          <figcaption>
+            Coil accelerator lol
           </figcaption>
         </figure>
 
@@ -1883,7 +1970,8 @@
          <figure>
           <img src="images/heating.jpeg"/>
           <figcaption>
-            I learned how to fix oil-based heating systems in my basement
+            I learned how to fix oil-based heating systems in my basement. My current internship/assistance/just to learn job
+            at a heating business earns me $20 per house lol
           </figcaption>
         </figure>
 
@@ -1918,6 +2006,7 @@
 
         <figure>
           <img src="images/nozzle.jpeg"/>
+          <figcaption>3D printer nozzle assembly</figcaption>
         </figure>
 
         <figure>
@@ -2045,6 +2134,10 @@
 
         <figure>
           <img src="images/tank2.jpeg"/>
+        </figure>
+
+        <figure>
+          <img src="images/transmit2.jpeg"/>
         </figure>
         
       </div>

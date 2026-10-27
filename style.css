@@ -176,6 +176,35 @@ figure img {
   height: auto;
 }
 
+/* Row of images, each with an optional small caption underneath */
+.photo-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 1rem;
+}
+
+.photo-row .photo {
+  width: 18%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.photo-row .photo span,
+.photo-row .photo a {
+  color: lightsteelblue;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 650px) {
+  .photo-row .photo {
+    width: calc(50% - 8px);
+  }
+}
+
 figcaption {
   color: lightsteelblue;
   padding: 0.5rem;
@@ -192,6 +221,34 @@ figcaption {
   padding: 0.8rem 1.5rem;
   cursor: pointer;
   transition: transform 0.2s, box-shadow 0.2s;
+}
+
+/* Category buttons: wrap into centered, evenly spaced rows on narrower screens */
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin: 1.5rem auto;
+  padding: 0 16px;
+}
+
+.controls .button {
+  margin: 0;
+}
+
+/* Phones: tidy two-column grid of equal-width buttons */
+@media (max-width: 650px) {
+  .controls {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .controls .button {
+    padding: 0.7rem 0.8rem;
+    font-size: 0.95rem;
+  }
 }
 
 .button:hover {
