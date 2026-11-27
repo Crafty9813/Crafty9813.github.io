@@ -359,6 +359,23 @@ figcaption {
   aspect-ratio: 1.1;
 }
 
+/* Video tile: same height as the neighboring photos, letterboxed so nothing is cut off */
+.photo-row .photo video {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1.1;
+  object-fit: contain;
+  background: var(--media-bg);
+  border-radius: 10px;
+}
+
+/* Wide images (like the CAD screenshot) that must show in full:
+   keep the 4:3 tile so the row stays aligned, but letterbox instead of crop */
+.photo-row .photo img.fit {
+  object-fit: contain;
+  background: var(--media-bg);
+}
+
 .photo-row .photo span,
 .photo-row .photo a {
   font-size: 0.85rem;

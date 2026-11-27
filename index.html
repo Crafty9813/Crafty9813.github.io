@@ -64,8 +64,15 @@
           <a href="https://www.youtube.com/watch?v=Ct8sVeMkBNI" target="_blank">Welding process video</a>
         </div>
         <div class="photo">
+          <img loading="lazy" src="images/gokartcad.png" class="fit" alt="Go-kart CAD model"/>
+          <span>Here's my CAD</span>
+        </div>
+        <div class="photo">
+          <img loading="lazy" src="images/rendered.png" class="fit"/>
+        </div>
+        <div class="photo">
           <img loading="lazy" src="images/weld-joint.jpg"/>
-          <span>My first weld joint</span>
+          <span>My first welds</span>
         </div>
         <div class="photo">
           <img loading="lazy" src="images/steering.jpg"/>
@@ -77,11 +84,19 @@
         </div>
         <div class="photo">
           <img loading="lazy" src="images/gokart2.jpeg" class="uncropped"/>
-          <span>Progress so far. Next I need to add the motor/power system and brakes</span>
+          <span>Raw chassis</span>
+        </div>
+        <div class="photo">
+          <video controls preload="metadata" playsinline>
+            <source src="videos/gokart.mp4#t=0.001" type="video/mp4" />
+          </video>
+          <span>How it drives so far</span>
         </div>
       </div>
       <figcaption>
-        I'm building an 8 ft long go-kart in my garage to learn more about vehicle design. I designed the frame in Fusion and learned how to weld by watching YouTube videos. I'm using rack and pinion steering with standard Ackermann geometry (the inner wheel angles more during a turn to reduce wear), and I chose negative camber for the front wheels to hopefully help with cornering. I hope to someday make new types of vehicles that are more efficient and eco-friendly, and this is a good start.
+        I'm building an 8 ft long go-kart (that I plan to make autonomous) in my garage to learn more about vehicle design. I designed the frame in Fusion and learned how to weld by watching YouTube videos. I'm using rack and pinion steering with standard Ackermann geometry (the inner wheel angles more during a turn to reduce wear), and I chose negative camber for the front wheels to help with cornering. I hope to someday make new types of vehicles that are more efficient and eco-friendly, and this is a good start.
+        It so far can drive but I need a clutch, I can't find any that fit my 530 chain so I plan to CNC a custom sprocket that fits onto a regular clutch or CNC a #35 or smaller chain sized sprocket for the rear axle. After I do that, I plan to add computer vision to possibly make it FSD-ish or just send alerts to the driver. I'll probably
+        use a motor to turn the steering wheel.
       </figcaption>
     </figure>
     </section>
@@ -525,6 +540,15 @@
     <div id="ai" class="section">
       <div class="image-container">
         <figure>
+          <img loading="lazy" src="images/driving-sim.webp" alt="tumor detection"/>
+          <figcaption>
+            A driving simulator I made recently with an Arduino and MPU-6050 as a steering wheel
+            and Python for the simulator. I also added FSD features like a camera and 3D LiDAR scan and it's
+            using pure pursuit for path following. Watch it <a href="https://www.youtube.com/watch?v=16HCtkErwzo" target="_blank">here</a>!
+          </figcaption>
+        </figure>
+
+        <figure>
           <img loading="lazy" src="images/tumor-det.png" alt="tumor detection"/>
           <figcaption>
             Brain tumor and pneumonia detection using CNNs in PyTorch (using Kaggle datasets). I wanted to see how ML could be used in healthcare.
@@ -660,6 +684,14 @@
           </video>
           <figcaption>
             ArUco marker pose display for swarm robot localization (also one of my Open Sauce 2024 projects)
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img loading="lazy" src="images/rocket-sim.png"/>
+          <figcaption>
+            A 3D rocket simulator using Python to simulate rocket trajectories and parachute landings
+            based on wind and fuel and mass and other factors.
           </figcaption>
         </figure>
 
@@ -840,10 +872,6 @@
           <figcaption>
             With the LDRs spread out so more FOV. Also looks more like a bug.
           </figcaption>
-        </figure>
-
-        <figure>
-          <img loading="lazy" src="images/sideline.jpeg"/>
         </figure>
 
         <figure>
@@ -1580,6 +1608,13 @@
             Plastic bottle raft V1, weighing buckets of water to see how much it can hold.
           </figcaption>
         </figure>
+
+        <figure>
+          <img loading="lazy" src="images/piston-boat.jpg"/>
+          <figcaption>
+            A model boat with a V6 3D printed engine I made when I was young
+          </figcaption>
+        </figure>
       </div>
     </div>
 
@@ -1993,6 +2028,13 @@
             A little gift I made for my mom using LED matrix (heart kind of broken), I probably
             made a mistake while soldering or my resistors were inconsistent.
             Watch it in action <a href="https://www.youtube.com/shorts/RTnu6R3G7aI" target="_blank">here</a>
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img loading="lazy" src="images/humidity-bar.jpeg"/>
+          <figcaption>
+            Humidity bar display in increments of 10% using a DHT11, 2510SR-1, and Arduino.
           </figcaption>
         </figure>
 
@@ -2552,7 +2594,7 @@
       </div>
 
       <p>
-        I got to visit BD's headquarters in Waltham, MA! It was super
+        I got to visit BD's headquarters in Waltham, MA! (sadly no internship opportunity D:) It was super
         cool seeing their robot progression/iterations & being able to drive some of their quadrupeds. I saw how Spot had stereo cameras on each side and some others had fancy 3D LiDARs as shown in the image.
         Just a cool life experience I wanted to share, watch <a href="https://www.youtube.com/watch?v=piJnL_Atjj4" target="_blank">here</a>!
       </p>
